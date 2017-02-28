@@ -21,6 +21,7 @@
       cursor: pointer;
 
       &:hover {
+        background-color: $GRAY_2;
         text-decoration: none;
       }
     }
