@@ -1,0 +1,24 @@
+# Site settings
+title: SiteName
+url: "http://vincentliaw.me/jekyll-boilerplate"
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+sass:
+  style: compressed
+  sass_dir: public/_scss
+
+include:
+- public/css
+- public/js
+
+# Show future events/posts
+future: true
+
+timezone: America/Los_Angeles
+
+highlighter: rouge
