@@ -1,0 +1,33 @@
+.du-nav {
+  width: 100%;
+  background-color: $WHITE;
+  position: fixed;
+  top: 0;
+  z-index: 8;
+
+  &--logo {
+    margin-top: 10px;
+  }
+  &--left {
+    float: left;
+  }
+  &--right {
+    float: right;
+  }
+  &--links {
+    a {
+      display: inline-block;
+      padding: 60px 25px;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    li {
+      font-size: 28px;
+      letter-spacing: -3.4px;
+      line-height: 1;
+    }
+  }
+}
