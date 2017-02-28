@@ -1,0 +1,16 @@
+/**
+ * Home page + hero
+ */
+.du-hero {
+  height: 80%;
+  height: 80vh;
+  min-height: 600px;
+  width: 100%;
+  width: 100vw;
+  background: url('/public/images/video_banner.jpg') no-repeat center center;
+  background-size: cover;
+
+  &--content {
+
+  }
+}

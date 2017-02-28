@@ -1,0 +1,20 @@
+.du-tile {
+
+}
+.du-card {
+  border-radius: 0;
+  background-color: $RED_3;
+
+  &--title {
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    margin-bottom: 22px;
+  }
+  &--img-top {
+    height: 300px;
+  }
+  &--block {
+    background-color: $WHITE;
+    padding: 30px 42px;
+  }
+}

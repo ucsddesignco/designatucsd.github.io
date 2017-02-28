@@ -3,5 +3,20 @@
 ---
 
 // Imports
-@import "resets";
+
+// Variables, constants and font imports
 @import "globals";
+
+// CSS Resets
+@import "resets";
+
+// Base styles
+@import "base";
+
+@import "components/elements";
+@import "components/tiles";
+@import "components/home";
+@import "components/section";
+
+@import "components/footer";
+@import "components/nav";

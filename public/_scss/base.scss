@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $JOSEFIN;
+}
+a,
+li,
+div,
+p {
+  font-family: $ORATOR;
+  line-height: 1.4;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: $GRAY_2;
+}
+h2 {
+  font-size: 36px;
+}
+.du-inline-list {
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    display: inline;
+  }
+}

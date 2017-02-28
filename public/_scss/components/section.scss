@@ -1,0 +1,11 @@
+.du-section {
+  padding-top: 64px;
+  padding-bottom: 74px;
+
+  &--header {
+    font-family: $ORATOR;
+    text-transform: uppercase;
+    letter-spacing: -3.4px;
+    margin-bottom: 42px;
+  }
+}

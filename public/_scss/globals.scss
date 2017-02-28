@@ -1,0 +1,79 @@
+// For global variables such as colors, fonts, etc.
+
+/* Fonts */
+  // Font imports 
+  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+  // @import url('/public/fonts/OratorStdMedium.ttf');
+  @font-face {
+      font-family: "OratorStdMedium";
+      src: url("/public/fonts/OratorStdMedium.ttf") format("truetype");
+  }
+
+  $ORATOR: "OratorStdMedium", Helvetica, Arial, sans-serif;
+  $JOSEFIN: "Josefin Sans", Helvetica, Arial, sans-serif;
+
+
+/* Styling */
+
+  // Radius of buttons
+  $BUTTON_RADIUS: 0px;  
+
+
+/* Colors */
+  // Usage: .selector { color: $BLUE_1; }
+
+  // The lighter blue (ie background of cards)
+  $BLUE_2: #84B5C8;
+
+  // The green for success indicators/buttons
+  $GREEN_1: #3FC0B0;
+
+  // Red for backgrounds (ie background of FOOTER)
+  $RED_1: #DF2F41;
+
+  // Red for buttons (ie background in button in FOOTER)
+  $RED_2: #BD0F21;
+
+  // Lighter red for backgrond of cards
+  $RED_3: #E75A68;
+
+  // Lighter yellow for background of cards
+  $YELLOW_1: #FFD97A;
+
+  // The white
+  $WHITE: #FFFFFF;
+
+  // The black
+  $BLACK: #000;
+
+  // Gray used for text in mockup
+  $GRAY_1: #767676;
+
+  // Light gray (background color)
+  $GRAY_2: #FAFAFA;
+
+  // Assignments
+  $TEXT_COLOR: $GRAY_1;
+  $BACKGROUND_COLOR: $GRAY_2;
+
+/* Breakpoints */
+  // Note breakpoints are the upper bound of each device size
+  // Usage: @media screen and (max-width: $BP_WHATEVER) { }
+
+  /* Bootstrap 6 default breakpoints 
+   * $breakpoints: (
+   *   small: 0px,
+   *   medium: 640px,
+   *   large: 1024px,
+   *   xlarge: 1200px,
+   *   xxlarge: 1440px,
+   * );
+   */
+  // Tablet width upper bound
+  $BP_LG: 1024px;
+
+  // Mobile device width upper bound
+  $BP_MD: 768px;
+
+  // Small desktop width upper bound (ie laptops)
+  $BP_XL: 1200px;

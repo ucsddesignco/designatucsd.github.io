@@ -1,0 +1,14 @@
+.du-footer {
+  width: 100%;
+  background-color: $RED_1;
+  padding: 42px 0;
+
+  &--left {
+
+  }
+  &--links {
+    a {
+      color: white;
+    }
+  }
+}
