@@ -31,6 +31,8 @@
     label {
       color: $WHITE;
       font-size: 24px;
+      letter-spacing: -3.4px;
+      text-transform: lowercase;
     }
     input {
       border-radius: 0;
@@ -38,6 +40,11 @@
       background-color: $WHITE;
       min-width: 400px;
       border: none;
+      text-transform: lowercase;
+    }
+    button {
+      text-transform: lowercase;
+      letter-spacing: -3.4px;
     }
   }
 }
