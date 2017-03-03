@@ -6,15 +6,16 @@
   border: 2px solid $GRAY_1;
   box-sizing: border-box;
   border-radius: 0;
-  font-size: 24px;
+  font-size: 20px;
+  padding: 8px 12px 6px 12px;
 
   &--footer-form {
     background-color: $RED_2;
     color: white;
     border: none;
-    padding: 3px 15px;
-    height: 36px;
-    line-height: 36px;
+    padding: 2px 12px;
+    height: 30px;
+    line-height: 30px;
     margin-left: 0;
   }
 }

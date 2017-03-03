@@ -4,7 +4,7 @@
 .du-hero {
   height: 80%;
   height: 80vh;
-  min-height: 600px;
+  min-height: 500px;
   width: 100%;
   width: 100vw;
   background: url('../images/video_banner.jpg') no-repeat center center;
@@ -16,7 +16,7 @@
 }
 .du-collabs {
   &--tile {
-    height: 220px;
+    height: 176px;
     display: flex;
     flex-direction: column;
     justify-content: center;
