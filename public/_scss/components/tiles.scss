@@ -1,5 +1,10 @@
 .du-tile {
+  min-height: 300px;
+  background-color: $GRAY_1;
 
+  &--wrapper {
+    margin-bottom: 25px;
+  }
 }
 .du-card {
   border-radius: 10px;

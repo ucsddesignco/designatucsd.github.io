@@ -54,8 +54,11 @@
       text-transform: lowercase;
     }
     button {
+      height: 34px;
       text-transform: lowercase;
       letter-spacing: -3.4px;
+      // Text off center due to letter-spacing (I think);
+      padding-left: 8px;
     }
   }
 }
