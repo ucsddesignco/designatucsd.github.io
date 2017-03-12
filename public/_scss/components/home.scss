@@ -1,19 +1,63 @@
 /**
  * Home page + hero
  */
+.du-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 .du-hero {
-  height: 55%;
-  height: 55vh;
-  min-height: 500px;
+  height: 50%;
+  height: 50vh;
+  min-height: 400px;
   width: 100%;
   width: 100vw;
+  margin-top: 112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 
+  // Heroes for pages
   &--index {
     background: url('../images/video_banner.jpg') no-repeat center center;
     background-size: cover;
+    // Wrap video
+    position: relative;
+  }
+  &--events {
+    background: url('../images/banners/hero_events.png') no-repeat center center;
+    background-size: cover;
+  }
+  &--contact {
+    background: url('../images/banners/hero_contact.png') no-repeat center center;
+    background-size: cover;
+  }
+  &--resources {
+    background: url('../images/banners/hero_contact.png') no-repeat center center;
+    background-size: cover;
+  }
+  &--about {
+    background: url('../images/banners/hero_about.png') no-repeat center center;
+    background-size: cover;
   }
   &--content {
-
+    h1 {
+      color: $WHITE;
+      font-size: 72px;
+      text-shadow: 2px 2px 2px $TITLE_SHADOW;
+    }
   }
 }
 .du-collabs {
