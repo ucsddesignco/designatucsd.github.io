@@ -21,12 +21,16 @@
 
 /* Colors */
   // Usage: .selector { color: $BLUE_1; }
+  $BLUE_1: #077EA4;
 
   // The lighter blue (ie background of cards)
   $BLUE_2: #84B5C8;
 
+  // The main (logo) green
+  $GREEN_1: #89B563;
+
   // The green for success indicators/buttons
-  $GREEN_1: #3FC0B0;
+  $GREEN_2: #3FC0B0;
 
   // Red for backgrounds (ie background of FOOTER)
   $RED_1: #DF2F41;
@@ -37,8 +41,11 @@
   // Lighter red for backgrond of cards
   $RED_3: #E75A68;
 
+  // Default yellow
+  $YELLOW_1: #FCB040;
+
   // Lighter yellow for background of cards
-  $YELLOW_1: #FFD97A;
+  $YELLOW_2: #FFD97A;
 
   // The white
   $WHITE: #FFFFFF;

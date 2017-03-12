@@ -2,9 +2,8 @@
 
 }
 .du-card {
-  border-radius: 0;
-  background-color: $RED_3;
-  box-shadow: 10px 10px 0px $GRAY_3;
+  border-radius: 10px;
+  // background-color: $RED_3;
 
   &--title {
     font-size: 20px;
@@ -16,10 +15,63 @@
   }
   &--block {
     background-color: $WHITE;
-    padding: 24px 34px;
+    padding: 0 34px 24px 34px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+  }
+  &--icon {
+    position: relative;
+    display: inline-block;
+    top: -25px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
+    border-radius: 25px;
+    background-color: $WHITE;
+
+    div {
+      width: 50px;
+      height: 50px;
+      padding: 15px;
+    }
+  }
+  &--content {
+    // text-align: left;
+    margin-top: -12px;
+  }
+  &--description {
+
   }
   .du-btn {
     letter-spacing: -2.8px;
     text-transform: lowercase;
+  }
+  // Semantic CSS for types of events
+  // Skills: Green + hamburger menu
+  &--type-skill {
+    background-color: $GREEN_1;
+    border-bottom: 6px solid $GREEN_1;
+
+    .du-card--icon div {
+      background: url('../images/icons/icon_menu.png') no-repeat center center;
+    }
+  }
+  // Professional: Yellow + bag
+  &--type-prof {
+    background-color: $YELLOW_1;
+    border-bottom: 6px solid $YELLOW_1;
+
+    .du-card--icon div {
+      background: url('../images/icons/icon_bag.png') no-repeat center center;
+    }
+  }
+  // Social: Blue + book
+  &--type-social {
+    background-color: $BLUE_1;
+    border-bottom: 6px solid $BLUE_1;
+
+    .du-card--icon div {
+      background: url('../images/icons/icon_book.png') no-repeat center center;
+    }
   }
 }

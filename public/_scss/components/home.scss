@@ -2,14 +2,16 @@
  * Home page + hero
  */
 .du-hero {
-  height: 80%;
-  height: 80vh;
+  height: 55%;
+  height: 55vh;
   min-height: 500px;
   width: 100%;
   width: 100vw;
-  background: url('../images/video_banner.jpg') no-repeat center center;
-  background-size: cover;
 
+  &--index {
+    background: url('../images/video_banner.jpg') no-repeat center center;
+    background-size: cover;
+  }
   &--content {
 
   }
