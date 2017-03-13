@@ -9,34 +9,52 @@ layout: default
   </div>
 
   <!-- Content goes here -->
-  <div class="du-section">
+  <div class="du-section du-section--form-wrapper">
+    <div class="du-section--form">
+      <form></form>
+    </div>
   </div>
 
   <div class="du-section">
-      <div id="map"></div>
+    <div class="container du-map--wrapper">
+      <h2 class="du-section--header">Our Locations</h2>
+      <div class="du-map" id="map"></div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h4 class="du-subheader">HSS Building 1346</h4>
+          <ul class="du-contact--list">
+            <li>Humanities and Social Sciences Building</li>
+            <li>Muir Lane and Scholars Lane</li>
+            <li>Muir College</li>
+            <li>UC San Diego</li>
+            <li>La Jolla, CA 92093</li>
+
+            <li>Closest Parking Lots: </li>
+            <li>Lot P207</li>
+            <li>Lot P208</li>
+          </ul>
+          <button class="btn btn-default du-btn" id="du-map--hss">Map Me</button>
+        </div>
+        <div class="col-md-6">
+          <h4 class="du-subheader">The Design Lab</h4>
+          <ul class="du-contact--list">
+            <li>Atkinson Hall</li>
+            <li>Voight Drive and Engineer Lane</li>
+            <li>Warren College</li>
+            <li>UC San Diego</li>
+            <li>La Jolla, CA 92093</li>
+
+            <li>Closest Parking Lots: </li>
+            <li>Lot P502</li>
+            <li>Lot P503</li>
+          </ul>
+          <button class="btn btn-default du-btn" id="du-map--atkinson">Map Me</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-<script>
-  function initMap() {
-    // Create center marker at UCSD
-    var hss_ltlg = {lat:32.879, lng:-117.2422};
-    // Create a map object and specify the DOM element for display.
-    var map = new google.maps.Map(document.getElementById('map'), {
-      center: hss_ltlg,
-      zoom: 15
-    });
-
-    var marker = new google.maps.Marker({
-        position: hss_ltlg,
-        map: map,
-        title: 'HSS'
-    });
-    console.log('initMap called');
-    // $('#map').css({
-      // overflow: 'auto',
-    // });
-  }
-</script>
-<script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ36pOZAGFabkIcf3ajDDeB6mXmV0skPE&callback=initMap">
+<script src="public/js/maps.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ36pOZAGFabkIcf3ajDDeB6mXmV0skPE&callback=initMap" async defer>
 </script>
