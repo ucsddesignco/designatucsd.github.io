@@ -2,27 +2,29 @@
  * Home page + hero
  */
 .du-video {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  height: 100%;
-  pointer-events: none;
+  height: 0;
+  padding-bottom: 56.25%;
 
   iframe {
     position: absolute;
-    top: 0;
+    top: -10%;
+    // top: 0;
     left: 0;
     width: 100%;
     height: 100%;
   }
+  &--wrapper {
+    max-height: 60%;
+    max-height: 60vh;
+    overflow: hidden;
+  }
 }
 .du-hero {
-  height: 50%;
-  height: 50vh;
-  min-height: 400px;
   width: 100%;
   width: 100vw;
+  min-height: 400px;
   margin-top: 112px;
   display: flex;
   flex-direction: column;
@@ -31,10 +33,12 @@
 
   // Heroes for pages
   &--index {
-    background: url('../images/video_banner.jpg') no-repeat center center;
+    // TODO: possibly add a loading image of the first frame
+    // background: url('../images/video_banner.jpg') no-repeat center center;
     background-size: cover;
     // Wrap video
     position: relative;
+    min-height: none;
   }
   &--events {
     background: url('../images/banners/hero_events.png') no-repeat center center;

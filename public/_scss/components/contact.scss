@@ -15,6 +15,39 @@
     background-color: $WHITE;
     border-radius: 10px;
     padding: 40px 50px;
+
+    label,
+    input,
+    textarea {
+      display: block;
+    }
+    label {
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-top: 45px;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    input {
+      border: none;
+      width: 100%;
+      border-bottom: 1.5px solid $GRAY_1;
+      // TODO: animations
+
+      &:focus {
+        outline: none;
+        border-color: $BLUE_3;
+      }
+    }
+    textarea {
+      border: 1.5px solid $GRAY_1;
+      width: 100%;
+      min-height: 300px;
+    }
+    textarea:focus {
+      border-color: $BLUE_3;
+      outline: none;
+    }
   }
   &--form-wrapper {
     position: relative;
@@ -24,7 +57,5 @@
     border-radius: 0 0 10px 10px;
     margin-bottom: -60px;
   }
-  &--card {
 
-  }
 }
