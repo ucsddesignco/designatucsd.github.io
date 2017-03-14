@@ -1,0 +1,30 @@
+.du-contact {
+  &--section {
+    padding-top: 0;
+  }
+  &--banner-title {
+    height: 160px;
+    background-color: $BLUE_3;
+    padding-top: 40px;
+
+    .du-section--header {
+      color: $WHITE;
+    }
+  }
+  &--form {
+    background-color: $WHITE;
+    border-radius: 10px;
+    padding: 40px 50px;
+  }
+  &--form-wrapper {
+    position: relative;
+    top: -60px;
+    background-color: $BLUE_3;
+    border-bottom: 10px solid $BLUE_3;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: -60px;
+  }
+  &--card {
+
+  }
+}
