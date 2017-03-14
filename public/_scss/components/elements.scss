@@ -2,18 +2,18 @@
  * Button styles go here
  */
 .btn {
-  background-color: $GRAY_1;
+  background-color: $GRAY_4;
   // box-sizing: border-box;
   border: none;
   border-radius: 8px;
   font-size: 16px;
-  padding: 8px 20px;
+  padding: 8px 24px;
   color: $WHITE;
   text-transform: uppercase;
 
   &:hover {
     color: $WHITE;
-    background-color: $GRAY_1;
+    background-color: $GRAY_4;
     border: none;
   }
   &.btn-primary {

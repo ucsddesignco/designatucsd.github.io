@@ -1,3 +1,8 @@
+.du-map {
+  &--description {
+    padding-top: 50px;
+  }
+}
 .du-contact {
   &--section {
     padding-top: 0;
@@ -10,6 +15,9 @@
     .du-section--header {
       color: $WHITE;
     }
+  }
+  &--list {
+    margin: 10px 0 20px 0;
   }
   &--form {
     background-color: $WHITE;
@@ -42,7 +50,7 @@
     textarea {
       border: 1.5px solid $GRAY_1;
       width: 100%;
-      min-height: 300px;
+      min-height: 220px;
     }
     textarea:focus {
       border-color: $BLUE_3;
@@ -57,5 +65,4 @@
     border-radius: 0 0 10px 10px;
     margin-bottom: -60px;
   }
-
 }
