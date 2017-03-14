@@ -3,9 +3,8 @@
   padding-bottom: 60px;
 
   &--header {
-    font-family: $ORATOR;
-    text-transform: lowercase;
-    letter-spacing: -3.4px;
+    font-family: $HEADER_FONT;
+    letter-spacing: 0.6px;
     margin-bottom: 34px;
   }
   &--white {

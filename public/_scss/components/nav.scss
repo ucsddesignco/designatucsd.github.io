@@ -24,7 +24,7 @@
         content: '';
         display: block;
         margin: auto;
-        height: 3px;
+        height: 2px;
         width: 0px;
         background: transparent;
         transition: width .5s ease, background-color .5s ease;
@@ -39,11 +39,11 @@
       }
     }
     li {
-      font-size: 24px;
-      letter-spacing: -3.4px;
-      line-height: 1;
+      font-size: 14px;
+      letter-spacing: 0.7px;
+      line-height: 1.4;
       padding-bottom: 3px;
-      text-transform: lowercase;
+      text-transform: uppercase;
     }
   }
   &--mobile-link {
@@ -170,7 +170,7 @@ $NAV_BODYBG: $WHITE;
   transition: opacity 0.25s, visibility 0s linear 0.5s;
   visibility: hidden;
   z-index: 10;
-  font-family: $ORATOR;
+  font-family: $TEXT_FONT;
 
   a {
     text-decoration: none;
@@ -180,7 +180,9 @@ $NAV_BODYBG: $WHITE;
     color: $GRAY_1;
     display: block;
     padding: 20px 0px;
-    font-size: 28px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
 
     &:focus {
       outline: none;
@@ -193,7 +195,7 @@ $NAV_BODYBG: $WHITE;
     display: block;
     transform: translateX(-10px);
     transition: opacity 0.25s, transform 0.25s;
-    text-align: right;
+    text-align: center;
   }
   .dropdown > a {
     display: none;

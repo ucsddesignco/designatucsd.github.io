@@ -40,9 +40,9 @@
   &--form {
     label {
       color: $WHITE;
-      font-size: 20px;
-      letter-spacing: -3.4px;
-      text-transform: lowercase;
+      font-size: 14px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
       margin-bottom: 5px;
     }
     input {
@@ -51,12 +51,12 @@
       background-color: $WHITE;
       min-width: 360px;
       border: none;
-      text-transform: lowercase;
     }
     button {
       height: 34px;
-      text-transform: lowercase;
-      letter-spacing: -3.4px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      font-size: 14px;
       // Text off center due to letter-spacing (I think);
       padding-left: 8px;
     }

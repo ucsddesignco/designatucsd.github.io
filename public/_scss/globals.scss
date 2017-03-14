@@ -5,13 +5,15 @@
   @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
   // @import url('/public/fonts/OratorStdMedium.ttf');
   @font-face {
-      font-family: "OratorStdMedium";
-      src: url("../fonts/OratorStdMedium.ttf") format("truetype");
+      font-family: "FF_DIN_Regular";
+      src: url("../fonts/FF_DIN_Regular.otf") format("opentype");
   }
 
-  $ORATOR: "OratorStdMedium", Helvetica, Arial, sans-serif;
+  $FFDIN: "FF_DIN_Regular", Helvetica, Arial, sans-serif;
   $JOSEFIN: "Josefin Sans", Helvetica, Arial, sans-serif;
 
+  $TEXT_FONT: $FFDIN;
+  $HEADER_FONT: $JOSEFIN;
 
 /* Styling */
 
