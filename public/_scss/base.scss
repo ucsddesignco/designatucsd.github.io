@@ -32,6 +32,9 @@ h2 {
 }
 // Overwrite default max container width
 .container {
+  @media screen and (min-width: $BP_LG) {
+    width: 970px;
+  }
 }
 // Map stuff
 #map {

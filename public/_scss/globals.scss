@@ -67,6 +67,9 @@
   // Shadow gray
   $GRAY_3: #DFDFDF;
 
+  // Button gray bg
+  $GRAY_4: #9B9B9B;
+
   // Assignments
   $TEXT_COLOR: $GRAY_1;
   $BACKGROUND_COLOR: $GRAY_2;
@@ -86,7 +89,7 @@
    * );
    */
   // Tablet width upper bound
-  $BP_LG: 1024px;
+  $BP_LG: 992px;
 
   // Mobile device width upper bound
   $BP_MD: 768px;
