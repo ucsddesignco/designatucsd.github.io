@@ -35,5 +35,15 @@
     line-height: 30px;
     margin-left: 0;
     border-radius: 0;
+
+    &:hover {
+      background-color: $RED_2;
+    }
+  }
+  &.btn-lg {
+    font-size: 16px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    background-color: $RED_1;
   }
 }

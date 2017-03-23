@@ -1,0 +1,18 @@
+.du-archive {
+  &--buttons {
+
+  }
+  &--button {
+    &.btn-lg {
+      background-color: $WHITE;
+      border: 2px solid $GRAY_3;
+      box-sizing: border-box;
+
+      &.active {
+        background-color: $RED_1;
+        color: $WHITE;
+        border: none;
+      }
+    }
+  }
+}

@@ -6,8 +6,14 @@
   z-index: 8;
 
   &--logo {
-    margin-top: 14px;
-    height: 80px;
+    margin-top: 18px;
+    height: 70px;
+
+    @media screen and (max-width: $BP_MD) {
+      margin-top: 10px;
+      margin-bottom: 4px;
+      height: 54px;
+    }
   }
   &--left {
     float: left;

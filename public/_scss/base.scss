@@ -44,3 +44,6 @@ div[id^=map_canvas],
 div[id^=map_canvas] div {
   overflow: auto;
 }
+img {
+  max-width: 100%;
+}

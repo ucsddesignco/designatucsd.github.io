@@ -6,7 +6,24 @@
     margin-bottom: 25px;
   }
   &--about {
+    margin-top: 20px;
+    text-align: center;
 
+    img {
+      margin: 20px 0;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: $TEXT_FONT;
+    }
+    p {
+      font-size: 16px;
+      max-width: 80%;
+      margin: auto;
+      margin-top: 6px;
+    }
   }
 }
 .du-card {
