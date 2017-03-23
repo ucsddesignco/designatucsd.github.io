@@ -181,7 +181,10 @@ function generateTeamMembers() {
     // Create each board member div
     var result = '<div class="col-md-3 col-sm-6 du-card--wrapper">' +
       '<div class="card du-card du-card--red" data-year="' + currTeam.gradYear + '">' +
-        '<div class="card-img-top du-card--img-top" data-index="' + i + '" id="' + currTeam.id + '"></div>' +
+        '<div class="card-img-top-wrapper du-card--img-top-wrapper">' +
+          '<div class="card-img-top du-card--img-top du-card--img-top-front" data-index="' + i + '" id="' + currTeam.id + '"></div>' +
+          '<div class="card-img-top du-card--img-top" data-index="' + i + '" id="' + currTeam.id + '-hover"></div>' +
+        '</div>' +
         '<div class="card-block du-card--block">' +
           '<p>' + currTeam.name + '</p>' +
           '<p class="light">' + role + '</p>' +
@@ -193,19 +196,22 @@ function generateTeamMembers() {
     $('#board-members-wrapper').append(result);
 
     // Also preload hover images, as they don't load by default
-    $('.preloaded-images').append('<img src="' + hoverImageURL + '"/>')
+    // $('.preloaded-images').append('<img src="' + hoverImageURL + '"/>')
 
     // Add css
     $('#' + currTeam.id).css('background', 'url(' + imageURL + ') no-repeat center center');
     $('#' + currTeam.id).css('background-size', 'cover');
 
+    $('#' + currTeam.id + '-hover').css('background', 'url(' + hoverImageURL + ') no-repeat center center');
+    $('#' + currTeam.id + '-hover').css('background-size', 'cover');
+
     // Add hover effect
     $('#' + currTeam.id).hover(function(e) {
-      // Conditionally render image
-      var index = parseInt($(this).attr("data-index"), 10);
-      var image = (e.type === 'mouseenter') ? team[index].hoverImageURL : team[index].imageURL;
-      $(this).css('background', 'url(' + image + ') no-repeat center center');
-      $(this).css('background-size', 'cover');
+      // First callback is mouseenter      
+      $(e.target).css('opacity', 0);
+    }, function(e) {
+      // Second callback is mouseleave
+      $(e.target).css('opacity', 1);
     });
   }
 
