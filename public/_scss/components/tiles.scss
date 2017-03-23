@@ -32,11 +32,23 @@
   margin-bottom: 30px;
   // background-color: $RED_3;
 
-
+  &--title-large {
+    font-size: 28px;
+    line-height: 40px;
+    padding: 30px 0 20px 0;
+  }
   &--title {
     font-size: 20px;
     letter-spacing: 0.8px;
     margin-bottom: 18px;
+  }
+  &--subtitle {
+    font-size: 16px;
+    font-family: $TEXT_FONT;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 5px 0;
   }
   &--img-top {
     height: 240px;
@@ -47,6 +59,14 @@
     padding: 0 34px 24px 34px;
     border-radius: 0 0 10px 10px;
     text-align: center;
+  }
+  &--block-nopad {
+    background-color: $GRAY_2;
+    padding: 0;
+    border-radius: 0 0 10px 10px;
+  }
+  &--block-nopad-content {
+    padding: 0 34px 0 34px;
   }
   &--icon {
     position: relative;
@@ -123,5 +143,29 @@
   &--type-resource {
     // background-color: $GREEN_1;
     border-bottom: 6px solid $GREEN_1;
+  }
+  &--resource {
+    border-top: 1px solid $GRAY_3;
+    text-align: left;
+
+    img {
+      max-width: 60%;
+    }
+    a {
+      color: $GREEN_1;
+      text-decoration: underline;
+    }
+  }
+  &--resource-title {
+    font-size: 16px;
+    font-family: $TEXT_FONT;
+    font-weight: bold;
+  }
+  &--resource-content {
+  }
+  &--resource-listener {
+    &:hover {
+      background-color: $WHITE;
+    }
   }
 }
