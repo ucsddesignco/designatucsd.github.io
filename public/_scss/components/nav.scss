@@ -97,7 +97,7 @@ $NAV_BODYBG: $WHITE;
   border: none;
   top: 30px;
 
-  @media screen and (max-width: $BP_SM) {
+  @media screen and (max-width: $BP_MD) {
     top: 20px;
   }
   .mobile-hamburger {

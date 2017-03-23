@@ -2,6 +2,14 @@
   padding-top: 60px;
   padding-bottom: 70px;
 
+  h1 {
+    font-size: 48px;
+  }
+  &--banner {
+    // Extra padding for title banners
+    padding-top: 100px;
+    padding-bottom: 90px;
+  }
   &--header {
     font-family: $HEADER_FONT;
     letter-spacing: 0.6px;
@@ -11,8 +19,19 @@
   &--large-text {
     font-size: 20px;
   }
+  &--color-white {
+    color: $WHITE;
+
+    h2, 
+    p {
+      color: $WHITE;
+    }
+  }
   &--white {
     background-color: $WHITE;
+  }
+  &--blue {
+    background-color: $BLUE_1;
   }
   &--subheader {
     font-size: 20px;
@@ -25,6 +44,29 @@
     }
     &:after {
       
+    }
+  }
+}
+.du-featurette {
+  padding-top: 70px;
+  padding-bottom: 20px;
+
+  &--content {
+    @media screen and (min-width: $BP_MD) {
+      height: 300px;
+    }
+  }
+  &--header {
+    font-size: 30px;
+    padding: 10px 0;
+  }
+  &--text {
+    font-size: 18px;
+  }
+  &--image {
+    img {
+      max-height: 180px;
+      max-width: 180px;
     }
   }
 }

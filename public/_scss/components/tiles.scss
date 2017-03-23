@@ -32,6 +32,7 @@
   margin-bottom: 30px;
   // background-color: $RED_3;
 
+
   &--title {
     font-size: 20px;
     letter-spacing: 0.8px;
@@ -78,6 +79,9 @@
     letter-spacing: -2.8px;
     text-transform: lowercase;
   }
+  &--full-round {
+    border-radius: 10px 10px 10px 10px;
+  }
   // Semantic CSS for types of events
   // Skills: Green + hamburger menu
   &--type-skill {
@@ -114,5 +118,10 @@
     .du-card--icon div {
       background: url('../images/icons/icon_circle.png') no-repeat center center;
     }
+  }
+  // RESOURCES page: resource cards
+  &--type-resource {
+    // background-color: $GREEN_1;
+    border-bottom: 6px solid $GREEN_1;
   }
 }

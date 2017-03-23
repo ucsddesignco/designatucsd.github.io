@@ -47,3 +47,8 @@ div[id^=map_canvas] div {
 img {
   max-width: 100%;
 }
+.flex-vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -2,6 +2,10 @@
   &--wrapper {
     
   }
+  &--up-to {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
   &--btn-lg {
     margin-top: 36px;
     margin-bottom: 20px;
@@ -13,9 +17,6 @@
     quotes: "\201C""\201D""\2018""\2019";
     position: relative;
 
-    p {
-      // display: inline;
-    }
     &::before,
     &::after {
       content: '"';

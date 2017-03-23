@@ -25,12 +25,18 @@
   width: 100%;
   width: 100vw;
   min-height: 375px;
-  margin-top: 112px;
+  margin-top: 109px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 
+  @media screen and (max-width: $BP_LG) {
+    margin-top: 93px;
+  }
+  @media screen and (max-width: $BP_MD) {
+    margin-top: 73px;
+  }
   // Heroes for pages
   &--index {
     // TODO: possibly add a loading image of the first frame
