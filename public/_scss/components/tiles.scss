@@ -5,9 +5,13 @@
   &--wrapper {
     margin-bottom: 25px;
   }
+  &--about {
+
+  }
 }
 .du-card {
   border-radius: 10px;
+  margin-bottom: 30px;
   // background-color: $RED_3;
 
   &--title {
@@ -17,6 +21,7 @@
   }
   &--img-top {
     height: 240px;
+    border-radius: 10px 10px 0 0;
   }
   &--block {
     background-color: $WHITE;
@@ -46,6 +51,10 @@
   }
   &--description {
 
+  }
+  &--red {
+    background-color: $RED_4;
+    border-bottom: 6px solid $RED_4;
   }
   .du-btn {
     letter-spacing: -2.8px;

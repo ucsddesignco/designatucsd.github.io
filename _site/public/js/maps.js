@@ -1,7 +1,6 @@
 var map;
 function initMap() {
   // Create center marker at UCSD
-  var hss_ltlg = {lat:32.878527, lng:-117.241396};
   // Create a map object and specify the DOM element for display.
   map = new google.maps.Map(document.getElementById('map'), {
     center: hss_ltlg,
@@ -9,9 +8,17 @@ function initMap() {
     scrollwheel: false,
   });
 
-  var marker = new google.maps.Marker({
+  var hss_ltlg = {lat:32.8784, lng:117.2422};
+  var hss = new google.maps.Marker({
     position: hss_ltlg,
     map: map,
     title: 'Humanities and Social Sciences Building'
+  });
+
+  var atkinson_ltlg = {lat:32.8825, lng:-117.2369};
+  var atkinson = new google.maps.Marker({
+    position: atkinson_ltlg,
+    map: map,
+    title: 'Atkinson Hall'
   });
 }
