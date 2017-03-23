@@ -17,4 +17,55 @@
       }
     }
   }
+  &--table-head {
+    th {
+      padding: 40px 0 15px 0;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: $TEXT_FONT;
+      letter-spacing: 1px;
+    }
+  }
+  &--table-row {
+    td {
+      width: 25%;
+      height: 42px;
+      line-height: 42px;
+
+      &:first-of-type {
+        width: 50%;
+        padding-left: 32px;
+        padding-right: 10px;
+      }
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+  // Semantic types
+  // Skills - green and hamburger
+  &--type-skill {
+    td:first-of-type {
+      background: url('../images/icons/icon_menu.png') no-repeat 0 center;
+    }
+  }
+  // Research - blue and graph
+  &--type-research {
+    td:first-of-type {
+      background: url('../images/icons/icon_book.png') no-repeat 0 center;
+    }
+  }
+  // Industry - yellow and bag
+  &--type-industry {
+    td:first-of-type {
+      background: url('../images/icons/icon_bag.png') no-repeat 0 center;
+    }
+  }
+  // Community - Red circle
+  &--type-community {
+    td:first-of-type {
+      background: url('../images/icons/icon_circle.png') no-repeat 0 center;
+    }
+  }
 }
