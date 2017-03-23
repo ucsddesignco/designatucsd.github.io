@@ -3,11 +3,14 @@
 xmlns:fb="http://ogp.me/ns/fb#">
 <head>
   <title>Design at UCSD</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="public/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="public/css/styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" crossorigin="anonymous"></script> -->
+  <script src="public/js/jquery-3.1.1.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+  <script src="public/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:image" content="public/images/video_banner.jpg">
   <meta name="description" content="A student-led group of designers focused on UX design, research, and design thinking with an appreciation for all design fields and related disciplines." >
@@ -108,7 +111,7 @@ xmlns:fb="http://ogp.me/ns/fb#">
           </div>
         </div>
         <div class="col-md-4 du-card--wrapper">
-          <div class="card du-card du-card--type-prof">
+          <div class="card du-card du-card--type-industry">
             <img class="card-img-top du-card--img-top" />
             <div class="card-block du-card--block">
               <div class="du-card--icon"><div></div></div>
@@ -120,7 +123,7 @@ xmlns:fb="http://ogp.me/ns/fb#">
           </div>
         </div>
         <div class="col-md-4 du-card--wrapper">
-          <div class="card du-card du-card--type-social">
+          <div class="card du-card du-card--type-community">
             <img class="card-img-top du-card--img-top" />
             <div class="card-block du-card--block">
               <div class="du-card--icon"><div></div></div>
@@ -143,6 +146,64 @@ xmlns:fb="http://ogp.me/ns/fb#">
         <div class="du-archive--buttons text-center">
           <button class="du-archive--button du-btn btn btn-lg active" id="du-archive--button-recent">Recent</button><button class="du-archive--button du-btn btn btn-lg" id="du-archive--button-sp16">Spring 2016</button><button class="du-archive--button du-btn btn btn-lg" id="du-archive--button-wi16">Winter 2016</button>
         </div>
+      </div>
+
+      <div class="row">
+        <table class="du-archive--table">
+          <tr class="du-archive--table-row du-archive--table-head">
+            <th>Event</th>
+            <th>Resources</th>
+            <th>Gallery</th>
+          </tr>
+
+          <tr class="du-archive--table-row du-archive--type-skill">
+            <td class="du-archive--table-event">
+              Arduino Workshop & Hackathon with the Design Lab
+            </td>
+            <td class="du-archive--table-resources">
+              <a href="#">PowerPoint Slides</a>
+            </td>
+            <td class="du-archive--table-gallery">
+              <a href="#">Photo Gallery</a>
+            </td>
+          </tr>
+
+          <tr class="du-archive--table-row du-archive--type-research">
+            <td class="du-archive--table-event">
+              Fab Lab Tour & Hike
+            </td>
+            <td class="du-archive--table-resources">
+              <a href="#">PowerPoint Slides</a>
+            </td>
+            <td class="du-archive--table-gallery">
+              <a href="#">Photo Gallery</a>
+            </td>
+          </tr>
+
+          <tr class="du-archive--table-row du-archive--type-industry">
+            <td class="du-archive--table-event">
+              GBM 2: Flavors of Design with Mitchell International
+            </td>
+            <td class="du-archive--table-resources">
+              <a href="#">PowerPoint Slides</a>
+            </td>
+            <td class="du-archive--table-gallery">
+              <a href="#">Photo Gallery</a>
+            </td>
+          </tr>
+
+          <tr class="du-archive--table-row du-archive--type-community">
+            <td class="du-archive--table-event">
+              GBM 3: Design Sprint
+            </td>
+            <td class="du-archive--table-resources">
+              <a href="#">PowerPoint Slides</a>
+            </td>
+            <td class="du-archive--table-gallery">
+              <a href="#">Photo Gallery</a>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </div>

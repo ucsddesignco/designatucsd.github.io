@@ -94,11 +94,15 @@
    *   xxlarge: 1440px,
    * );
    */
-  // Tablet width upper bound
-  $BP_LG: 992px;
+
+  // Small mobile device
+  $BP_SM: 640px;
 
   // Mobile device width upper bound
   $BP_MD: 768px;
+  
+  // Tablet width upper bound
+  $BP_LG: 992px;
 
   // Small desktop width upper bound (ie laptops)
   $BP_XL: 1200px;

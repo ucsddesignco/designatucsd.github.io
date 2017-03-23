@@ -93,10 +93,13 @@ $NAV_BODYBG: $WHITE;
   height: 32px;
   position: absolute;
   right: 20px;
-  top: 20px;
   width: 32px;
   border: none;
+  top: 30px;
 
+  @media screen and (max-width: $BP_SM) {
+    top: 20px;
+  }
   .mobile-hamburger {
     border-top: 3px solid;
     border-color: $GRAY_1;

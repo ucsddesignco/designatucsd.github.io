@@ -88,7 +88,7 @@
     }
   }
   // Professional: Yellow + bag
-  &--type-prof {
+  &--type-industry {
     background-color: $YELLOW_1;
     border-bottom: 6px solid $YELLOW_1;
 
@@ -97,12 +97,21 @@
     }
   }
   // Social: Blue + book
-  &--type-social {
+  &--type-research {
     background-color: $BLUE_1;
     border-bottom: 6px solid $BLUE_1;
 
     .du-card--icon div {
       background: url('../images/icons/icon_book.png') no-repeat center center;
+    }
+  }
+  // Community: Red + circle
+  &--type-community {
+    background-color: $RED_1;
+    border-bottom: 6px solid $RED_1;
+
+    .du-card--icon div {
+      background: url('../images/icons/icon_circle.png') no-repeat center center;
     }
   }
 }
