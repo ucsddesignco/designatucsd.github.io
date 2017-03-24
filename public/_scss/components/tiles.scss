@@ -50,11 +50,15 @@
     text-align: left;
     padding: 5px 0;
   }
-  &--img-top-wrapper {
+  &--about-img-top-wrapper {
     position: relative;
     height: 240px;
   }
   &--img-top {
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+  }
+  &--about-img-top {
     border-radius: 10px 10px 0 0;
     position: absolute;
     top: 0;
@@ -194,6 +198,22 @@
     }
     &:hover {
       background-color: $WHITE;
+    }
+  }
+  // About page
+  &--about {
+    .du-card--block {
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .du-card--title {
+      padding: 0;
+      margin-bottom: 5px;
+    }
+    .du-card--title,
+    .du-card--desc {
+      color: $GRAY_7;
     }
   }
 }

@@ -180,14 +180,14 @@ function generateTeamMembers() {
 
     // Create each board member div
     var result = '<div class="col-md-3 col-sm-6 du-card--wrapper">' +
-      '<div class="card du-card du-card--red" data-year="' + currTeam.gradYear + '">' +
-        '<div class="card-img-top-wrapper du-card--img-top-wrapper">' +
-          '<div class="card-img-top du-card--img-top du-card--img-top-front" data-index="' + i + '" id="' + currTeam.id + '"></div>' +
-          '<div class="card-img-top du-card--img-top" data-index="' + i + '" id="' + currTeam.id + '-hover"></div>' +
+      '<div class="card du-card du-card--about du-card--red" data-year="' + currTeam.gradYear + '">' +
+        '<div class="card-img-top-wrapper du-card--about-img-top-wrapper">' +
+          '<div class="card-img-top du-card--about-img-top du-card--img-top-front" data-index="' + i + '" id="' + currTeam.id + '"></div>' +
+          '<div class="card-img-top du-card--about-img-top" data-index="' + i + '" id="' + currTeam.id + '-hover"></div>' +
         '</div>' +
         '<div class="card-block du-card--block">' +
-          '<p>' + currTeam.name + '</p>' +
-          '<p class="light">' + role + '</p>' +
+          '<h4 class="du-card--title">' + currTeam.name + '</h4>' +
+          '<p class="du-card--desc">' + role + '</p>' +
           '<p class="light-gray">Class of ' + currTeam.gradYear + '</p>' +
         '</div>' +
       '</div>' +
