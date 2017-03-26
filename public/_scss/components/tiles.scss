@@ -188,13 +188,13 @@
     position: relative;
 
     &:after {
-      content: ">";
+      content: "\25BE";
       position: absolute;
       right: 34px;
       top: 5px;
     }
     &.active:after {
-      content: "x";
+      content: "\2715";
     }
     &:hover {
       background-color: $WHITE;

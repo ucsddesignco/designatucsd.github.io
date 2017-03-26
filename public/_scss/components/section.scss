@@ -48,7 +48,7 @@
   }
 }
 .du-featurette {
-  padding-top: 70px;
+  padding-top: 30px;
   padding-bottom: 20px;
 
   &--content {
@@ -68,5 +68,8 @@
       max-height: 180px;
       max-width: 180px;
     }
+  }
+  &--cta {
+    margin-top: 18px;
   }
 }
