@@ -1,6 +1,6 @@
 # Site settings
-title: SiteName
-url: "http://vincentliaw.me/jekyll-boilerplate"
+title: Design at UCSD
+url: "http://designatucsd.org"
 
 markdown: kramdown
 
