@@ -128,25 +128,7 @@ xmlns:fb="http://ogp.me/ns/fb#">
     <div class="container">
       <h2 class="du-section--header">What We've Been Up To</h2>
 
-      <div class="row du-tile--row">
-        <div class="col-md-4 du-tile--wrapper">
-          <div class="du-tile"></div>
-        </div>
-        <div class="col-md-4 du-tile--wrapper">
-          <div class="du-tile"></div>
-        </div>
-        <div class="col-md-4 du-tile--wrapper">
-          <div class="du-tile"></div>
-        </div>
-        <div class="col-md-4 du-tile--wrapper">
-          <div class="du-tile"></div>
-        </div>
-        <div class="col-md-4 du-tile--wrapper">
-          <div class="du-tile"></div>
-        </div>
-        <div class="col-md-4 du-tile--wrapper">
-          <div class="du-tile"></div>
-        </div>
+      <div class="row du-tile--row" id="instafeed">
       </div>
 
       <div class="text-center">
@@ -156,6 +138,22 @@ xmlns:fb="http://ogp.me/ns/fb#">
   </div>
 
 </div>
+<script src="public/js/instafeed.min.js"></script>
+<script>
+  var feed = new Instafeed({
+    get: 'user',
+    userId: 3028872187, // Ex: 1374300081
+    accessToken: '3028872187.54142da.1a1906f7787547389eddcac028e81f62',
+    limit: 6,
+    resolution: 'standard_resolution',
+    after: function() {
+    // Execute after
+      $('#instafeed a').attr('target', '_blank'); 
+    }
+  });
+  feed.run();
+  // Execute after
+</script>
 
 
 <div class="du-section du-section--white">

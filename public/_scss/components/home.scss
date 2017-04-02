@@ -87,3 +87,23 @@
     }
   }
 }
+#instafeed {
+  // display: flex;
+
+  a {
+    display: inline-block;
+    width: 33.33333333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+    @media screen and (max-width: $BP_MD) {
+      width: 100%;  
+    }
+  }
+}
+
