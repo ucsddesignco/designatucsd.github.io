@@ -9,11 +9,19 @@
     @media screen and (max-width: $BP_MD) {
       width: 100%;
       text-align: center;
+      float: none;
     }
   }
   &--right {
     float: right;
     position: relative;
+
+    @media screen and (max-width: $BP_MD) {
+      width: 100%;
+      text-align: center;
+      float: none;
+      min-height: 94px;
+    }
   }
   &--icons {
     padding: 14px 0;
@@ -39,6 +47,16 @@
     }
   }
   &--form {
+    &#events-form {
+      input {
+        border: 2px solid $GRAY_3;
+        box-shadow: none;
+
+        @media screen and (min-width: $BP_MD) {
+          border-right: none;
+        }
+      }
+    }
     label {
       color: $WHITE;
       font-size: 14px;
@@ -52,6 +70,8 @@
       background-color: $WHITE;
       min-width: 360px;
       border: none;
+      max-width: 400px;
+      margin: auto;
     }
     button {
       height: 34px;
@@ -61,6 +81,15 @@
       // Text off center due to letter-spacing (I think);
       padding-left: 12px;
     }
+
+    // @media screen and (max-width: $BP_SM) {
+    //   label {
+    //     float: center;
+    //   }
+    //   input {
+    //     float: center;
+    //   }
+    // }
   }
   &--submit-message {
     text-align: left;
@@ -79,6 +108,17 @@
 
       &:hover {
         color: $WHITE;
+      }
+    }
+    @media screen and (max-width: $BP_MD) {
+      // position: relative;
+      text-align: center;
+      width: 100%;
+
+      a,
+      p {
+        max-width: 400px;
+        margin: auto;
       }
     }
   }
