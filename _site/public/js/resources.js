@@ -157,7 +157,7 @@ function generateResources() {
           // '<h6 class="du-card--resource-title">' + method.LearnFrom + '</h6>' +
           '<h6 class="du-card--resource-title">' + method.MethodName + '</h6>' +
         '</div>' +
-        '<div class="du-card--block-nopad-content hidden">' +
+        '<div class="du-card--block-nopad-content du-card--resource-content-wrapper">' +
           '<div class="du-card--resource-content">' +
             learnFroms +
             tools +
@@ -201,11 +201,22 @@ function generateResources() {
   res = res + "</div>"
 
   $('#du-resources--container').append(res);
+  $('.du-card--resource-content-wrapper').slideUp(0);
 
   $(".du-card--resource-listener").click(function(e) {
     // Toggle hidden class in card content
     $(this).toggleClass('active');
-    $(this.nextElementSibling).toggleClass('hidden');
+    // $(this.nextElementSibling).toggleClass('hidden');
+
+    if ($(this).hasClass('active')) {
+      $(this).parent().siblings().slideUp();
+      console.log($(this.nextElementSibling));
+      $(this.nextElementSibling).slideDown();
+    } else {
+      $(this).parent().siblings().slideDown();
+      $(this.nextElementSibling).slideUp();
+    }
+    // Slideup all the siblings
   });
 
 }
