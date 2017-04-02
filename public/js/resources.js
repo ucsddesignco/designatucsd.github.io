@@ -176,7 +176,7 @@ function generateResources() {
               key +
             '</h4>' +
             '<img src="public/images/icons/' + cardData[key].icon + '" /><br><br>' +
-            '<p>' + cardData[key].description + '</p>' +
+            '<p class="du-card--resource-description">' + cardData[key].description + '</p>' +
           '</div>' +
           '<div class="card-block du-card--block-nopad">' +
             '<div class="du-card--block-nopad-content">' +
