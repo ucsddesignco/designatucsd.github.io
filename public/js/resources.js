@@ -209,11 +209,12 @@ function generateResources() {
     // $(this.nextElementSibling).toggleClass('hidden');
 
     if ($(this).hasClass('active')) {
-      $(this).parent().siblings().slideUp();
-      console.log($(this.nextElementSibling));
+      $(this).parent().siblings().slideUp({ queue: false });
+      $(this).parent().siblings().animate({ opacity: 0 }, { queue: false });
       $(this.nextElementSibling).slideDown();
     } else {
-      $(this).parent().siblings().slideDown();
+      $(this).parent().siblings().slideDown({ queue: false });
+      $(this).parent().siblings().animate({ opacity: 1 }, { queue: false });
       $(this.nextElementSibling).slideUp();
     }
     // Slideup all the siblings
