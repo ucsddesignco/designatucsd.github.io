@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-{% assign curDate = site.time | date: '%s' %}
-
 <div class="du-wrapper du-events--wrapper">
   <div class="du-hero du-hero--events">
     <div class="du-hero--content">
@@ -42,29 +40,30 @@ layout: default
       <h2 class="du-section--header">Upcoming events:</h2>
 
       <div class="row du-card--row">
+        {% assign curDate = site.time | date: '%s' %}
         {% assign upcomingCount = 0 %}
-          {% for post in site.posts reversed %}
-            {% assign postStartDate = post.date | date: '%s' %}
+        {% for post in site.posts reversed %}
+          {% assign postStartDate = post.date | date: '%s' %}
 
-            {% if upcomingCount < 3 %}
-              {% if postStartDate >= curDate %}
-                {% assign upcomingCount = upcomingCount | plus: 1 %}
-                <div class="col-md-4 du-card--wrapper">
-                  <div class="card du-card du-card--type-{{ post.type }}">
-                    <img class="card-img-top du-card--img-top" />
-                    <div class="card-block du-card--block">
-                      <div class="du-card--icon"><div></div></div>
-                      <div class="du-card--content">
-                        <h4 class="card-title du-card--title du-card--event-title">{{ post.title }}</h4>
-                        <h6 class="du-card--date">{{ post.time }}</h6>
-                        <p class="du-card--description du-card--event-description">{{ post.excerpt }}</p>
-                      </div>
+          {% if upcomingCount < 3 %}
+            {% if postStartDate >= curDate %}
+              {% assign upcomingCount = upcomingCount | plus: 1 %}
+              <a class="col-md-4 du-card--wrapper du-card--type-{{ post.type }}" href="{{ post.facebook }}" target="_blank">
+                <div class="card du-card">
+                  <div class="card-img-top du-card--img-top"></div>
+                  <div class="card-block du-card--block">
+                    <div class="du-card--icon"><div></div></div>
+                    <div class="du-card--content">
+                      <h4 class="card-title du-card--title du-card--event-title">{{ post.title }}</h4>
+                      <h6 class="du-card--date">{{ post.time }}</h6>
+                      <p class="du-card--description du-card--event-description">{{ post.excerpt }}</p>
                     </div>
                   </div>
                 </div>
-              {% endif %}
+              </a>
             {% endif %}
-          {% endfor %}
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>
@@ -75,7 +74,7 @@ layout: default
 
       <div class="du-archive--wrapper">
         <div class="du-archive--buttons text-center">
-          <button class="du-archive--button du-btn btn btn-lg active" id="du-archive--button-recent">Recent</button><button class="du-archive--button du-btn btn btn-lg" id="du-archive--button-sp16">Spring 2016</button><button class="du-archive--button du-btn btn btn-lg" id="du-archive--button-wi16">Winter 2016</button>
+          <button class="du-archive--button du-btn btn btn-lg active" id="du-archive--button-recent" data-quarter="ALL">Recent</button><button class="du-archive--button du-btn btn btn-lg" id="du-archive--button-sp16" data-quarter="WI17">Winter 2017</button><button class="du-archive--button du-btn btn btn-lg" id="du-archive--button-wi16"data-quarter="FA16">Fall 2016</button>
         </div>
       </div>
 
@@ -90,10 +89,11 @@ layout: default
         {% for post in site.posts %}
           {% assign postStartDate = post.date | date: '%s' %}
           
-          {% if oldCount < 1000 %}<!-- TODO: just remove the limit somehow -->
-            {% if postStartDate < curDate %}
+          {% if oldCount < 1000 and postStartDate < curDate %}<!-- TODO: just remove the limit somehow -->
+            {% if post.resource_link or post.gallery_link %}
+
               {% assign oldCount = oldCount | plus: 1 %}
-              <div class="row du-archive--table-row du-archive--type-{{ post.type }}">
+              <div class="row du-archive--table-row du-archive--type-{{ post.type }}" data-quarter="{{ post.quarter }}">
                 <div class="col-md-6 du-archive--table-event">
                   {{ post.title }}
                 </div>

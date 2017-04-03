@@ -8,7 +8,7 @@ image: WI17_InterviewWorkshop.png
 published: true
 facebook: https://www.facebook.com/events/1390484261002271/
 
-quarter: W17
+quarter: WI17
 type: industry
 resource_text: Interviewing and Portfolio Workshop
 resource_link: https://docs.google.com/presentation/d/1seEqf-3nN1GWUkmGQDtUWGcec85-MGbLCbGAhR44Pic/edit?pli=1#slide=id.g180e1b9ab3_0_5

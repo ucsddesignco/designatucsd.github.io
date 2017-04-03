@@ -3,13 +3,10 @@
 xmlns:fb="http://ogp.me/ns/fb#">
 <head>
   <title>Design at UCSD</title>
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="public/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="public/css/styles.css">
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" crossorigin="anonymous"></script> -->
   <script src="public/js/jquery-3.1.1.min.js"></script>
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
   <script src="public/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:image" content="public/images/video_banner.jpg">
@@ -107,6 +104,16 @@ xmlns:fb="http://ogp.me/ns/fb#">
 
             <button type="submit" class="btn du-btn btn-primary">Submit</button>
           </form>
+          <div class="du-contact--loading hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="80px" height="80px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ring-alt"><rect x="0" y="0" width="100" height="100" fill="none" class="bk"/><circle cx="50" cy="50" r="40" stroke="#077ea4" fill="none" stroke-width="10" stroke-linecap="round"/><circle cx="50" cy="50" r="40" stroke="#65a1ba" fill="none" stroke-width="6" stroke-linecap="round"><animate attributeName="stroke-dashoffset" dur="2s" repeatCount="indefinite" from="0" to="502"/><animate attributeName="stroke-dasharray" dur="2s" repeatCount="indefinite" values="150.6 100.4;1 250;150.6 100.4"/></circle></svg>
+          </div>
+          <div class="du-contact--form-success hidden">
+            <div class="du-contact--form-success-content">
+              <h4>Your submission was received!</h4>
+              <p>You'll hear back from us shortly</p>
+              <a class="btn du-btn btn-primary" id="du-contact--submit-another">Submit another</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -155,6 +162,7 @@ xmlns:fb="http://ogp.me/ns/fb#">
   </div>
 </div>
 <script src="public/js/maps.js"></script>
+<script src="public/js/contact.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ36pOZAGFabkIcf3ajDDeB6mXmV0skPE&callback=initMap" async defer>
 </script>
 
@@ -219,7 +227,6 @@ xmlns:fb="http://ogp.me/ns/fb#">
     </footer>
   </div>
   <!-- Script includes here -->
-  <!-- <script src="/public/js/hello.js"></script> -->
   <script>
     var YOUR_GA_CODE = 'UA-84330975-1';
 

@@ -170,8 +170,8 @@ function generateResources() {
     methods = methods.join('');
 
     res = res + 
-      '<div class="col-md-5 du-card--wrapper">' +
-        '<div class="card du-card du-card--type-resource">' +
+      '<div class="col-md-5 du-card--wrapper du-card--type-resource">' +
+        '<div class="card du-card">' +
           '<div class="card-block du-card--block du-card--round-top">' +
             '<h4 class="card-title du-card--title-large">' +
               key +
