@@ -5,7 +5,14 @@
   position: relative;
   width: 100%;
   height: 100%;
+  background-color: $BLUE_1;
+  background: url('../video/feature_video_frame1.png') no-repeat center center;
+  background-size: cover;
 
+  @media screen and (max-width: $BP_MD) {
+    height: 60%;
+    height: 60vh;
+  }
   // // Deprecated YT stuff
   // iframe {
   //   position: absolute;
@@ -18,6 +25,10 @@
   video {
     width: 100%;
     height: 100%;
+
+    @media screen and (max-width: $BP_MD) {
+      display: none;
+    }
   }
   &--wrapper {
     max-height: 60%;

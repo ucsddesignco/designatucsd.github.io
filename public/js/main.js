@@ -10,8 +10,6 @@ $(document).ready(function() {
   $(".du-footer--form").submit(function(e) {
     $(e.target).fadeOut();
     $(e.target.nextElementSibling).fadeIn();
-
-    return false;
   });
 
   // Fedin submit form

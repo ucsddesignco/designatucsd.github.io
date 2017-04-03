@@ -17,11 +17,11 @@ layout: default
           <br>
           <p class="du-section--large-text">Sign up for our newsletter to hear about future events.</p>
           <div class="pos-relative du-events--form-wrapper">
-            <form class="form-inline du-footer--form" id="events-form">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSeOb8DiOujSTgK3inQJtjriwtAbd0GSdEU-WepoxvcptH6XoQ/formResponse" target="dummyfooterframe" class="form-inline du-footer--form" id="events-form">
               <!-- <label class="" for="emailInput">Sign up for our newsletter</label> -->
               <br>
               <div class="du-footer--form-inputs">
-                <input type="email" required id="emailInput" class="du-footer--input form-control" placeholder="email@designatucsd.org"><button type="submit" class="btn btn-primary btn--footer-form">Subscribe</button>
+                <input type="email" class="quantumWizTextinputPaperinputInput exportInput du-footer--input form-control" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Email" aria-describedby="i.desc.1391549105 i.err.1391549105" name="entry.131456824" value="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="email@designatucsd.org" required><button type="submit" class="btn btn-primary btn--footer-form">Subscribe</button>
               </div>
             </form>
             <div class="du-footer--submit-message du-footer--submit-events hidden">
@@ -42,7 +42,7 @@ layout: default
       <div class="row du-card--row">
         {% assign curDate = site.time | date: '%s' %}
         {% assign upcomingCount = 0 %}
-        {% for post in site.posts reversed %}
+        {% for post in site.posts %}
           {% assign postStartDate = post.date | date: '%s' %}
 
           {% if upcomingCount < 3 %}

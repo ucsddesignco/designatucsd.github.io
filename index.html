@@ -23,7 +23,7 @@ layout: defaultwithcollaborators
       <div class="row du-card--row">
         {% assign curDate = site.time | date: '%s' %}
         {% assign upcomingCount = 0 %}
-        {% for post in site.posts reversed %}
+        {% for post in site.posts %}
           {% assign postStartDate = post.date | date: '%s' %}
 
           {% if upcomingCount < 3 %}
