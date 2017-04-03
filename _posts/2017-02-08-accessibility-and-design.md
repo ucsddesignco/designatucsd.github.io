@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility and Design
 hosted: Hosted by Design at UCSD
-time: Wednesday, February 8, 7PM - 8PM
+time: Wednesday, February 8, 7-8PM
 location: HSS 1346
 published: true
 

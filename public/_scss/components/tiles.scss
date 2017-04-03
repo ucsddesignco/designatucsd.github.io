@@ -11,6 +11,7 @@
 
     img {
       margin: 20px 0;
+      max-width: 80%;
     }
     h4 {
       font-size: 20px;
@@ -30,9 +31,10 @@
 .du-card {
   border-radius: 10px;
   margin-bottom: 30px;
+  display: block;
 
-  &--wrapper:hover,
-  &--wrapper:active {
+  &:hover,
+  &:active, {
     text-decoration: none;
   }
   &--title-large {

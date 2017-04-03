@@ -2,7 +2,7 @@
 layout: post
 title: Design at UCSD Info Session & Kickoff
 hosted: Hosted by Design at UCSD
-time: Wednesday, October 5, 7PM - 8PM
+time: Wednesday, October 5, 7-8PM
 location: HSS 1346
 published: true
 

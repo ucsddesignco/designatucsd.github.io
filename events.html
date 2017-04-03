@@ -37,7 +37,7 @@ layout: default
   <!-- Content goes here -->
   <div class="du-section">
     <div class="container">
-      <h2 class="du-section--header">Upcoming events:</h2>
+      <h2 class="du-section--header">Upcoming and past events:</h2>
 
       <div class="row du-card--row">
         {% assign curDate = site.time | date: '%s' %}
@@ -46,22 +46,20 @@ layout: default
           {% assign postStartDate = post.date | date: '%s' %}
 
           {% if upcomingCount < 3 %}
-            {% if postStartDate >= curDate %}
-              {% assign upcomingCount = upcomingCount | plus: 1 %}
-              <a class="col-md-4 du-card--wrapper du-card--type-{{ post.type }}" href="{{ post.facebook }}" target="_blank">
-                <div class="card du-card">
-                  <div class="card-img-top du-card--img-top"></div>
-                  <div class="card-block du-card--block">
-                    <div class="du-card--icon"><div></div></div>
-                    <div class="du-card--content">
-                      <h4 class="card-title du-card--title du-card--event-title">{{ post.title }}</h4>
-                      <h6 class="du-card--date">{{ post.time }}</h6>
-                      <p class="du-card--description du-card--event-description">{{ post.excerpt }}</p>
-                    </div>
+            {% assign upcomingCount = upcomingCount | plus: 1 %}
+            <div class="col-md-4 du-card--wrapper du-card--type-{{ post.type }}" >
+              <a class="card du-card" href="{{ post.facebook }}" target="_blank">
+                <div class="card-img-top du-card--img-top"></div>
+                <div class="card-block du-card--block">
+                  <div class="du-card--icon"><div></div></div>
+                  <div class="du-card--content">
+                    <h4 class="card-title du-card--title du-card--event-title">{{ post.title }}</h4>
+                    <h6 class="du-card--date">{{ post.time }}</h6>
+                    <p class="du-card--description du-card--event-description">{{ post.excerpt }}</p>
                   </div>
                 </div>
               </a>
-            {% endif %}
+            </div>
           {% endif %}
         {% endfor %}
       </div>
@@ -95,7 +93,9 @@ layout: default
               {% assign oldCount = oldCount | plus: 1 %}
               <div class="row du-archive--table-row du-archive--type-{{ post.type }}" data-quarter="{{ post.quarter }}">
                 <div class="col-md-6 du-archive--table-event">
-                  {{ post.title }}
+                  <a href="{{ post.facebook }}" target="_blank">
+                    {{ post.title }}
+                  </a>
                 </div>
                 <div class="col-md-3 hidden-sm hidden-xs du-archive--table-resources">
                   {% if post.resource_link %}
