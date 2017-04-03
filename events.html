@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+{% assign curDate = site.time | date: '%s' %}
+
 <div class="du-wrapper du-events--wrapper">
   <div class="du-hero du-hero--events">
     <div class="du-hero--content">
@@ -40,42 +42,29 @@ layout: default
       <h2 class="du-section--header">Upcoming events:</h2>
 
       <div class="row du-card--row">
-        <div class="col-md-4 du-card--wrapper">
-          <div class="card du-card du-card--type-skill">
-            <img class="card-img-top du-card--img-top" />
-            <div class="card-block du-card--block">
-              <div class="du-card--icon"><div></div></div>
-              <div class="du-card--content">
-                <h4 class="card-title du-card--title">Intro to Sketch</h4>
-                <p class="du-card--description">Join us for a workshop on an industry-standard UI design tool</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 du-card--wrapper">
-          <div class="card du-card du-card--type-industry">
-            <img class="card-img-top du-card--img-top" />
-            <div class="card-block du-card--block">
-              <div class="du-card--icon"><div></div></div>
-              <div class="du-card--content">
-                <h4 class="card-title du-card--title">Resume Critique</h4>
-                <p class="du-card--description">Come learn how to make your resume stand out!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 du-card--wrapper">
-          <div class="card du-card du-card--type-community">
-            <img class="card-img-top du-card--img-top" />
-            <div class="card-block du-card--block">
-              <div class="du-card--icon"><div></div></div>
-              <div class="du-card--content">
-                <h4 class="card-title du-card--title">Taco Tuesday</h4>
-                <p class="du-card--description">Get some tacos and hang out with the design community</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        {% assign upcomingCount = 0 %}
+          {% for post in site.posts reversed %}
+            {% assign postStartDate = post.date | date: '%s' %}
+
+            {% if upcomingCount < 3 %}
+              {% if postStartDate >= curDate %}
+                {% assign upcomingCount = upcomingCount | plus: 1 %}
+                <div class="col-md-4 du-card--wrapper">
+                  <div class="card du-card du-card--type-{{ post.type }}">
+                    <img class="card-img-top du-card--img-top" />
+                    <div class="card-block du-card--block">
+                      <div class="du-card--icon"><div></div></div>
+                      <div class="du-card--content">
+                        <h4 class="card-title du-card--title du-card--event-title">{{ post.title }}</h4>
+                        <h6 class="du-card--date">{{ post.time }}</h6>
+                        <p class="du-card--description du-card--event-description">{{ post.excerpt }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
       </div>
     </div>
   </div>
@@ -97,53 +86,31 @@ layout: default
           <div class="col-md-3 hidden-sm hidden-xs hidden-sm hidden-xs">Gallery</div>
         </div>
 
-        <div class="row du-archive--table-row du-archive--type-skill">
-          <div class="col-md-6 du-archive--table-event">
-            Arduino Workshop & Hackathon with the Design Lab
-          </div>
-          <div class="col-md-3 hidden-sm hidden-xs du-archive--table-resources">
-            <a href="#">PowerPoint Slides</a>
-          </div>
-          <div class="col-md-3 hidden-sm hidden-xs du-archive--table-gallery">
-            <a href="#">Photo Gallery</a>
-          </div>
-        </div>
-
-        <div class="row du-archive--table-row du-archive--type-research">
-          <div class="col-md-6 du-archive--table-event">
-            Fab Lab Tour & Hike
-          </div>
-          <div class="col-md-3 hidden-sm hidden-xs du-archive--table-resources">
-            <a href="#">PowerPoint Slides</a>
-          </div>
-          <div class="col-md-3 hidden-sm hidden-xs du-archive--table-gallery">
-            <a href="#">Photo Gallery</a>
-          </div>
-        </div>
-
-        <div class="row du-archive--table-row du-archive--type-industry">
-          <div class="col-md-6 du-archive--table-event">
-            GBM 2: Flavors of Design with Mitchell International
-          </div>
-          <div class="col-md-3 hidden-sm hidden-xs du-archive--table-resources">
-            <a href="#">PowerPoint Slides</a>
-          </div>
-          <div class="col-md-3 hidden-sm hidden-xs du-archive--table-gallery">
-            <a href="#">Photo Gallery</a>
-          </div>
-        </div>
-
-        <div class="row du-archive--table-row du-archive--type-community">
-          <div class="col-md-6 du-archive--table-event">
-            GBM 3: Design Sprint
-          </div>
-          <div class="col-md-3 hidden-sm hidden-xs du-archive--table-resources">
-            <a href="#">PowerPoint Slides</a>
-          </div>
-          <div class="col-md-3 hidden-sm hidden-xs du-archive--table-gallery">
-            <a href="#">Photo Gallery</a>
-          </div>
-        </div>
+        {% assign oldCount = 0 %}
+        {% for post in site.posts %}
+          {% assign postStartDate = post.date | date: '%s' %}
+          
+          {% if oldCount < 1000 %}<!-- TODO: just remove the limit somehow -->
+            {% if postStartDate < curDate %}
+              {% assign oldCount = oldCount | plus: 1 %}
+              <div class="row du-archive--table-row du-archive--type-{{ post.type }}">
+                <div class="col-md-6 du-archive--table-event">
+                  {{ post.title }}
+                </div>
+                <div class="col-md-3 hidden-sm hidden-xs du-archive--table-resources">
+                  {% if post.resource_link %}
+                    <a href="{{ post.resource_link }}">{{ post.resource_text }}</a>
+                  {% endif %}
+                </div>
+                <div class="col-md-3 hidden-sm hidden-xs du-archive--table-gallery">
+                  {% if post.gallery_link %}
+                    <a href="{{ post.gallery_link }}">Photo Gallery</a>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>

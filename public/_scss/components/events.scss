@@ -52,24 +52,28 @@
   &--type-skill {
     div:first-of-type {
       background: url('../images/icons/icon_menu.png') no-repeat 15px center;
+      background-size: 20px 20px;
     }
   }
   // Research - blue and graph
   &--type-research {
     div:first-of-type {
       background: url('../images/icons/icon_book.png') no-repeat 15px center;
+      background-size: 20px 20px;
     }
   }
   // Industry - yellow and bag
   &--type-industry {
     div:first-of-type {
       background: url('../images/icons/icon_bag.png') no-repeat 15px center;
+      background-size: 20px 20px;
     }
   }
   // Community - Red circle
   &--type-community {
     div:first-of-type {
       background: url('../images/icons/icon_circle.png') no-repeat 15px center;
+      background-size: 20px 20px;
     }
   }
   // Mobile styles for archive events

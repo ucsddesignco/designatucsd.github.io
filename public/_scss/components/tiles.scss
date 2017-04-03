@@ -40,7 +40,12 @@
   &--title {
     font-size: 20px;
     letter-spacing: 0.8px;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
+  }
+  &--event-title {
+    @media screen and (min-width: $BP_SM) {
+      height: 55px;
+    }
   }
   &--subtitle {
     font-size: 16px;
@@ -49,6 +54,10 @@
     text-transform: uppercase;
     text-align: left;
     padding: 5px 0;
+  }
+  &--date {
+    font-family: $HEADER_FONT;
+    margin-bottom: 6px;
   }
   &--about-img-top-wrapper {
     position: relative;
@@ -101,10 +110,14 @@
   }
   &--content {
     // text-align: left;
-    margin-top: -12px;
+    margin-top: -20px;
   }
   &--description {
 
+  }
+  &--event-description {
+    height: 40px;
+    overflow: hidden;
   }
   &--red {
     background-color: $RED_4;
@@ -128,6 +141,7 @@
 
     .du-card--icon div {
       background: url('../images/icons/icon_menu.png') no-repeat center center;
+      background-size: 20px 20px;
     }
   }
   // Professional: Yellow + bag
@@ -137,6 +151,7 @@
 
     .du-card--icon div {
       background: url('../images/icons/icon_bag.png') no-repeat center center;
+      background-size: 20px 20px;
     }
   }
   // Social: Blue + book
@@ -146,6 +161,7 @@
 
     .du-card--icon div {
       background: url('../images/icons/icon_book.png') no-repeat center center;
+      background-size: 20px 20px;
     }
   }
   // Community: Red + circle
@@ -155,6 +171,7 @@
 
     .du-card--icon div {
       background: url('../images/icons/icon_circle.png') no-repeat center center;
+      background-size: 20px 20px;
     }
   }
   // RESOURCES page: resource cards

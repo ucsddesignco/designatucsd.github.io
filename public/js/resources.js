@@ -1,6 +1,7 @@
 /**
  * Generates and adds click handlers to resources page
  */
+// TODO: add images
 var cardOrder = [
   "Human Centered Design", 
   "Research", 
@@ -14,47 +15,47 @@ var cardOrder = [
 var cardData = {
   "Human Centered Design": { 
     "description": "Understanding, designing, and evaluating for human user needs, while align with technology and your own goals for a real solution.",
-    "icon": "about_handshake.png",
+    "icon": "resource_hcd.png",
     "data": [],
   },
   "Research": { 
     "description": "In UX Research, you apply various techniques in order to add context and insight into the design process.",
-    "icon": "about_handshake.png",
+    "icon": "resource_research.png",
     "data": [],
   },
   "Insights": { 
     "description": "Make sense of all of your research to contextualize your design into a truly valuable solution.",
-    "icon": "about_handshake.png",
+    "icon": "resource_insights.png",
     "data": [],
   },
   "Info Architecture": { 
     "description": "The structural design of shared information environments; the art and science of organizing and labeling websites, intranets.",
-    "icon": "about_handshake.png",
+    "icon": "resource_ia.png",
     "data": [],
   },
   "Interaction Design": { 
     "description": "Interaction design or user interface design focuses on the interface to match with the user’s frame of mind, rather than the underlying functionality.",
-    "icon": "about_handshake.png",
+    "icon": "resource_ixd.png",
     "data": [],
   },
   "Visual Design": { 
     "description": "Coming from UI and graphic design, visual design is the use of imagery, color, shapes, typography, and form to improve the user experience.",
-    "icon": "about_handshake.png",
+    "icon": "resource_visual.png",
     "data": [],
   },
   "Prototyping": { 
     "description": "A simulation of the final product. Prototypes allow us to test the feasibility and usability of our designs.",
-    "icon": "about_handshake.png",
+    "icon": "resource_prototyping.png",
     "data": [],
   },
   "Measure": {
     "description": "User-experience metrics give you objective, persuasive data on which to base your design recommendations.",
-    "icon": "about_handshake.png",
+    "icon": "resource_measure.png",
     "data": [],
   },
   "Testing": {
     "description": "Testing is necessary for delivering a good user experience",
-    "icon": "about_handshake.png",
+    "icon": "resource_testing.png",
     "data": [],
   }
 };
@@ -217,7 +218,5 @@ function generateResources() {
       $(this).parent().siblings().animate({ opacity: 1 }, { queue: false });
       $(this.nextElementSibling).slideUp();
     }
-    // Slideup all the siblings
   });
-
 }

@@ -2,8 +2,8 @@ var map;
 function initMap() {
   // Create center marker at UCSD
   // Create a map object and specify the DOM element for display.
-  var hss_ltlg = {lat:32.8783906, lng:-117.2422482};
-  var atkinson_ltlg = {lat:32.8824895, lng:-117.2368928};
+  var hss_ltlg = {lat:32.878515, lng:-117.241413};
+  var atkinson_ltlg = {lat:32.882407, lng:-117.234822};
  
   var center = {
     lat: (hss_ltlg.lat + atkinson_ltlg.lat) / 2,

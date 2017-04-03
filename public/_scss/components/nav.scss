@@ -9,6 +9,11 @@
     margin-top: 18px;
     height: 70px;
 
+    @media screen and (max-width: $BP_LG) {
+      height: 60px;
+      margin-top: 15px;
+      margin-bottom: 12px;
+    }
     @media screen and (max-width: $BP_MD) {
       margin-top: 10px;
       margin-bottom: 4px;
