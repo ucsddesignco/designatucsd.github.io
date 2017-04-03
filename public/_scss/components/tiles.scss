@@ -31,7 +31,8 @@
   border-radius: 10px;
   margin-bottom: 30px;
 
-  &--wrapper:hover {
+  &--wrapper:hover,
+  &--wrapper:active {
     text-decoration: none;
   }
   &--title-large {
