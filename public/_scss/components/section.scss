@@ -60,12 +60,18 @@
       height: 300px;
     }
   }
+  &--description {
+    @media screen and (min-width: $BP_MD) {
+      padding-left: 75px;
+    }
+  }
   &--header {
     font-size: 30px;
     padding: 10px 0;
   }
   &--text {
     font-size: 18px;
+
   }
   &--image {
     img {
