@@ -129,7 +129,7 @@ function generateResources() {
   }
 
   // cardData is keyed by category - now we need to order it properly
-  var res = '<div class="row">';
+  var res = '<div class="row"><div class="col-md-1"></div>';
   for (var i=0; i<cardOrder.length; i++) {
     var key = cardOrder[i];
     var elem = cardData[key];
@@ -191,10 +191,8 @@ function generateResources() {
       '</div>';
 
     // Add spacer
-    if (i % 2 === 0) {
-      res = res + '<div class="col-md-2"></div>';
-    } else {
-      res = res + '</div><div class="row">'
+    if (i % 2 === 1) {
+      res = res + '<div class="col-md-1"></div></div><div class="row"><div class="col-md-1"></div>'
     }
 
   }

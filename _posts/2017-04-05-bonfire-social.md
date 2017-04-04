@@ -6,6 +6,7 @@ time: Wednesday, April 5, 7-8&#58;30PM
 location: La Jolla Shores
 image: 2017_Bonfire.png
 published: true
+facebook: https://www.facebook.com/events/1029535400514129/
 
 quarter: SP17
 type: community

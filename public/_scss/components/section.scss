@@ -62,7 +62,7 @@
   }
   &--description {
     @media screen and (min-width: $BP_MD) {
-      padding-left: 75px;
+      padding-left: 100px;
     }
   }
   &--header {
@@ -81,5 +81,9 @@
   }
   &--cta {
     margin-top: 18px;
+  }
+  &--discipline {
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
