@@ -17,23 +17,24 @@
     quotes: "\201C""\201D""\2018""\2019";
     position: relative;
 
-    &::before,
-    &::after {
-      content: '"';
-      font-family: Times, serif;
-      // display: inline;
-      color: $GRAY_5;
-      font-size: 54px;
-      position: absolute;
-      top: -10px;
-    }
-    &::before {
-      content: open-quote;
-      left: -30px;
-    }
-    &::after {
-      content: close-quote;
-      right: -30px;
+    @media screen and (min-width: $BP_MD) {
+      &::before,
+      &::after {
+        content: '"';
+        font-family: Times, serif;
+        color: $GRAY_5;
+        font-size: 54px;
+        position: absolute;
+        top: -10px;
+      }
+      &::before {
+        content: open-quote;
+        left: -30px;
+      }
+      &::after {
+        content: close-quote;
+        right: -30px;
+      }
     }
   }
 }

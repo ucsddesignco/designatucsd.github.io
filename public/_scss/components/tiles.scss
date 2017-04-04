@@ -257,9 +257,9 @@
   &--resource-description {
     height: 100px;
 
-    @media screen and (max-width: $BP_MD) {
-      height: 44px;
-    }
+    // @media screen and (max-width: $BP_MD) {
+    //   height: 44px;
+    // }
   }
   &--resource-title {
     font-size: 16px;

@@ -15,6 +15,11 @@
         border-color: $RED_1;
         box-shadow: none;
       }
+      @media screen and (max-width: $BP_SM) {
+        button {
+          padding: 16px;
+        }
+      }
     }
   }
   &--table-head {
