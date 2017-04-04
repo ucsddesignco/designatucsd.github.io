@@ -36,8 +36,9 @@
 
   &:visited,
   &:hover,
-  &:active {
-    text-decoration: none;
+  &:active,
+  &:focus {
+    text-decoration: none !important;
   }
   &--title-large {
     font-size: 28px;
