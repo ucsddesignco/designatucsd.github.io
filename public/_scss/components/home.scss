@@ -111,7 +111,15 @@
     position: absolute;
     width: 100%;
 
+    @media screen and (max-width: $BP_MD) {
+      top: 32%
+    }
+    @media screen and (max-width: $BP_SM) {
+      top: 24%;
+    }
     h1 {
+      display: block;
+
       @media screen and (max-width: $BP_MD) {
         font-size: 52px;
       }
