@@ -34,8 +34,9 @@
   margin-bottom: 30px;
   display: block;
 
+  &:visited,
   &:hover,
-  &:active, {
+  &:active {
     text-decoration: none;
   }
   &--title-large {
