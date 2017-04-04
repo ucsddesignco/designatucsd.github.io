@@ -40,27 +40,20 @@ layout: default
       <h2 class="du-section--header">Upcoming and past events:</h2>
 
       <div class="row du-card--row">
-        {% assign curDate = site.time | date: '%s' %}
-        {% assign upcomingCount = 0 %}
         {% for post in site.posts %}
-          {% assign postStartDate = post.date | date: '%s' %}
-
-          {% if upcomingCount < 3 %}
-            {% assign upcomingCount = upcomingCount | plus: 1 %}
-            <div class="col-md-4 du-card--wrapper du-card--type-{{ post.type }}" >
-              <a class="card du-card" href="{{ post.facebook }}" target="_blank">
-                <div class="card-img-top du-card--img-top"></div>
-                <div class="card-block du-card--block">
-                  <div class="du-card--icon"><div></div></div>
-                  <div class="du-card--content">
-                    <h4 class="card-title du-card--title du-card--event-title">{{ post.title }}</h4>
-                    <h6 class="du-card--date">{{ post.time }}</h6>
-                    <p class="du-card--description du-card--event-description">{{ post.excerpt }}</p>
-                  </div>
+          <div class="col-md-4 du-card--wrapper du-card--type-{{ post.type }}" >
+            <a class="card du-card" href="{{ post.facebook }}" target="_blank">
+              <div class="card-img-top du-card--img-top"></div>
+              <div class="card-block du-card--block">
+                <div class="du-card--icon"><div></div></div>
+                <div class="du-card--content">
+                  <h4 class="card-title du-card--title du-card--event-title">{{ post.title }}</h4>
+                  <h6 class="du-card--date">{{ post.time }}</h6>
+                  <p class="du-card--description du-card--event-description">{{ post.excerpt }}</p>
                 </div>
-              </a>
-            </div>
-          {% endif %}
+              </div>
+            </a>
+          </div>
         {% endfor %}
       </div>
     </div>
@@ -82,7 +75,8 @@ layout: default
           <div class="col-md-3 hidden-sm hidden-xs hidden-sm hidden-xs">Resources</div>
           <div class="col-md-3 hidden-sm hidden-xs hidden-sm hidden-xs">Gallery</div>
         </div>
-
+        
+        {% assign curDate = site.time | date: '%s' %}
         {% assign oldCount = 0 %}
         {% for post in site.posts %}
           {% assign postStartDate = post.date | date: '%s' %}
@@ -97,14 +91,14 @@ layout: default
                     {{ post.title }}
                   </a>
                 </div>
-                <div class="col-md-3 hidden-sm hidden-xs du-archive--table-resources">
-                  {% if post.resource_link %}
-                    <a href="{{ post.resource_link }}">{{ post.resource_text }}</a>
-                  {% endif %}
-                </div>
                 <div class="col-md-3 hidden-sm hidden-xs du-archive--table-gallery">
                   {% if post.gallery_link %}
                     <a href="{{ post.gallery_link }}">Photo Gallery</a>
+                  {% endif %}
+                </div>
+                <div class="col-md-3 hidden-sm hidden-xs du-archive--table-resources">
+                  {% if post.resource_link %}
+                    <a href="{{ post.resource_link }}">{{ post.resource_text }}</a>
                   {% endif %}
                 </div>
               </div>
