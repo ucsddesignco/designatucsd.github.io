@@ -45,6 +45,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  position: relative;
 
   @media screen and (max-width: $BP_LG) {
     margin-top: 93px;
