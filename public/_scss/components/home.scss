@@ -99,15 +99,20 @@
       background-size: cover;
     }
   }
-  &--content {
-    position: absolute;
-    width: 100%;
-
+  &--content,
+  &--home-content {
     h1 {
       color: $WHITE;
       font-size: 64px;
       text-shadow: 2px 2px 2px $TITLE_SHADOW;
 
+    }
+  }
+  &--home-content {
+    position: absolute;
+    width: 100%;
+
+    h1 {
       @media screen and (max-width: $BP_MD) {
         font-size: 52px;
       }
