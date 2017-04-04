@@ -52,6 +52,7 @@
   @media screen and (max-width: $BP_MD) {
     margin-top: 73px;
   }
+
   // Heroes for pages
   &--index {
     // TODO: possibly add a loading image of the first frame
@@ -64,24 +65,54 @@
   &--events {
     background: url('../images/banners/hero_events.png') no-repeat center center;
     background-size: cover;
+
+    @media screen and (max-width: $BP_SM) {
+      background: url('../images/banners/event_mobile.png') no-repeat center center;
+      background-size: cover;
+    }
   }
   &--contact {
     background: url('../images/banners/hero_contact.png') no-repeat center center;
     background-size: cover;
+
+    @media screen and (max-width: $BP_SM) {
+      background: url('../images/banners/contact_mobile.png') no-repeat center center;
+      background-size: cover;
+    }
   }
   &--resources {
     background: url('../images/banners/hero_resources.png') no-repeat center center;
     background-size: cover;
+
+    @media screen and (max-width: $BP_SM) {
+      background: url('../images/banners/resources_mobile.png') no-repeat center center;
+      background-size: cover;
+    }
   }
   &--about {
     background: url('../images/banners/hero_about.png') no-repeat center center;
     background-size: cover;
+
+    @media screen and (max-width: $BP_SM) {
+      background: url('../images/banners/about_mobile.png') no-repeat center center;
+      background-size: cover;
+    }
   }
   &--content {
+    position: absolute;
+    width: 100%;
+
     h1 {
       color: $WHITE;
-      font-size: 72px;
+      font-size: 64px;
       text-shadow: 2px 2px 2px $TITLE_SHADOW;
+
+      @media screen and (max-width: $BP_MD) {
+        font-size: 52px;
+      }
+      @media screen and (max-width: $BP_SM) {
+        font-size: 48px;
+      }
     }
   }
 }
