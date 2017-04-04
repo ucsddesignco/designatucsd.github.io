@@ -23,7 +23,7 @@ layout: defaultwithcollaborators
       <h2 class="du-section--header">Upcoming and Past Events</h2>
 
       <div class="row du-card--row">
-        {% for post in site.posts limit: 3 %}
+        {% for post in site.posts reversed limit: 3 %}
           <div class="col-md-4 du-card--wrapper du-card--type-{{ post.type }}" >
             <a class="card du-card" href="{{ post.facebook }}" target="_blank">
               <div class="card-img-top du-card--img-top"></div>
