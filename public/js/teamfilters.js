@@ -57,19 +57,19 @@ var team = [
   {
     id: 'ophelia',
     name: 'Ophelia Ding',
-    role: 'Graphic Studio Co-Chair',
+    role: 'Graphic Studio',
     gradYear: 2017,
   },
   {
     id: 'tori',
     name: 'Tori Duong',
-    role: 'Graphic Studio Co-Chair',
+    role: 'Graphic Studio',
     gradYear: 2018,
   },
   {
     id: 'kaichin',
     name: 'Kai-Chin Shih',
-    role: 'Graphic Studio Co-Chair',
+    role: 'Graphic Studio',
     gradYear: 2019,
   },
   {
