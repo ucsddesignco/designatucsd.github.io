@@ -2,7 +2,7 @@
 layout: post
 title: Sketch Workshop II
 hosted: Hosted by Design at UCSD
-time: Tuesday, April 27, 7-9PM
+time: Wednesday, April 12, 7-9PM
 location: HSS 1346
 published: true
 
