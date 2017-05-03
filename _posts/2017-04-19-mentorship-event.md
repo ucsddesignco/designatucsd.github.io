@@ -2,7 +2,7 @@
 layout: post
 title: Mentorship Meetup
 hosted: Hosted by Design at UCSD
-time: Wednesday, April 19, 7-8:30PM
+time: Wednesday, April 19, 7PM-8:30PM
 location: HSS 1346
 image: TBD
 published: true
