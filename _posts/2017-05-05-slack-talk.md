@@ -10,7 +10,8 @@ published: true
 quarter: SP17
 type: industry
 resource_text: Data-Driven Design Thinking at Slack
-gallery_link: https://www.facebook.com/events/1872209556324490/
+
+facebook: https://www.facebook.com/events/1872209556324490/
 
 excerpt: Join us for an exciting talk with Jerry Talton of Slack!
 ---
