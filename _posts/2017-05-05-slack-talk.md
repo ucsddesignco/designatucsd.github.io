@@ -2,7 +2,7 @@
 layout: post
 title: Data-Driven Design Thinking at Slack
 hosted: Hosted by Design at UCSD
-time: Friday, May 5 12PM-1:30PM
+time: Friday, May 5, 12PM-1:30PM
 location: Fung Auditorium
 image: TBD
 published: true
