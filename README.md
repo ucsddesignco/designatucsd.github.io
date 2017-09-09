@@ -1,5 +1,5 @@
 # Design at UCSD Website
-The website for Design at UCSD. See [designatucsd.org](designatucsd.org).
+The website for Design at UCSD. See [designatucsd.org](http://designatucsd.org).
 
 ## Development
 
