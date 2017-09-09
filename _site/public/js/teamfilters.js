@@ -59,21 +59,21 @@ var team = [
     id: 'marisa',
     name: 'Marisa Kanemoto',
     role: 'Community and Culture',
-    linkedin: '',
+    linkedin: 'https://www.linkedin.com/in/marisa-kanemoto-266909a9/',
     gradYear: 2017,
   },
   {
     id: 'akanksha',
     name: 'Akanksha Kevalramani',
     role: 'Marketing Chair',
-    linkedin: '',
+    linkedin: 'http://linkedin.com/in/itsakanksha/',
     gradYear: 2018,
   },
   {
     id: 'steven',
     name: 'Steven Chen',
     role: 'Marketing Chair',
-    linkedin: '',
+    linkedin: 'https://www.linkedin.com/in/StevChen/',
     gradYear: 2020,
   },
   {
@@ -94,7 +94,7 @@ var team = [
     id: 'nancy',
     name: 'Nancy Bui',
     role: 'Visual Design',
-    linkedin: '',
+    linkedin: 'http://www.linkedin.com/in/nancyybui/',
     gradYear: 2020,
   },
   /*
