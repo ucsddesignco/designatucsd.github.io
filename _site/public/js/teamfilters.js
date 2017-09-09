@@ -7,6 +7,98 @@ const GRAD_YEAR = 2016;
 // List of teams
 var team = [
   {
+    id: 'elmer',
+    name: 'Elmer Barrera',
+    role: 'President',
+    linkedin: 'https://www.linkedin.com/in/elmerbarrera',
+    gradYear: 2018,
+  },
+  {
+    id: 'vincent',
+    name: 'Vincent Liaw',
+    role: 'Vice President External',
+    linkedin: 'https://www.linkedin.com/in/vincentliaw/',
+    gradYear: 2018,
+  },
+  {
+    id: 'tori',
+    name: 'Tori Duong',
+    role: 'Vice President Internal',
+    linkedin: 'https://www.linkedin.com/in/tori-duong-194823120/',
+    gradYear: 2018,
+  },
+  {
+    id: 'aman',
+    name: 'Aman Gupta',
+    role: 'Professional Development',
+    linkedin: 'http://linkedin.com/in/97agupta',
+    gradYear: 2019,
+  },
+  {
+    id: 'kaila',
+    name: 'Kaila Lee',
+    role: 'Professional Development',
+    linkedin: 'https://www.linkedin.com/in/kailatlee/',
+    gradYear: 2019,
+  },
+  {
+    id: 'kaichin',
+    name: 'Kai-Chin Shih',
+    role: 'Professional Development',
+    linkedin: 'https://www.linkedin.com/in/kaichinshih/',
+    gradYear: 2019,
+  },
+  {
+    id: 'chris',
+    name: 'Chris Wong',
+    role: 'Professional Development',
+    linkedin: 'http://linkedin.com/in/ckwong97',
+    gradYear: 2020,
+  },
+  {
+    id: 'marisa',
+    name: 'Marisa Kanemoto',
+    role: 'Community and Culture',
+    linkedin: '',
+    gradYear: 2017,
+  },
+  {
+    id: 'akanksha',
+    name: 'Akanksha Kevalramani',
+    role: 'Marketing Chair',
+    linkedin: '',
+    gradYear: 2018,
+  },
+  {
+    id: 'steven',
+    name: 'Steven Chen',
+    role: 'Marketing Chair',
+    linkedin: '',
+    gradYear: 2020,
+  },
+  {
+    id: 'joel',
+    name: 'Joel Sequeira',
+    role: 'Tech Chair',
+    linkedin: 'https://www.linkedin.com/in/joelseq/',
+    gradYear: 2018,
+  },
+  {
+    id: 'anna',
+    name: 'Anne Le',
+    role: 'Visual Design',
+    linkedin: 'https://www.linkedin.com/in/anne-le-607415bb/',
+    gradYear: 2018,
+  },
+  {
+    id: 'nancy',
+    name: 'Nancy Bui',
+    role: 'Visual Design',
+    linkedin: '',
+    gradYear: 2020,
+  },
+  /*
+  {
     id: 'ed',
     name: 'Ed Ngai',
     role: 'President',
@@ -166,6 +258,7 @@ var team = [
     role: 'President',
     gradYear: 2016,
   },
+  */
 ];
 
 $(document).ready(function() {
@@ -187,21 +280,25 @@ function generateTeamMembers() {
     var currTeam = team[i];
     var role = (currTeam.gradYear >= GRAD_YEAR) ? currTeam.role : 'Alumnus';
     var imageURL = 'public/images/team/' + currTeam.id + '.jpg';
-    var hoverImageURL = 'public/images/team/' + currTeam.id + '-hover.jpg';
+    var hoverImageURL = 'public/images/team/' + currTeam.id + '.gif';
 
     currTeam.imageURL = imageURL;
     currTeam.hoverImageURL = hoverImageURL;
     currTeam.index = i; // For keeping track of which board member in array
 
     // Create each board member div
-    var result = '<div class="col-md-3 col-sm-6 du-card--wrapper">' +
+    var result = '<div class="col-md-4 col-sm-6 du-card--wrapper">' +
       '<div class="card du-card du-card--about du-card--red" data-year="' + currTeam.gradYear + '">' +
         '<div class="card-img-top-wrapper du-card--about-img-top-wrapper">' +
           '<div class="card-img-top du-card--about-img-top du-card--img-top-front" data-index="' + i + '" id="' + currTeam.id + '"></div>' +
           '<div class="card-img-top du-card--about-img-top" data-index="' + i + '" id="' + currTeam.id + '-hover"></div>' +
         '</div>' +
         '<div class="card-block du-card--block">' +
-          '<h4 class="du-card--title">' + currTeam.name + '</h4>' +
+          '<h4 class="du-card--title">' + currTeam.name +
+            '<a class="du-card--linkedin" href="' + currTeam.linkedin + '" target="_blank">' +
+              '<i class="fa fa-linkedin" aria-hidden="true"></i>' +
+            '</a>' +
+          '</h4>' +
           '<p class="du-card--desc">' + role + '</p>' +
           '<p class="light-gray">Class of ' + currTeam.gradYear + '</p>' +
         '</div>' +

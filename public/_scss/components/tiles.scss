@@ -50,6 +50,14 @@
     letter-spacing: 0.8px;
     margin-bottom: 10px;
   }
+  &--linkedin {
+    background: #0077B5;
+    padding: 0px 2px;
+    margin-left: 10px;
+    > i {
+      color: #fff;
+    }
+  }
   &--event-title {
     @media screen and (min-width: $BP_SM) {
       height: 55px;
