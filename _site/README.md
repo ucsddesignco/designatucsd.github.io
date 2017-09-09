@@ -1,6 +1,9 @@
-# A Jekyll Boilerplate
+# Design at UCSD Website
+The website for Design at UCSD. See [designatucsd.org](http://designatucsd.org).
 
-## How to set up:
+## Development
+
+### How to set up:
 First, clone this repo and `cd` into the directory.
 
 ```
