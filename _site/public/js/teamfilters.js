@@ -24,7 +24,7 @@ var team = [
     id: 'tori',
     name: 'Tori Duong',
     role: 'Vice President Internal',
-    linkedin: 'https://www.linkedin.com/in/tori-duong-194823120/',
+    linkedin: 'https://www.linkedin.com/in/toriduong/',
     gradYear: 2018,
   },
   {
