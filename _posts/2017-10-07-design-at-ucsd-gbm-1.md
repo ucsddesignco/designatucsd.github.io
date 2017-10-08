@@ -1,5 +1,5 @@
 ---
-date: 2017-10-10 00:00:00 +0000
+date: 2017-10-09 00:00:00 +0000
 excerpt: Design at UCSD is an open community of designers looking to educate, inspire
   and involve students across disciplines. Whether you’re a freshman starting college
   or a continuing student returning from summer break, everyone’s invited to come
