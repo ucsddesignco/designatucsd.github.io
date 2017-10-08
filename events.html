@@ -80,14 +80,9 @@ layout: default
         </div>
         
         {% assign curDate = site.time | date: '%s' %}
-        {% assign oldCount = 0 %}
         {% for post in site.posts %}
           {% assign postStartDate = post.date | date: '%s' %}
-          
-          {% if oldCount < 1000 and postStartDate < curDate %}<!-- TODO: just remove the limit somehow -->
-            {% if post.resource_link or post.gallery_link %}
-
-              {% assign oldCount = oldCount | plus: 1 %}
+          {% if postStartDate < curDate %}
               <div class="row du-archive--table-row du-archive--type-{{ post.type }}" data-quarter="{{ post.quarter }}">
                 <div class="col-md-6 du-archive--table-event">
                   <a href="{{ post.facebook }}" target="_blank">
@@ -105,7 +100,6 @@ layout: default
                   {% endif %}
                 </div>
               </div>
-            {% endif %}
           {% endif %}
         {% endfor %}
       </div>
