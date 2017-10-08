@@ -1,0 +1,47 @@
+---
+hide_body: false
+fields:
+- type: text
+  label: layout
+  name: layout
+  description: Should be "post"
+- type: text
+  name: title
+  label: Title
+  description: Title of Event
+- type: text
+  name: hosted
+  label: Hosted
+  description: Event host
+- type: text
+  name: time
+  label: Time
+  description: Time of Event
+- type: text
+  name: location
+  label: location
+  description: Location of Event
+- type: text
+  name: image
+  label: image
+- type: boolean
+  name: published
+  label: published
+- type: text
+  name: quarter
+  label: quarter
+  description: Eg. FA17
+- type: text
+  name: type
+  label: type
+  description: Type of event. eg. skill
+- type: text
+  name: resource_text
+  label: resource_text
+- type: text
+  name: facebook
+  label: facebook
+  description: Link to facebook event
+- type: text
+  name: excerpt
+  label: excerpt
