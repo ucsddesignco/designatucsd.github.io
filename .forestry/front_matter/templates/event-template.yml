@@ -30,9 +30,6 @@ fields:
 - type: text
   name: image
   label: image
-- type: boolean
-  name: published
-  label: published
 - type: text
   name: quarter
   label: quarter
