@@ -12,5 +12,5 @@ quarter: FA17
 resource_text: ''
 time: Monday, Oct 9, 7PM - 8:30PM
 title: 'Design at UCSD GBM #1'
-type: skill
+type: community
 ---
