@@ -1,14 +1,5 @@
 ---
-title: 'Workday: Meet the Designers'
 date: 2017-10-10 00:00:00 +0000
-layout: post
-hosted: Host
-published: true
-time: 2PM - 3:30PM
-location: HSS 1346
-image: TBD
-quarter: FA17
-type: industry
 excerpt: " Looking for an internship or full-time opportunity in Product Design? Come
   meet the designers from Workday, a leader in providing cloud applications and software
   solutions for enterprise companies, at a fun and interactive information session.
@@ -16,5 +7,14 @@ excerpt: " Looking for an internship or full-time opportunity in Product Design?
   all your questions!   Bring your resumes and an appetite because there will be food!
   :)"
 facebook: https://www.facebook.com/events/130430914352021/
+hosted: Host
+image: TBD
+layout: post
+location: HSS 1346
+published: true
+quarter: FA17
 resource_text: ''
+time: Tuesday, Oct 9, 2PM - 3:30PM
+title: 'Workday: Meet the Designers'
+type: industry
 ---
