@@ -8,7 +8,7 @@ time: 2PM - 3:30PM
 location: HSS 1346
 image: TBD
 quarter: FA17
-type: skill
+type: industry
 excerpt: " Looking for an internship or full-time opportunity in Product Design? Come
   meet the designers from Workday, a leader in providing cloud applications and software
   solutions for enterprise companies, at a fun and interactive information session.
