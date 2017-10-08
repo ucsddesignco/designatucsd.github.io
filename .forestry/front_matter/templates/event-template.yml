@@ -1,8 +1,10 @@
 ---
-pages:
-- _posts/2017-10-10-workday-meet-designers-md.md
 hide_body: false
 fields:
+- type: text
+  name: date
+  label: Date
+  description: Date of Post
 - type: text
   label: layout
   name: layout
