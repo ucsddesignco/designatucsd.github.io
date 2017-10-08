@@ -14,7 +14,7 @@ image: TBD
 layout: post
 location: HSS 1346
 publish: true
-published: false
+published: true
 quarter: FA17
 resource_text: ''
 time: 7PM - 8:30PM
