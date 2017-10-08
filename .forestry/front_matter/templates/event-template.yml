@@ -48,3 +48,6 @@ fields:
 - type: text
   name: excerpt
   label: excerpt
+- type: boolean
+  label: publish
+  name: publish
