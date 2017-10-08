@@ -13,11 +13,11 @@ hosted: 'Design at UCSD '
 image: TBD
 layout: post
 location: HSS 1346
+publish: true
 published: false
 quarter: FA17
 resource_text: ''
 time: 7PM - 8:30PM
 title: 'Design at UCSD GBM #1'
 type: skill
-publish: false
 ---
