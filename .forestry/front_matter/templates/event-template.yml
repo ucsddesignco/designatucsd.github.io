@@ -49,5 +49,5 @@ fields:
   name: excerpt
   label: excerpt
 - type: boolean
-  label: publish
-  name: publish
+  label: published
+  name: published
