@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/workday-meet-the-designers.md
 hide_body: false
 fields:
 - type: text
