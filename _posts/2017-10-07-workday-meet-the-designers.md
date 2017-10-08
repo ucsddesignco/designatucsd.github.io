@@ -10,7 +10,7 @@ location: HSS 1346
 published: true
 quarter: FA17
 resource_text: ''
-time: Tuesday, Oct 9, 2PM - 3:30PM
+time: Tuesday, Oct 10, 2PM - 3:30PM
 title: 'Workday: Meet the Designers'
 type: industry
 ---
