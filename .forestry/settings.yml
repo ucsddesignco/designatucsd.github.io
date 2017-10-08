@@ -5,5 +5,5 @@ body_file_url_template: "/_site/:year:/:month:/:day:"
 new_page_extension: md
 auto_deploy: true
 admin_path: 
-webhook_url: https://app.forestry.io/provider/git/hook/s6ab2tbhoslwqa/github
+webhook_url: ''
 collections: 
