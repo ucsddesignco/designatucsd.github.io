@@ -6,14 +6,15 @@ time: Wednesday, Nov 16, 7-8&#58;30pm
 location: H&SS 1346
 image: FA16_IntroHTML.png
 published: true
-
 quarter: FA16
 type: skill
 resource_text: Intro to HTML/CSS Workshop
 resource_link: http://designatucsd.org/2016/11/16/intro-html-css.html
 gallery_link: https://www.facebook.com/pg/designatucsd/photos/?tab=album&album_id=1787327574841039
-
-excerpt: Knowing HTML and CSS can help you build great websites, though getting started with it may seem daunting at first. Join us at this hands-on workshop where we tackle the basics of HTML and CSS. Just bring your computer and your favorite text editor.
+excerpt: Knowing HTML and CSS can help you build great websites, though getting started
+  with it may seem daunting at first. Join us at this hands-on workshop where we tackle
+  the basics of HTML and CSS. Just bring your computer and your favorite text editor.
+date: 2016-11-16 00:00:00 +0000
 ---
 ## Table of Contents
 

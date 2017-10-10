@@ -7,13 +7,18 @@ location: H&SS 1346
 image: WI17_Roundfeather.png
 published: true
 facebook: https://www.facebook.com/events/1361639203898168/
-
 quarter: WI17
 type: research
 resource_text: Design Research Workshop
 gallery_link: https://www.facebook.com/pg/designatucsd/photos/?tab=album&album_id=1854340141473115
-
-excerpt: Design at UCSD welcomes Emilia Pucci, an Interaction Designer and Researcher at Round Feather, an innovation consulting firm that helps companies develop products and services that bring happiness to people through emotion-driven design. Join us for an interactive workshop to learn more about best practices for UX research and design as she shares advice and tips for creating innovative and culturally immerse digital experiences. Make sure to check out our Facebook page for a link to the Google signup form!
+excerpt: Design at UCSD welcomes Emilia Pucci, an Interaction Designer and Researcher
+  at Round Feather, an innovation consulting firm that helps companies develop products
+  and services that bring happiness to people through emotion-driven design. Join
+  us for an interactive workshop to learn more about best practices for UX research
+  and design as she shares advice and tips for creating innovative and culturally
+  immerse digital experiences. Make sure to check out our Facebook page for a link
+  to the Google signup form!
+date: 2017-02-22 00:00:00 +0000
 ---
 Design at UCSD welcomes Emilia Pucci, an Interaction Designer and Researcher at Round Feather, an innovation consulting firm that helps companies develop products and services that bring happiness to people through emotion-driven design. Join us for an interactive workshop to learn more about best practices for UX research and design as she shares advice and tips for creating innovative and culturally immerse digital experiences.
 
