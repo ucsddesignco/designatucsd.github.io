@@ -11,5 +11,5 @@ quarter: FA17
 resource_text: ''
 time: Monday, Oct 16, 7 PM - 8:30 PM
 title: Mentorship Speed Dating
-type: Networking
+type: Community
 ---
