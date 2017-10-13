@@ -1,7 +1,7 @@
 ---
 title: Mentorship Speed Dating
 date: 2017-10-12 19:19:26 +0000
-layout: post
+layout: '"post"'
 time: 7 PM
 location: HSS 1346
 quarter: FA 17
@@ -11,5 +11,5 @@ excerpt: Come and get to know your potential mentors and mentees!
 hosted: ''
 image: ''
 resource_text: ''
-published: false
+published: true
 ---
