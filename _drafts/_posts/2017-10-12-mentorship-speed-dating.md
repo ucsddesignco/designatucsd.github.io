@@ -2,7 +2,7 @@
 date: 2017-10-12 19:19:26 +0000
 excerpt: Get to know your potential mentors and mentees!
 facebook: https://www.facebook.com/events/303678756776530/
-hosted: ''
+hosted: Host
 image: https://imgur.com/a/OsEzY
 layout: post
 location: HSS 1346
