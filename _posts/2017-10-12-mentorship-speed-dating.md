@@ -9,7 +9,7 @@ location: HSS 1346
 published: true
 quarter: FA17
 resource_text: ''
-time: Monday, Oct 16, 7 PM - 8:30 PM
+time: Monday, Oct 16, 7PM - 8:30PM
 title: Mentorship Speed Dating
 type: Community
 ---
