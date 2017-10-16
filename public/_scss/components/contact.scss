@@ -12,6 +12,7 @@
 .du-contact {
   &--section {
     padding-top: 0;
+    padding-bottom: 0;
   }
   &--banner-title {
     min-height: 160px;
@@ -102,13 +103,18 @@
       margin-bottom: 10px;
     }
   }
+  &--application-container {
+    min-height: 160px;
+    background-color: $WHITE;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   &--application-text {
     margin-bottom: 20px;
 
     p {
       margin-bottom: 14px;
       font-size: 16px;
-      color: $WHITE;
     }
   }
   &--application-buttons {
@@ -121,14 +127,22 @@
     padding: 10px;
     display: block;
     border-radius: 10px;
+    border: 1px solid $GRAY_4;
     font-family: $HEADER_FONT;
     font-size: 20px;
     letter-spacing: 0.6px;
     margin-bottom: 16px;
+
+    &:hover, &:focus {
+      color: $GRAY_7;
+      box-shadow: 0 0.5em 0.5em -0.4em $GRAY_3;
+      text-decoration: none;
+    }
   }
   &--google-form-button {
-    background-color: $BLUE_1;
+    background-color: #60B794;
     color: $WHITE;
+    border: none;
   }
   &--application-type-skill {
     background: url('../images/icons/icon_menu.png') no-repeat 15px center, $WHITE;
