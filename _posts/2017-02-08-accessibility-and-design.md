@@ -16,7 +16,7 @@ excerpt: Curious to learn more about how to design for accessibility? Join us fo
   with user testing voters both with and without disabilities. Come learn about how
   discovering design solutions for those with disabilities can greatly improve user
   experiences for all types of users!
-date: 2017-02-08 00:00:00 -0800
+date: 2017-02-08 08:00:00 +0000
 ---
 Curious to learn more about how to design for accessibility? Join us for a talk with Andrew Bergeron, a UX Design Manager for Everyone Counts, a rapidly growing start-up leading the transformation of modern election systems. 
 

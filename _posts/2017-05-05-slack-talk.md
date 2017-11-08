@@ -11,6 +11,6 @@ type: industry
 resource_text: Data-Driven Design Thinking at Slack
 facebook: https://www.facebook.com/events/1872209556324490/
 excerpt: Join us for an exciting talk with Jerry Talton of Slack!
-date: 2017-05-05 00:00:00 -0800
+date: 2017-05-05 08:00:00 +0000
 ---
 Join us for an exciting talk with Jerry Talton, an Engineering Manager in the Search, Learning, and Intelligence group at Slack!

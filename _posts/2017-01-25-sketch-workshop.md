@@ -17,6 +17,6 @@ excerpt: With Sketch becoming a staple among designers in companies like Apple, 
   attendees the fundamentals of vector-based design and offer an opportunity to practice
   Sketch principles through creating a mockup. Also check out our TapEx game night
   afterwards!
-date: 2017-01-25 00:00:00 -0800
+date: 2017-01-25 08:00:00 +0000
 ---
 With Sketch becoming a staple among designers in companies like Apple, Facebook, and Google, Design at UCSD will be hosting an introductory Sketch workshop to teach attendees the fundamentals of vector-based design and offer an opportunity to practice Sketch principles through creating a mockup. 

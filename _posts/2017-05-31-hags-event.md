@@ -11,7 +11,7 @@ type: skill
 resource_text: How to HAGS (Have A Great Summer)
 facebook: https://www.facebook.com/events/1942592995976255/
 excerpt: Learn from our board members how to best use your summer!
-date: 2017-05-31 00:00:00 -0800
+date: 2017-05-31 08:00:00 +0000
 ---
 Summer is right around the corner and we’ve asked some of our board members to conduct a panel discussion to answer your questions and talk about how they try to make the best of their summer with or without an internship! 
 

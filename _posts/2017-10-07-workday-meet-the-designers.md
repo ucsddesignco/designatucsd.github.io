@@ -1,5 +1,5 @@
 ---
-date: 2017-10-10 00:00:00 -0800
+date: 2017-10-10 08:00:00 +0000
 excerpt: " Looking for an internship or full-time opportunity in Product Design? Come
   meet the designers from Workday!"
 facebook: https://www.facebook.com/events/130430914352021/

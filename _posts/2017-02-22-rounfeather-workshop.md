@@ -18,7 +18,7 @@ excerpt: Design at UCSD welcomes Emilia Pucci, an Interaction Designer and Resea
   and design as she shares advice and tips for creating innovative and culturally
   immerse digital experiences. Make sure to check out our Facebook page for a link
   to the Google signup form!
-date: 2017-02-22 00:00:00 -0800
+date: 2017-02-22 08:00:00 +0000
 ---
 Design at UCSD welcomes Emilia Pucci, an Interaction Designer and Researcher at Round Feather, an innovation consulting firm that helps companies develop products and services that bring happiness to people through emotion-driven design. Join us for an interactive workshop to learn more about best practices for UX research and design as she shares advice and tips for creating innovative and culturally immerse digital experiences.
 

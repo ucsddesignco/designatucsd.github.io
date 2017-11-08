@@ -14,7 +14,7 @@ gallery_link: https://www.facebook.com/pg/designatucsd/photos/?tab=album&album_i
 excerpt: Knowing HTML and CSS can help you build great websites, though getting started
   with it may seem daunting at first. Join us at this hands-on workshop where we tackle
   the basics of HTML and CSS. Just bring your computer and your favorite text editor.
-date: 2016-11-16 00:00:00 -0800
+date: 2016-11-16 08:00:00 +0000
 ---
 ## Table of Contents
 
