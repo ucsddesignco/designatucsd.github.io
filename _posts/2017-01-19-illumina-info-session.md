@@ -16,7 +16,7 @@ excerpt: Are you interested in designing for the future? Illumina is the world-w
   several Illumina designers and UCSD alumni about the importance of design within
   the company and how you fit in. There will be Q&A and networking at the end so bring
   your questions!
-date: 2017-01-19 00:00:00 +0000
+date: 2017-01-19 00:00:00 -0800
 ---
 Are you interested in designing for the future? Illumina is the world-wide leader in unlocking the power of the genome to improve human health in innovative areas like personalized medicine and early cancer detection and we’re looking for team members passionate about impacting the world through design.
 

@@ -13,7 +13,7 @@ excerpt: Looking for an internship or career in Product Design? Come meet the de
   at Workday's interactive information session. The designers will introduce how Workday
   approaches Design, showcase a few problems they're trying to solve, and host a Q&A
   panel including recent interns and new grads from UCSD.
-date: 2017-01-18 00:00:00 +0000
+date: 2017-01-18 00:00:00 -0800
 ---
 Looking for an internship or career in Product Design? Come meet the designers at Workday's interactive information session. The designers will introduce how Workday approaches Design, showcase a few problems they're trying to solve, and host a Q&A panel including recent interns and new grads from UCSD.
 

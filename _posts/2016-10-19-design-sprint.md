@@ -14,6 +14,6 @@ excerpt: Crime in Gotham is at an all-time High. Join us this Wednesday night in
   hands-on, interactive design sprint, where we work in small groups to brainstorm
   and prototype to help Batman save Gotham. Also, this is a good opportunity to meet
   others if you're on the fence about becoming a mentor or mentee.
-date: 2016-10-19 00:00:00 +0000
+date: 2016-10-19 00:00:00 -0800
 ---
 Crime in Gotham is at an all-time High. Join us this Wednesday night in a hands-on, interactive design sprint, where we work in small groups to brainstorm and prototype to help Batman save Gotham. Also, this is a good opportunity to meet others if you're on the fence about becoming a mentor or mentee.

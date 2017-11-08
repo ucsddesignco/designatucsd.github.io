@@ -13,6 +13,6 @@ excerpt: Hello Designers! Join us for some free food and good times. To start of
   the quarter, we’ll look back at last year’s accomplishments, work together on a
   simple design challenge, define what design means to us, and look ahead to see what’s
   in store for the upcoming year with Design at UCSD!
-date: 2016-10-05 00:00:00 +0000
+date: 2016-10-05 00:00:00 -0800
 ---
 Hello Designers! Join us for some free food and good times. To start off the quarter, we’ll look back at last year’s accomplishments, work together on a simple design challenge, define what design means to us, and look ahead to see what’s in store for the upcoming year with Design at UCSD!

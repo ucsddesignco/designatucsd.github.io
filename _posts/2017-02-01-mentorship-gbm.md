@@ -19,7 +19,7 @@ excerpt: New events, new incentives, new tips, oh my! Come out to reconnect with
   longer want to participate, please fill out this form so that someone else can have
   the opportunity to participate. We'll be sad to see you go!
 form: https://goo.gl/forms/c22uDrqm7mweHPnZ2
-date: 2017-02-01 00:00:00 +0000
+date: 2017-02-01 00:00:00 -0800
 ---
 New events, new incentives, new tips, oh my! Come out to reconnect with your mentor/mentees and to find out the exciting new updates to our mentorship program! If you don't have a mentor/mentee but want to see what it's like to be one & to potentially have the opportunity to join the program, feel free to come check it out. We can't promise anything though since it'll depend on interest.
 

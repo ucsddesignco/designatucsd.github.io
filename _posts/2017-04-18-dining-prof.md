@@ -14,7 +14,7 @@ facebook: https://www.facebook.com/events/1150322698422847/
 excerpt: Design at UCSD’s edition of Dining with the Professors is coming to you in
   a few weeks!  Don’t miss out an opportunity to chat with a few of the brightest
   minds in design.  We hope to see you there!
-date: 2017-04-18 00:00:00 +0000
+date: 2017-04-18 00:00:00 -0800
 ---
 Mark your calendars!  On Tuesday, April 18 from 11am-1pm at the Price Center Forum (4th Floor), we will be hosting a design edition of Dining with the Professors!  
 

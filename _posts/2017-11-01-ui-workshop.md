@@ -1,5 +1,6 @@
 ---
 title: UI Workshop
+layout: post
 date: 2017-11-01 11:55:12 +0000
 time: Monday, Nov 6, 7PM - 8PM
 location: HSS 1346

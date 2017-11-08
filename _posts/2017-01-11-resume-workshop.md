@@ -17,6 +17,6 @@ excerpt: With the Winter Career Fair (1/18) and DECaF (1/19) just around the cor
   at HP. In this workshop, you’ll learn how to successfully build a strong UX-focused
   resume. Attendees can also have their resumes critiqued during the session in preparation
   for the upcoming job fairs.
-date: 2017-01-11 00:00:00 +0000
+date: 2017-01-11 00:00:00 -0800
 ---
 Welcome back, we hope all of you enjoyed a restful winter break! With the Winter Career Fair (1/18) and DECaF (1/19) just around the corner, we’re going to hit the ground running with our first workshop of the quarter led by Alyssa and Kami, both Design at UCSD alumni and current Interaction Designers at HP. In this workshop, you’ll learn how to successfully build a strong UX-focused resume. Attendees can also have their resumes critiqued during the session in preparation for the upcoming job fairs.

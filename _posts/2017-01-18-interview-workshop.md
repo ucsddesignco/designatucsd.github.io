@@ -19,7 +19,7 @@ excerpt: We all know how stressful interviews can be. Whether or not your interv
   thinking. Come out to our interactive workshop to learn and practice proven tips
   and strategies for setting yourself apart from other candidates and wowing your
   recruiter!
-date: 2017-01-18 00:00:00 +0000
+date: 2017-01-18 00:00:00 -0800
 ---
 We all know how stressful interviews can be. Whether or not your interview goes well may be the deciding factor in scoring your dream job. We at Design at UCSD want to help you learn how to ace a UX interview every time by leveraging your portfolio and skills. 
 

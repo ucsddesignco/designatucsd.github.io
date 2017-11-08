@@ -13,7 +13,7 @@ resource_text: Bonfire Social
 gallery_link: https://www.facebook.com/events/1029535400514129/
 excerpt: Come out to our bonfire this Wednesday at 6PM for s’mores and good company!
   We look forward to seeing both new and old faces!
-date: 2017-04-05 00:00:00 +0000
+date: 2017-04-05 00:00:00 -0800
 ---
 Start the quarter off right and come out to our bonfire this Wednesday for s’mores and good company!  New members are absolutely invited to learn more about our organization and meet some of our current members.  Please feel free to bring volleyballs, beach balls, frisbees, etc. and be sure to dress warmly!
 
