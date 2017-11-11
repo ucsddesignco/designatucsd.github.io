@@ -233,24 +233,27 @@
  }
  div.highlighter-rouge {
    border-radius: 5px;
-   border-bottom: 22px solid $GRAY_4;
+   border-top: 24px solid $GRAY_4;
    margin-bottom: 10px;
-   padding-bottom: 0;
+   padding-top: 0;
    position: relative;
 
-  &.language-css:after,
-  &.language-html:after {
+  .highlight {
+    margin-top: 0;
+  }
+  &.language-css:before,
+  &.language-html:before {
     content: ' ';
     text-align: center;
-    z-index: 10;
     color: $WHITE;
     position: absolute;
-    bottom: -22px;
+    top: -23px;
+    left: 8px;
   }
-  &.language-css:after {
+  &.language-css:before {
     content: 'CSS';
   }
-  &.language-html:after {
+  &.language-html:before {
     content: 'HTML';
   }
  }
