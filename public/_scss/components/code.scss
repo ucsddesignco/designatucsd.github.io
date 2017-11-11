@@ -213,7 +213,7 @@
    color: $RED_3;
  }
  .highlight {
-   margin: 10px 0;
+   margin: 10px 0 0 0;
    color: darken($GRAY_4, 8%);
    background-color: lighten($GRAY_3, 5%);
    padding: 4px;
@@ -233,4 +233,24 @@
  }
  div.highlighter-rouge {
    border-radius: 5px;
+   border-bottom: 22px solid $GRAY_4;
+   margin-bottom: 10px;
+   padding-bottom: 0;
+   position: relative;
+
+  &.language-css:after,
+  &.language-html:after {
+    content: ' ';
+    text-align: center;
+    z-index: 10;
+    color: $WHITE;
+    position: absolute;
+    bottom: -22px;
+  }
+  &.language-css:after {
+    content: 'CSS';
+  }
+  &.language-html:after {
+    content: 'HTML';
+  }
  }
