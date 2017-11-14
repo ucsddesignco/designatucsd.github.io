@@ -11,7 +11,6 @@ quarter: FA17
 type: skill
 resource_text: Intro to HTML/CSS Workshop
 resource_link: http://designatucsd.org/2017/11/15/intro-html-css.html
-# gallery_link:
 excerpt: Knowing HTML and CSS can help you build great websites, though getting started
   with it may seem daunting at first. Join us at this hands-on workshop where we tackle
   the basics of HTML and CSS. Just bring your computer and your favorite text editor.
