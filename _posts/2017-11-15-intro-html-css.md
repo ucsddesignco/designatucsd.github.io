@@ -10,7 +10,7 @@ published: true
 quarter: FA17
 type: skill
 resource_text: Intro to HTML/CSS Workshop
-resource_link: http://designatucsd.org/2017/11/15/intro-html-css.html
+resource_link: https://designatucsd.org/2017/11/15/intro-html-css.html
 excerpt: Knowing HTML and CSS can help you build great websites, though getting started
   with it may seem daunting at first. Join us at this hands-on workshop where we tackle
   the basics of HTML and CSS. Just bring your computer and your favorite text editor.
@@ -31,13 +31,13 @@ Go ahead and create a folder to hold everything in this workshop. Call it someth
 
 Now go ahead and write this in your `index.html`
 
-```
+```html
 Hello World!
 ```
 
 Then navigate to the file in your browser to view it. On Macs, you can also drag the file from Finder into Chrome to open it. You should see something like this:
 
-![](/public/images/events/FA16_IntroHTML_HelloWorld.jpg)
+![](https://designatucsd.org/examples/screenshots/HelloWorldScreenshot.png)
 
 ## What is HTML?
 
@@ -57,7 +57,7 @@ Now go ahead and write this code into your index.html:
         <div>
             <h1>Aesop's Fables</h1>
             <p>This is my first HTML page</p>
-            <a href="https://stackoverflow.com">This is a link</a>
+            <a href="https://stackoverflow.com">Example link</a>
             <!-- This is a HTML comment and it won't show up -->
         </div>
     </body>
@@ -77,7 +77,7 @@ The elements inside the angled brackets are called `tags`. Most of these tags re
 * `<p>` A paragraph tag - used for most text content
 * `<a>` An anchor tag (used to link; the `href` specifies where the content links to)
 
-There are many more types of tags you'll encounter as you continue learning frontend, but these should be enough for now. 
+There are many more types of tags you'll encounter as you continue learning frontend, but these should be enough for now. More about tags can be found [here](https://www.w3schools.com/html/html_elements.asp){:target="_blank"}
 
 ### HTML: Block vs Inline
 
@@ -88,13 +88,15 @@ There are two ways HTML can be displayed:
 * `inline`: these elements take as much width as they need
   * Examples: `span`, `a`
 
-To see this, try placing this `<a>` tag below the `<a>` tag that you currently have in your code and see what happens:
+Note: you can also change the `display` type of an element with CSS, which we'll get into later.
+
+To see this, try placing this `<a>` tag below the `<a>` tag (right above the HTML comment) that you currently have in your code and see what happens.
 
 ```html
 <a href="gnat.html">The Gnat and the Bull</a>
 ```
 
-Note: you can also change the `display` type of an element with CSS, which we'll get into later.
+Note: the point here is to see that inline tags like `<a>` by default space out horizontally, while block tags like `<p>` or `<h1>` space out on top of each other.
 
 ## Building a website
 
@@ -117,12 +119,14 @@ Now let's go ahead and build our first Fable page! Write this HTML into a new fi
               We may often be of more consequence in our own eyes than in the eyes of our neighbours.
             </p>
             <p>
-              Read more Aesop's Fables <a href="https://femmebot.github.io/google-type/">here</a>
+              Back to <a href="index.html">home</a>
             </p>
         </div>
     </body>
 </html>
 ```
+
+We can delete the first link in `index.html` (The `This is a link` link) as it's only for demonstration purposes. Try clicking around and navigating using the links. At this point, your site should look something like [this](https://designatucsd.org/examples/intro-html-css/checkpoint1/).
 
 ## What is CSS?
 
@@ -138,7 +142,7 @@ Imagine if you had to add *inline styles* (like we just did) to style every elem
 
 This is where **classes** and **ids** come in. CSS can specify style properties that define the behavior of **certain classes, ids, and HTML tags**. This gives more power and separated, reusable code. (Note that ids are unique so you can only have one of a certain id on a page). 
 
-However, we'll first need to link our stylesheet. Create a file called `stylesheet.css` and add this line to in your HTML `head`.
+However, we'll first need to link our stylesheet. Create a file called `stylesheet.css` in the same directory and add this line to in your HTML `head`:
 
 ```html
 <link rel="stylesheet" href="stylesheet.css">
@@ -230,7 +234,7 @@ What if we added an image to be the background of our page? You can look in [Uns
 ```css
 .hero {
   /* background-image: url("path/to/your/image"); */
-  background-image: url("http://designatucsd.org/examples/htmlcss1/bull_background.jpg");
+  background-image: url("http://designatucsd.org/examples/files/bull.jpg");
   background-size: cover;
 }
 .hero h1 {
@@ -242,9 +246,11 @@ What if we added an image to be the background of our page? You can look in [Uns
 * `background-image`: self-explanatory
 * `background-size: cover`: Tells the browser to stretch the image to fit window
 
+Your `gnat.html` page should now look something like [this](https://designatucsd.org/examples/intro-html-css/checkpoint2/gnat.html).
+
 ## Readability
 
-Right now, our text appears to span the entire width of the page, making it difficult to read, so let's update that. Add a class for your `<div>` tag with a relevant name (like 'container') and add some css.
+Right now, our text appears to span the entire width of the page, making it difficult to read, so let's update that. Add a class for your `<div>` tag surrounding your paragraph contents (`<p>` tags) with a relevant name (like 'container') and add some css.
 
 ```css
 .your-div-class-name {
@@ -260,25 +266,27 @@ Right now, our text appears to span the entire width of the page, making it diff
 * `max-width`: denotes the largest width of an element
 * Note: there exists properties like `padding-left` and `margin-left` and for each other direction.
 
-Now viewing this in desktop, we can see that the content centers nicely on the page. Let's try a custom font to add more personality. Here at DesignatUCSD, we're big fans of [Lato](https://fonts.google.com/specimen/Lato). You can always head to [fonts.google.com](https://fonts.google.com) to pick a different font to use. Just make sure to also use `font-family` in the tags/classes/ids where you'd like the font to be used.
+Now viewing this in desktop, we can see that the content centers nicely on the page. Let's try a custom font to add more personality. One popular font is [Lato](https://fonts.google.com/specimen/Lato). You can always head to [fonts.google.com](https://fonts.google.com) to pick a different font to use. Just make sure to also use `font-family` in the tags/classes/ids where you'd like the font to be used.
 
 ```css
+/* The url below is given by fonts.google.com */
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 /* You can edit your existing body tag */
 body {
+  /* The continued use of Helvetica afterwards is as a back up, say in case Lato fails to load due to bad network connection */
   font-family: "Lato", "Helvetica", sans-serif;
   line-height: 1.4;
 }
 ```
 * `line-height`: denotes the height of the line relative to the size of text.
 
-We can also update font sizes to improve readability. Try changing the `font-size` property for your `.hero h1` to 64px and `p` elements to 20px using CSS. 
+We can also update font sizes to improve readability. Try changing the `font-size` property for your `.hero h1` to 64px and `p` elements to **20px** using CSS. 
 
 ```css
 .hero h1 {
   font-size: 64px;
-  font-weight: 300;
+  font-weight: lighter;
 }
 p {
   /* Try figuring this out */
@@ -286,21 +294,123 @@ p {
 ```
 * `font-weight`: sets thickness of font
 
+Now, your `gnat.html` page should look something like [this](https://designatucsd.org/examples/intro-html-css/checkpoint3/gnat.html). 
+
 ## Cards
 
-Cards are a major feature that are often show up on many sites and help separate different sections of content. In this case, let's try separating the majority of our content, Let's try making our different paragraphs basic cards. Try to add these properties into your existing `p` selector in CSS.
+Cards are a major feature that are often show up on many sites and help separate different sections of content. In this case, let's try separating the majority of our content, Let's try making our different paragraphs basic cards. Let's assume we've added a couple fables already to our fables website. You can add the next two anchor tags under our original link to `gnat.html`. Let's also wrap our cards in a div.
 
-```css 
-p {
-  /* Previous styles */
-  padding: 10px;
+```html
+<div class="card-wrapper">
+  <a href="gnat.html">The Gnat and the Bull</a>
+  <a href="boywolf.html">The Boy who Cried Wolf</a>
+  <a href="fox.html">The Fox and the Grapes</a>
+</div>
+```
+
+To make our cards, let's add to the anchor tag class `card` to each of our links so that we can have content inside of our cards. Here's one example (make sure to do the other two):
+
+```html
+<a class="card" href="gnat.html">The Gnat and the Bull</a>
+```
+
+To style our card divs, let's add these properties into our class selector in CSS:
+
+```css
+.card-wrapper {
+  text-align: center; /* Keep our cards centered */
+}
+.the-card-classname-we-used {
   background-color: #f1f1f1; /* Or your choice color */
-  box-shadow: 0 4px 8px 0 #ddd; /* This adds some depth */
   margin-top: 10px;
 }
 ```
 
-Try refreshing and observe how the cards help give the page some organization. 
+Try refreshing and observe how the cards help give the page some organization.
+
+### Inline cards
+
+So far while our cards add a bit of organization, they still look like a simple list. Let's make them a bit more organized. Let's make our card class `inline-block`. Similar to `inline` elements, `inline-block` elements act like inline elements, but are allowed to have a specified width and height. This will help us create equal-width cards. Let's add these two lines **inside** our card styling:
+
+```css
+.the-card-classname-we-used {
+  /* Add the new styles below the old ones */
+  display: inline-block;
+  width: 31%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  text-align: center; /* Make the links centered */
+}
+```
+
+### Better looking cards
+
+Right now we just have a link with text as each of our cards, and it looks a bit boring. Let's add images for each of the cards. To do this, let's first separate out our text from the images. Let's use paragraph tags to enclose our text. Each paragraph tag should have an *opening* `a` tag before, and a *closing* `a` tag after. Here's one example (make sure to do the other two):
+
+```html
+<a class="card" href="gnat.html">
+  <p>The Gnat and the Bull</p>
+</a>
+```
+
+We can use an `img` tag to add an image. We've pre-selected 3 images for you:
+
+* [https://designatucsd.org/examples/files/bull.jpg](https://designatucsd.org/examples/files/bull.jpg)
+* [https://designatucsd.org/examples/files/wolf.jpg](https://designatucsd.org/examples/files/wolf.jpg)
+* [https://designatucsd.org/examples/files/fox.jpg](https://designatucsd.org/examples/files/fox.jpg)
+
+For the first card for *The Gnat and the Bull*, let's add the `img` tag before the link. Here's an example (make sure to do the other two):
+
+```html
+<a class="card" href="gnat.html">
+  <img src="https://designatucsd.org/examples/files/bull.jpg">
+  <p>The Gnat and the Bull</p>
+</a>
+```
+
+Note: `img` tags are *self-closing*, which means there is *no corresponding closing tag needed* for them.
+
+If we open our page it looks like our images are overflowing the cards. Let's go ahead and set the images to match the sizing of the cards. We can do this by nesting:
+
+```css
+.card img {
+  width: 100%;
+}
+```
+
+Finally, let's make and style a hero for our homepage. See if you can handle this yourself, and refer to the previous step where we [added a hero to the gnat page](#a-heroic-step).
+
+At this point with the hero, your code could look something like [this](). Feel free to play around with styles, content and colors as you see fit.
+
+## Bonus: Mobile-friendliness & Media Queries
+
+So what happens if we look at our page on mobile?
+
+The entire page looks really zoomed out and the text is not really readable. This is an artifact from early smartphones - at that time, no such thing as mobile-friendliness existed, so webpages were just crammed onto mobile screens, super zoomed out. However, we can override this to make our website mobile-friendly by adding this in our `<head>` tag.
+
+```html
+<!-- Add this inside your <head> tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+What this does is tell the mobile browser to render things at normal scale (rather than zoomed out). The other thing we'll need to do is add a `media query`, which allows us to have different styling for different viewport sizes (think desktop screen size vs mobile screen size). More info [here](https://varvy.com/mobile/media-queries.html). Let's style our cards on our `index.html` in a way that allows them to collapse on smaller viewports! To do this, let's add this css:
+
+```css
+/* The following line states that at a viewport size of 667px or less, use the styles inside */
+@media screen and (max-width: 667px) {
+  .card {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+```
+
+With this, we should have gone from the screenshot on the left to the one on the right. 
+
+![](https://designatucsd.org/examples/screenshots/MobileScreenshot.png)
+
+Note that you'll need to have your website hosted somewhere so you can view it on mobile to see your changes. We recommend using [Github Pages](https://pages.github.com/) to host.
 
 ## Finishing up
 Can you think of more touches you'd like to add to your site? Here's some things you can play around with:
@@ -312,7 +422,8 @@ Can you think of more touches you'd like to add to your site? Here's some things
 * Content sizes
 * Your hero background image
   * Try including your own image or finding one online
-* Adding more/editing text content
+* Adding other Aesop's fables. You can find some inspiration and fables [here](https://femmebot.github.io/google-type/)
+* Host your website on [Github Pages](https://pages.github.com/) so you can view it publicly!
 
 How about adding a class and making Aesop's punchline "We may often be..." more unique? [Here's](http://designatucsd.org/examples/htmlcss1/){:target="_blank"} an example of what your site might look like at the end of this tutorial. You can view its code [here](https://github.com/designucsd/examples/tree/master/htmlcss1){:target="_blank"}.
 
