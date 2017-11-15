@@ -386,6 +386,32 @@ At this point with the hero, your code could look something like [this](). Feel 
 
 So what happens if we look at our page on mobile?
 
+The entire page looks really zoomed out and the text is not really readable. This is an artifact from early smartphones - at that time, no such thing as mobile-friendliness existed, so webpages were just crammed onto mobile screens, super zoomed out. However, we can override this to make our website mobile-friendly by adding this in our `<head>` tag.
+
+```html
+<!-- Add this inside your <head> tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+What this does is tell the mobile browser to render things at normal scale (rather than zoomed out). The other thing we'll need to do is add a `media query`, which allows us to have different styling for different viewport sizes (think desktop screen size vs mobile screen size). More info [here](https://varvy.com/mobile/media-queries.html). Let's style our cards on our `index.html` in a way that allows them to collapse on smaller viewports! To do this, let's add this css:
+
+```css
+/* The following line states that at a viewport size of 667px or less, use the styles inside */
+@media screen and (max-width: 667px) {
+  .card {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+```
+
+With this, we should have gone from the screenshot on the left to the one on the right. 
+
+![](https://designatucsd.org/examples/screenshots/MobileScreenshot.png)
+
+Note that you'll need to have your website hosted somewhere so you can view it on mobile to see your changes. We recommend using [Github Pages](https://pages.github.com/) to host.
+
 ## Finishing up
 Can you think of more touches you'd like to add to your site? Here's some things you can play around with:
 
@@ -397,6 +423,7 @@ Can you think of more touches you'd like to add to your site? Here's some things
 * Your hero background image
   * Try including your own image or finding one online
 * Adding other Aesop's fables. You can find some inspiration and fables [here](https://femmebot.github.io/google-type/)
+* Host your website on [Github Pages](https://pages.github.com/) so you can view it publicly!
 
 How about adding a class and making Aesop's punchline "We may often be..." more unique? [Here's](http://designatucsd.org/examples/htmlcss1/){:target="_blank"} an example of what your site might look like at the end of this tutorial. You can view its code [here](https://github.com/designucsd/examples/tree/master/htmlcss1){:target="_blank"}.
 

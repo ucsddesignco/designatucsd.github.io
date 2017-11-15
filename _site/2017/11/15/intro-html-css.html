@@ -492,6 +492,32 @@ xmlns:fb="http://ogp.me/ns/fb#">
 
 <p>So what happens if we look at our page on mobile?</p>
 
+<p>The entire page looks really zoomed out and the text is not really readable. This is an artifact from early smartphones - at that time, no such thing as mobile-friendliness existed, so webpages were just crammed onto mobile screens, super zoomed out. However, we can override this to make our website mobile-friendly by adding this in our <code class="highlighter-rouge">&lt;head&gt;</code> tag.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="c">&lt;!-- Add this inside your &lt;head&gt; tag --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
+</code></pre>
+</div>
+
+<p>What this does is tell the mobile browser to render things at normal scale (rather than zoomed out). The other thing we’ll need to do is add a <code class="highlighter-rouge">media query</code>, which allows us to have different styling for different viewport sizes (think desktop screen size vs mobile screen size). More info <a href="https://varvy.com/mobile/media-queries.html">here</a>. Let’s style our cards on our <code class="highlighter-rouge">index.html</code> in a way that allows them to collapse on smaller viewports! To do this, let’s add this css:</p>
+
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="c">/* The following line states that at a viewport size of 667px or less, use the styles inside */</span>
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">max-width</span><span class="p">:</span> <span class="m">667px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.card</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">96%</span><span class="p">;</span>
+    <span class="nl">margin-left</span><span class="p">:</span> <span class="m">2%</span><span class="p">;</span>
+    <span class="nl">margin-right</span><span class="p">:</span> <span class="m">2%</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>With this, we should have gone from the screenshot on the left to the one on the right.</p>
+
+<p><img src="https://designatucsd.org/examples/screenshots/MobileScreenshot.png" alt="" /></p>
+
+<p>Note that you’ll need to have your website hosted somewhere so you can view it on mobile to see your changes. We recommend using <a href="https://pages.github.com/">Github Pages</a> to host.</p>
+
 <h2 id="finishing-up">Finishing up</h2>
 <p>Can you think of more touches you’d like to add to your site? Here’s some things you can play around with:</p>
 
@@ -513,6 +539,7 @@ xmlns:fb="http://ogp.me/ns/fb#">
     </ul>
   </li>
   <li>Adding other Aesop’s fables. You can find some inspiration and fables <a href="https://femmebot.github.io/google-type/">here</a></li>
+  <li>Host your website on <a href="https://pages.github.com/">Github Pages</a> so you can view it publicly!</li>
 </ul>
 
 <p>How about adding a class and making Aesop’s punchline “We may often be…” more unique? <a href="http://designatucsd.org/examples/htmlcss1/" target="_blank">Here’s</a> an example of what your site might look like at the end of this tutorial. You can view its code <a href="https://github.com/designucsd/examples/tree/master/htmlcss1" target="_blank">here</a>.</p>
