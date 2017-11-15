@@ -318,7 +318,7 @@ To style our card divs, let's add these properties into our class selector in CS
 
 ```css
 .card-wrapper {
-  text-align: center; /* Keep text in our cards centered */
+  text-align: center; /* Keep our cards centered */
 }
 .the-card-classname-we-used {
   background-color: #f1f1f1; /* Or your choice color */
