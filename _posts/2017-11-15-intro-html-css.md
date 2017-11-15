@@ -26,6 +26,7 @@ If you haven't already done so, find and install a text editor. Here are two we 
 
 * [Sublime Text](https://www.sublimetext.com/){:target="_blank"}
 * [Atom](https://atom.io/){:target="_blank"}
+* [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"}
 
 Go ahead and create a folder to hold everything in this workshop. Call it something like `HTMLWorkshop`. Navigate into that directory and create a file called `index.html` using your new code editor.
 
@@ -410,6 +411,9 @@ With this, we should have gone from the screenshot on the left to the one on the
 
 ![](https://designatucsd.org/examples/screenshots/MobileScreenshot.png)
 
+
+Finally [this](https://designatucsd.org/examples/intro-html-css/checkpoint5/index.html) is what it all should look like!
+
 Note that you'll need to have your website hosted somewhere so you can view it on mobile to see your changes. We recommend using [Github Pages](https://pages.github.com/) to host.
 
 ## Finishing up
@@ -425,7 +429,7 @@ Can you think of more touches you'd like to add to your site? Here's some things
 * Adding other Aesop's fables. You can find some inspiration and fables [here](https://femmebot.github.io/google-type/)
 * Host your website on [Github Pages](https://pages.github.com/) so you can view it publicly!
 
-How about adding a class and making Aesop's punchline "We may often be..." more unique? [Here's](http://designatucsd.org/examples/htmlcss1/){:target="_blank"} an example of what your site might look like at the end of this tutorial. You can view its code [here](https://github.com/designucsd/examples/tree/master/htmlcss1){:target="_blank"}.
+How about adding a class and making Aesop's punchline "We may often be..." more unique? [Here's](https://designatucsd.org/examples/intro-html-css/){:target="_blank"} an example of what your site might look like at the end of this tutorial. You can view its code [here](https://github.com/designucsd/examples/tree/master/intro-html-css){:target="_blank"}.
 
 ## Feedback and thank you
 
@@ -446,9 +450,9 @@ If you're ever interested in getting more involved with DesignatUCSD, have gener
 ### The next logical steps
 Now that we've covered the basics of HTML and CSS, what's next? To become a frontend developer, you'd need to learn and do a couple more things:
 
-* Javascript
+* JavaScript
 * Mobile friendliness
-* Frontend frameworks (like Bootstrap) - we'll be having a workshop on this soon!
+* Frontend frameworks (like Bootstrap)
 * Practice, practice, practice!
 
 ### Additional resources
