@@ -298,7 +298,7 @@ Now, your `gnat.html` page should look something like [this](https://designatucs
 
 ## Cards
 
-Cards are a major feature that are often show up on many sites and help separate different sections of content. In this case, let's try separating the majority of our content, Let's try making our different paragraphs basic cards. Let's assume we've added a couple fables already to our fables website. You can add the next two anchor tags under our original link to `gnat.html`. Let's also wrap our cards in a div.
+Cards are a major feature that often show up on many sites and help separate different sections of content. In this case, let's try separating the different fable links using basic cards. Let's assume we've added a couple fables already to our fables website. You can add the next two anchor tags under our original link to `gnat.html`. Let's also wrap our cards in a div.
 
 ```html
 <div class="card-wrapper">
@@ -318,7 +318,7 @@ To style our card divs, let's add these properties into our class selector in CS
 
 ```css
 .card-wrapper {
-  text-align: center; /* Keep our cards centered */
+  text-align: center; /* Keep text in our cards centered */
 }
 .the-card-classname-we-used {
   background-color: #f1f1f1; /* Or your choice color */
