@@ -380,7 +380,7 @@ If we open our page it looks like our images are overflowing the cards. Let's go
 
 Finally, let's make and style a hero for our homepage. See if you can handle this yourself, and refer to the previous step where we [added a hero to the gnat page](#a-heroic-step).
 
-At this point with the hero, your code could look something like [this](). Feel free to play around with styles, content and colors as you see fit.
+At this point with the hero, your code could look something like [this](https://designatucsd.org/examples/intro-html-css/checkpoint4/index.html). Feel free to play around with styles, content and colors as you see fit.
 
 ## Bonus: Mobile-friendliness & Media Queries
 
