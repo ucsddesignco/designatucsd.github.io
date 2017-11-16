@@ -26,6 +26,7 @@ If you haven't already done so, find and install a text editor. Here are two we 
 
 * [Sublime Text](https://www.sublimetext.com/){:target="_blank"}
 * [Atom](https://atom.io/){:target="_blank"}
+* [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"}
 
 Go ahead and create a folder to hold everything in this workshop. Call it something like `HTMLWorkshop`. Navigate into that directory and create a file called `index.html` using your new code editor.
 
@@ -298,7 +299,7 @@ Now, your `gnat.html` page should look something like [this](https://designatucs
 
 ## Cards
 
-Cards are a major feature that are often show up on many sites and help separate different sections of content. In this case, let's try separating the majority of our content, Let's try making our different paragraphs basic cards. Let's assume we've added a couple fables already to our fables website. You can add the next two anchor tags under our original link to `gnat.html`. Let's also wrap our cards in a div.
+Cards are a major feature that often show up on many sites and help separate different sections of content. In this case, let's try separating the different fable links using basic cards. Let's assume we've added a couple fables already to our fables website. You can add the next two anchor tags under our original link to `gnat.html`. Let's also wrap our cards in a div.
 
 ```html
 <div class="card-wrapper">
@@ -380,7 +381,7 @@ If we open our page it looks like our images are overflowing the cards. Let's go
 
 Finally, let's make and style a hero for our homepage. See if you can handle this yourself, and refer to the previous step where we [added a hero to the gnat page](#a-heroic-step).
 
-At this point with the hero, your code could look something like [this](). Feel free to play around with styles, content and colors as you see fit.
+At this point with the hero, your code could look something like [this](https://designatucsd.org/examples/intro-html-css/checkpoint4/index.html). Feel free to play around with styles, content and colors as you see fit.
 
 ## Bonus: Mobile-friendliness & Media Queries
 
@@ -410,6 +411,9 @@ With this, we should have gone from the screenshot on the left to the one on the
 
 ![](https://designatucsd.org/examples/screenshots/MobileScreenshot.png)
 
+
+Finally [this](https://designatucsd.org/examples/intro-html-css/checkpoint5/index.html) is what it all should look like!
+
 Note that you'll need to have your website hosted somewhere so you can view it on mobile to see your changes. We recommend using [Github Pages](https://pages.github.com/) to host.
 
 ## Finishing up
@@ -425,9 +429,7 @@ Can you think of more touches you'd like to add to your site? Here's some things
 * Adding other Aesop's fables. You can find some inspiration and fables [here](https://femmebot.github.io/google-type/)
 * Host your website on [Github Pages](https://pages.github.com/) so you can view it publicly!
 
-<!-- How about adding a class and making Aesop's punchline "We may often be..." more unique?  -->
-
-[Here's](https://designatucsd.org/examples/intro-html-css/checkpoint5/index.html){:target="_blank"} an example of what your site might look like at the end of this tutorial. You can view its code [here](https://github.com/designucsd/examples/tree/master/intro-html-css/checkpoint5){:target="_blank"}.
+How about adding a class and making Aesop's punchline "We may often be..." more unique? [Here's](https://designatucsd.org/examples/intro-html-css/){:target="_blank"} an example of what your site might look like at the end of this tutorial. You can view its code [here](https://github.com/designucsd/examples/tree/master/intro-html-css){:target="_blank"}.
 
 ## Feedback and thank you
 
@@ -448,9 +450,9 @@ If you're ever interested in getting more involved with DesignatUCSD, have gener
 ### The next logical steps
 Now that we've covered the basics of HTML and CSS, what's next? To become a frontend developer, you'd need to learn and do a couple more things:
 
-* Javascript
+* JavaScript
 * Mobile friendliness
-* Frontend frameworks (like Bootstrap) - we'll be having a workshop on this soon!
+* Frontend frameworks (like Bootstrap)
 * Practice, practice, practice!
 
 ### Additional resources
