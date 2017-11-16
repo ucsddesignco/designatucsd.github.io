@@ -425,7 +425,9 @@ Can you think of more touches you'd like to add to your site? Here's some things
 * Adding other Aesop's fables. You can find some inspiration and fables [here](https://femmebot.github.io/google-type/)
 * Host your website on [Github Pages](https://pages.github.com/) so you can view it publicly!
 
-How about adding a class and making Aesop's punchline "We may often be..." more unique? [Here's](http://designatucsd.org/examples/htmlcss1/){:target="_blank"} an example of what your site might look like at the end of this tutorial. You can view its code [here](https://github.com/designucsd/examples/tree/master/htmlcss1){:target="_blank"}.
+<!-- How about adding a class and making Aesop's punchline "We may often be..." more unique?  -->
+
+[Here's](https://designatucsd.org/examples/intro-html-css/checkpoint5/index.html){:target="_blank"} an example of what your site might look like at the end of this tutorial. You can view its code [here](https://github.com/designucsd/examples/tree/master/intro-html-css/checkpoint5){:target="_blank"}.
 
 ## Feedback and thank you
 
