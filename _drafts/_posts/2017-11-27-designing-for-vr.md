@@ -7,7 +7,7 @@ location: Atkinson Hall 1601
 quarter: FA17
 type: skill
 facebook: https://www.facebook.com/events/1489244334500703/
-excerpt: Learn how to design for VR in a talk with designers from Nanome
+excerpt: Learn how to design for VR with designers from Nanome
 published: true
 hosted: ''
 image: ''
