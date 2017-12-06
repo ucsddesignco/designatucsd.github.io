@@ -99,12 +99,25 @@
       background-size: cover;
     }
   }
+  &--mentorship {
+    background: url('../images/banners/hero_mentorship.png') no-repeat center center;
+    background-size: cover;
+
+    @media screen and (max-width: $BP_SM) {
+      background: url('../images/banners/mentorship_mobile.png') no-repeat center center;
+      background-size: cover;
+    }
+  }
   &--content {
     h1 {
       color: $WHITE;
       font-size: 64px;
       text-shadow: 2px 2px 2px $TITLE_SHADOW;
-
+    }
+    h2 {
+      color: $WHITE;
+      font-size: 48px;
+      text-shadow: 2px 2px 2px $TITLE_SHADOW;
     }
   }
   &--home-content {

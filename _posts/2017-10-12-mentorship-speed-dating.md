@@ -12,4 +12,5 @@ resource_text: ''
 time: Monday, Oct 16, 7PM - 8:30PM
 title: Mentorship Speed Dating
 type: community
+mentorship: true
 ---

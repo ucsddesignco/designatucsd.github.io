@@ -1,0 +1,76 @@
+---
+layout: default
+---
+<div class="du-wrapper du-mentorship-wrapper">
+  <div class="du-hero du-hero--mentorship">
+    <div class="du-hero--content">
+      <h1>Mentorship Program</h1>
+      <h2>2017-2018</h2>
+    </div>
+  </div>
+
+  <div class="du-section du-section--white">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+          <h2 class="du-section--header">Purpose and Goals</h2>
+          <div class="du-mentorship--purpose">
+            <p class="du-section--large-text du-section--quote">
+              The purpose of this program is to support students who are interested in design,
+              and are seeking guidance or mentorship whether it be in the form of career
+              advice or learning new design skills and practices. We also strive to make this 
+              program beneficial to mentors by providing structure for mentorship, supplying
+              design resources, and establishing a network of mentors who can help and
+              support each other.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="du-section">
+    <div class="container">
+
+    </div>
+  </div>
+
+  <div class="du-section du-section--white">
+    <div class="container">
+      <div class="row">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="du-section">
+    <div class="container">
+      <h2 class="du-section--header">Important Events</h2>
+
+      <div class="row du-card--row">
+        {% assign count = 0 %}
+        {% for post in site.posts reversed %}
+          {% if post.mentorship %}
+            <div class="col-md-4 du-card--wrapper du-card--type-{{ post.type }}" >
+              <a class="card du-card" href="{% if post.facebook %}{{ post.facebook }}{% else %}{{post.resource_link }}{% endif %}" target="_blank">
+                <div class="card-img-top du-card--img-top"></div>
+                <div class="card-block du-card--block">
+                  <div class="du-card--icon"><div></div></div>
+                  <div class="du-card--content">
+                    <h4 class="card-title du-card--title du-card--event-title">{{ post.title }}</h4>
+                    <h6 class="du-card--date">{{ post.time }}</h6>
+                    <p class="du-card--description du-card--event-description">{{ post.excerpt }}</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            {% assign count = count | plus: 1 %}
+            {% if count == 3 %}
+              {% break %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
