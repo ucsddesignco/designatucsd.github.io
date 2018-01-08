@@ -43,7 +43,7 @@ fields:
 - type: text
   name: type
   label: type
-  description: Type of event. eg. skill
+  description: 'Type of event. One of: skill, community, industry, research'
 - type: text
   name: resource_text
   label: resource_text
@@ -57,3 +57,7 @@ fields:
 - type: boolean
   label: published
   name: published
+- type: boolean
+  name: mentorship
+  label: Mentorship
+  description: Whether this event is a mentorship related event
