@@ -5,7 +5,7 @@ title: Intro to HTML/CSS Workshop
 hosted: Hosted by Design at UCSD
 time: Wednesday, Nov 15, 6:30 - 8:00pm
 location: Atkinson Hall, Room 1601 (The Design Lab)
-image: FA16_IntroHTML.png
+image: 'https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/23318957_1952698454970616_4417365152230158632_n.jpg?oh=8fc9b5b4abdc6893922b04a45e4b8098&oe=5AF8636C'
 published: true
 quarter: FA17
 type: skill

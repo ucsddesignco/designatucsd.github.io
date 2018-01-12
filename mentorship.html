@@ -67,7 +67,11 @@ layout: default
           {% if post.mentorship %}
             <div class="col-md-4 du-card--wrapper du-card--type-{{ post.type }}" >
               <a class="card du-card" href="{% if post.facebook %}{{ post.facebook }}{% else %}{{post.resource_link }}{% endif %}" target="_blank">
-                <div class="card-img-top du-card--img-top"></div>
+                <div class="card-img-top du-card--img-top">
+                  {% if post.image %}
+                    <img src="{{ post.image }}" alt="">
+                  {% endif %}
+                </div>
                 <div class="card-block du-card--block">
                   <div class="du-card--icon"><div></div></div>
                   <div class="du-card--content">
