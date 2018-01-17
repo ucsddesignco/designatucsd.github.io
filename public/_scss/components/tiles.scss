@@ -33,7 +33,10 @@
   border-radius: 10px;
   margin-bottom: 30px;
   display: block;
-  height: 405px;
+
+  &--event {
+    height: 405px;
+  }
 
   &:visited,
   &:hover,
@@ -102,11 +105,14 @@
     z-index: 1;
   }
   &--block {
-    height: 220px;
     background-color: $WHITE;
     padding: 0 34px 24px 34px;
     border-radius: 0 0 10px 10px;
     text-align: center;
+
+    &--event {
+      height: 220px;
+    }
   }
   &--block-nopad {
     background-color: $GRAY_2;
