@@ -13,7 +13,9 @@ fields:
 - type: text
   name: date
   label: Date
-  description: Date of Post
+  description: Date of Event. The default will be today's date and time but you need
+    to change the date to that of the event so change everything before the 'T' and
+    you can leave the rest as is.
 - type: text
   label: layout
   name: layout
@@ -37,6 +39,7 @@ fields:
 - type: text
   name: image
   label: image
+  description: URL of image to use for the event
 - type: text
   name: quarter
   label: quarter
