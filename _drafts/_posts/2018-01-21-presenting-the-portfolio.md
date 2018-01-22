@@ -8,7 +8,7 @@ quarter: WI18
 type: Industry
 image: https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/26903993_1982691071971354_4919448413030126616_n.jpg?oh=7273a679d87db9515bbd578e10e563e6&oe=5AEC531B
 facebook: https://www.facebook.com/events/180631566020843/
-layout: ''
+layout: post
 resource_text: ''
 excerpt: ''
 published: false
