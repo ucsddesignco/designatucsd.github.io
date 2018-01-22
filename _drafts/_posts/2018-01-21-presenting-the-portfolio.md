@@ -1,6 +1,6 @@
 ---
 title: Presenting the Portfolio
-date: 2018-01-23 19:00:00 +0000
+date: 2018-01-22 01:00:00 +0000
 hosted: Design at UCSD
 time: Tuesday, Jan 23, 7PM - 9PM
 location: HSS 1346
