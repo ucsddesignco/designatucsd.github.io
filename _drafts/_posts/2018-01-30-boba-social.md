@@ -1,8 +1,8 @@
 ---
 title: Boba Social
-date: 2018-01-30 16:47:35 +0000
+date: 2018-01-30 20:00:00 +0000
 layout: post
-time: 8 PM
+time: Tuesday, Jan 30, 8 PM
 location: Kung Fu Tea
 quarter: WI18
 type: community
