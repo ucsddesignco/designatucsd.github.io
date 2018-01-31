@@ -10,7 +10,7 @@ facebook: https://www.facebook.com/events/269856873545167/
 excerpt: Enjoy some boba while getting to know other designers!
 published: true
 hosted: ''
-image: ''
+image: 'https://i.imgur.com/bIXzHCt.png'
 resource_text: ''
 mentorship: false
 ---
