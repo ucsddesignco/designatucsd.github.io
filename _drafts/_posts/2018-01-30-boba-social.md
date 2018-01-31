@@ -7,7 +7,7 @@ location: Kung Fu Tea
 quarter: WI18
 type: community
 facebook: https://www.facebook.com/events/269856873545167/
-excerpt: Enjoy some delicious boba while getting to know other designers!
+excerpt: Enjoy some boba while getting to know other designers!
 published: true
 hosted: ''
 image: ''
