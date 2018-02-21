@@ -7,11 +7,18 @@ const GRAD_YEAR = 2016;
 // List of teams
 var team = [
   {
-    id: 'elmer',
-    name: 'Elmer Barrera',
-    role: 'President',
-    linkedin: 'https://www.linkedin.com/in/elmerbarrera',
-    gradYear: 2018,
+    id: 'aman',
+    name: 'Aman Gupta',
+    role: 'Co-President',
+    linkedin: 'http://linkedin.com/in/97agupta',
+    gradYear: 2019,
+  },
+  {
+    id: 'kaila',
+    name: 'Kaila Lee',
+    role: 'Co-President',
+    linkedin: 'https://www.linkedin.com/in/kailatlee/',
+    gradYear: 2019,
   },
   {
     id: 'vincent',
@@ -21,30 +28,16 @@ var team = [
     gradYear: 2018,
   },
   {
-    id: 'tori',
-    name: 'Tori Duong',
+    id: 'anna',
+    name: 'Anne Le',
     role: 'Vice President Internal',
-    linkedin: 'https://www.linkedin.com/in/toriduong/',
+    linkedin: 'https://www.linkedin.com/in/anne-le-607415bb/',
     gradYear: 2018,
   },
   {
-    id: 'aman',
-    name: 'Aman Gupta',
-    role: 'Professional Development',
-    linkedin: 'http://linkedin.com/in/97agupta',
-    gradYear: 2019,
-  },
-  {
-    id: 'kaila',
-    name: 'Kaila Lee',
-    role: 'Professional Development',
-    linkedin: 'https://www.linkedin.com/in/kailatlee/',
-    gradYear: 2019,
-  },
-  {
-    id: 'kaichin',
+    id: 'kai-chin',
     name: 'Kai-Chin Shih',
-    role: 'Professional Development',
+    role: 'Vice President Finance',
     linkedin: 'https://www.linkedin.com/in/kaichinshih/',
     gradYear: 2019,
   },
@@ -56,11 +49,32 @@ var team = [
     gradYear: 2020,
   },
   {
-    id: 'marisa',
-    name: 'Marisa Kanemoto',
+    id: 'anita',
+    name: 'Anita Chuen',
+    role: 'Professional Development',
+    linkedin: '',
+    gradYear: 2019,
+  },
+  {
+    id: 'josh',
+    name: 'Joshua Tjong',
+    role: 'Professional Development',
+    linkedin: 'https://www.linkedin.com/in/joshua-tjong/',
+    gradYear: 2018,
+  },
+  {
+    id: 'chaitanya',
+    name: 'Chaitanya Prashant',
     role: 'Community and Culture',
-    linkedin: 'https://www.linkedin.com/in/marisa-kanemoto-266909a9/',
-    gradYear: 2017,
+    linkedin: 'https://linkedin.com/in/chaitanyaprashant',
+    gradYear: 2020,
+  },
+  {
+    id: 'tamar',
+    name: 'Tamar Esserman',
+    role: 'Community and Culture',
+    linkedin: '',
+    gradYear: 2018,
   },
   {
     id: 'akanksha',
@@ -77,18 +91,11 @@ var team = [
     gradYear: 2020,
   },
   {
-    id: 'joel',
-    name: 'Joel Sequeira',
-    role: 'Tech Chair',
-    linkedin: 'https://www.linkedin.com/in/joelseq/',
-    gradYear: 2018,
-  },
-  {
-    id: 'anna',
-    name: 'Anne Le',
-    role: 'Visual Design',
-    linkedin: 'https://www.linkedin.com/in/anne-le-607415bb/',
-    gradYear: 2018,
+    id: 'bianca',
+    name: 'Bianca Moy',
+    role: 'Marketing Chair',
+    linkedin: '',
+    gradYear: 2020,
   },
   {
     id: 'nancy',
@@ -96,6 +103,20 @@ var team = [
     role: 'Visual Design',
     linkedin: 'http://www.linkedin.com/in/nancyybui/',
     gradYear: 2020,
+  },
+  {
+    id: 'emily',
+    name: 'Emily Nguyen',
+    role: 'Visual Design',
+    linkedin: 'https://www.linkedin.com/in/emilymnguyen/',
+    gradYear: 2019,
+  },
+  {
+    id: 'joel',
+    name: 'Joel Sequeira',
+    role: 'Tech Chair',
+    linkedin: 'https://www.linkedin.com/in/joelseq/',
+    gradYear: 2018,
   },
   /*
   {
@@ -279,8 +300,8 @@ function generateTeamMembers() {
 
     var currTeam = team[i];
     var role = (currTeam.gradYear >= GRAD_YEAR) ? currTeam.role : 'Alumnus';
-    var imageURL = 'public/images/team/' + currTeam.id + '.jpg';
-    var hoverImageURL = 'public/images/team/' + currTeam.id + '.gif';
+    var imageURL = 'public/images/team/' + currTeam.id + '.png';
+    var hoverImageURL = 'public/images/team/' + currTeam.id + '-hover.png';
 
     currTeam.imageURL = imageURL;
     currTeam.hoverImageURL = hoverImageURL;
@@ -319,7 +340,7 @@ function generateTeamMembers() {
 
     // Add hover effect
     $('#' + currTeam.id).hover(function(e) {
-      // First callback is mouseenter      
+      // First callback is mouseenter
       $(e.target).css('opacity', 0);
     }, function(e) {
       // Second callback is mouseleave
