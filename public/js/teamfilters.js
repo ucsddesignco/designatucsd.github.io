@@ -94,8 +94,8 @@ var team = [
     id: 'bianca',
     name: 'Bianca Moy',
     role: 'Marketing Chair',
-    linkedin: '',
-    gradYear: 2020,
+    linkedin: 'https://www.linkedin.com/in/biancamoy/',
+    gradYear: 2021,
   },
   {
     id: 'nancy',
