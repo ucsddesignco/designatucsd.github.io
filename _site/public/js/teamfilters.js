@@ -10,7 +10,7 @@ var team = [
     id: 'aman',
     name: 'Aman Gupta',
     role: 'Co-President',
-    linkedin: 'http://linkedin.com/in/97agupta',
+    linkedin: 'https://linkedin.com/in/97agupta',
     gradYear: 2019,
   },
   {
@@ -45,15 +45,15 @@ var team = [
     id: 'chris',
     name: 'Chris Wong',
     role: 'Professional Development',
-    linkedin: 'http://linkedin.com/in/ckwong97',
+    linkedin: 'https://linkedin.com/in/ckwong97',
     gradYear: 2020,
   },
   {
     id: 'anita',
     name: 'Anita Chuen',
     role: 'Professional Development',
-    linkedin: '',
-    gradYear: 2019,
+    linkedin: 'https://linkedin.com/in/anitachuen',
+    gradYear: 2020,
   },
   {
     id: 'josh',
@@ -80,7 +80,7 @@ var team = [
     id: 'akanksha',
     name: 'Akanksha Kevalramani',
     role: 'Marketing Chair',
-    linkedin: 'http://linkedin.com/in/itsakanksha/',
+    linkedin: 'https://linkedin.com/in/itsakanksha/',
     gradYear: 2018,
   },
   {
@@ -101,7 +101,7 @@ var team = [
     id: 'nancy',
     name: 'Nancy Bui',
     role: 'Visual Design',
-    linkedin: 'http://www.linkedin.com/in/nancyybui/',
+    linkedin: 'https://www.linkedin.com/in/nancyybui/',
     gradYear: 2020,
   },
   {
