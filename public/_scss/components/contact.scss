@@ -58,6 +58,13 @@
       &::placeholder {
         color: $GRAY_3;
       }
+
+      &[type="radio"],
+      &[type="checkbox"] {
+        display: inline-block;
+        width: 30px;
+        margin-top: 15px;
+      }
     }
     textarea {
       border: 1.5px solid $GRAY_1;
@@ -67,6 +74,10 @@
     textarea:focus {
       border-color: $BLUE_3;
       outline: none;
+    }
+
+    .apparel-images {
+      margin: 30px 0;
     }
   }
   &--form-wrapper {
