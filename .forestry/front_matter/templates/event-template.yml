@@ -1,5 +1,6 @@
 ---
 pages:
+- _posts/dessert-board-games.md
 - _posts/2018-04-10-info-session.md
 - _posts/2018-04-04-design-at-ucsd-dinner-social.md
 - _posts/2018-03-07-intern-panel.md
@@ -20,6 +21,7 @@ pages:
 - _posts/2017-10-12-mentorship-speed-dating.md
 - _posts/2017-10-07-design-at-ucsd-gbm-1.md
 hide_body: false
+is_partial: false
 fields:
 - type: text
   name: date
