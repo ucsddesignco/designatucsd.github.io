@@ -8,7 +8,7 @@ quarter: SP18
 type: community
 image: http://oi63.tinypic.com/vzv705.jpg
 published: true
-excerpt: 'De-stress with board games & tea at Camellia Rd Tea Bar this Thursday! '
+excerpt: De-stress with board games & tea at Camellia Rd Tea Bar!
 facebook: https://www.facebook.com/events/470590750025019/
 hosted: ''
 resource_text: ''
