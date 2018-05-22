@@ -118,6 +118,13 @@ var team = [
     linkedin: 'https://www.linkedin.com/in/joelseq/',
     gradYear: 2018,
   },
+  {
+    id: 'ashkon',
+    name: 'Ashkon Honardoost',
+    role: 'Honorary Board Member',
+    linkedin: 'https://www.linkedin.com/in/ahonardo',
+    gradYear: 2018,
+  }
   /*
   {
     id: 'ed',
