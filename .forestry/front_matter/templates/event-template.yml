@@ -58,6 +58,7 @@ fields:
   label: Mentorship
   description: Whether this event is a mentorship related event
 pages:
+- _posts/designing-your-summer.md
 - _posts/2018-05-29-intro-to-design-systems.md
 - _posts/2018-05-16-a-conversation-w-roku-s-design-team.md
 - _posts/2018-05-14-design-frontiers-healthcare.md
