@@ -723,7 +723,7 @@ var data = [
  },
  {
    "MethodName": "Test Planning",
-   "Category": "Testing",
+   "Category": "Measure",
    "LearnFrom": "Usability.gov",
    "LearnFromLink": "https://www.usability.gov/how-to-and-tools/methods/planning-usability-testing.html",
    "Tool1": "Consent Form",
@@ -742,7 +742,7 @@ var data = [
  },
  {
    "MethodName": "A/B Testing",
-   "Category": "Testing",
+   "Category": "Measure",
    "LearnFrom": "NNGroup",
    "LearnFromLink": "https://www.nngroup.com/articles/putting-ab-testing-in-its-place/",
    "Tool1": "Google Experiments",
@@ -761,7 +761,7 @@ var data = [
  },
  {
    "MethodName": "Guerilla Testing",
-   "Category": "Testing",
+   "Category": "Measure",
    "LearnFrom": "Userbrain",
    "LearnFromLink": "https://userbrain.net/blog/7-step-guide-guerrilla-usability-testing-diy-usability-testing-method",
    "Tool1": "Own Prototype",
@@ -780,7 +780,7 @@ var data = [
  },
  {
    "MethodName": "Lab Testing ",
-   "Category": "Testing",
+   "Category": "Measure",
    "LearnFrom": "Medium",
    "LearnFromLink": "https://medium.com/product-labs/build-your-usability-lab-on-a-budget-b9bcd09ef23e#.io655dqid",
    "Tool1": "Own Prototype",
@@ -799,7 +799,7 @@ var data = [
  },
  {
    "MethodName": "Remote Testing",
-   "Category": "Testing",
+   "Category": "Measure",
    "LearnFrom": "Usability.gov",
    "LearnFromLink": "https://www.usability.gov/how-to-and-tools/methods/remote-testing.html",
    "Tool1": "Own Prototype",
@@ -818,7 +818,7 @@ var data = [
  },
  {
    "MethodName": "Analytics",
-   "Category": "Testing",
+   "Category": "Measure",
    "LearnFrom": "Sitepoint",
    "LearnFromLink": "https://www.sitepoint.com/5-ways-use-google-analytics-ux-research/",
    "Tool1": "Google Analytics",
@@ -837,7 +837,7 @@ var data = [
  },
  {
    "MethodName": "Analysis & Report",
-   "Category": "Testing",
+   "Category": "Measure",
    "LearnFrom": "Usability.gov",
    "LearnFromLink": "https://www.usability.gov/how-to-and-tools/methods/reporting-usability-test-results.html",
    "Tool1": "",

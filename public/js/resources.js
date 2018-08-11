@@ -52,11 +52,6 @@ var cardData = {
     "description": "User-experience metrics give you objective, persuasive data on which to base your design recommendations.",
     "icon": "resource_measure.png",
     "data": [],
-  },
-  "Testing": {
-    "description": "Testing is necessary for delivering a good user experience",
-    "icon": "resource_testing.png",
-    "data": [],
   }
 };
 
