@@ -59,7 +59,7 @@ fields:
   label: Mentorship
   description: Whether this event is a mentorship related event
 pages:
-- _posts/gliderport-sunset-social.md
+- _posts/2018-10-05-gliderport-sunset-social.md
 - _posts/2018-10-09-workday-design-jam.md
 - _posts/2018-10-03-happy-lemon-boba-run.md
 - _posts/2018-10-02-fall-kick-off.md
