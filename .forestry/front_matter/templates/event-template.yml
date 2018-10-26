@@ -59,7 +59,7 @@ fields:
   label: Mentorship
   description: Whether this event is a mentorship related event
 pages:
-- _posts/resume-workshop.md
+- _posts/2018-10-25-resume-workshop.md
 - _posts/2018-10-20-design-sprint.md
 - _posts/2018-10-11-intern-panel-paths-to-careers-in-design.md
 - _posts/2018-10-11-torrey-pines-hike.md
