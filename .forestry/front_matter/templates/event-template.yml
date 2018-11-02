@@ -59,7 +59,7 @@ fields:
   label: Mentorship
   description: Whether this event is a mentorship related event
 pages:
-- _posts/design-camp.md
+- _posts/2018-11-02-design-camp.md
 - _posts/2018-11-01-design-frontiers-intuit.md
 - _posts/2018-10-25-resume-workshop.md
 - _posts/2018-10-20-design-sprint.md
