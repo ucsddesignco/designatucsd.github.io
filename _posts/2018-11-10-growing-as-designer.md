@@ -1,5 +1,5 @@
 ---
-title: 'Design Camp: Growing as Designer'
+title: 'Design Camp: Growing as a Designer'
 date: 2018-11-10 10:34:46 -0800
 layout: post
 hosted: Design at UCSD
