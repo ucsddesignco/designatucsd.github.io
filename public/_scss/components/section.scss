@@ -1,3 +1,11 @@
+.du-wrapper {
+  min-height: calc(100vh - 92px - 151px);
+}
+
+.du-board-wrapper {
+  background-color: $RED_1;
+}
+
 .du-section {
   padding-top: 60px;
   padding-bottom: 70px;

@@ -107,6 +107,13 @@
       background-size: cover;
     }
   }
+  &--board {
+    background-size: cover;
+
+    @media screen and (max-width: $BP_SM) {
+      background-size: cover;
+    }
+  }
   &--content {
     h1 {
       color: $WHITE;
