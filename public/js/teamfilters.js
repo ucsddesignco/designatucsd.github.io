@@ -7,117 +7,103 @@ const GRAD_YEAR = 2016;
 // List of teams
 var team = [
   {
-    id: 'aman',
-    name: 'Aman Gupta',
+    id: 'nancy',
+    name: 'Nancy Bui',
     role: 'Co-President',
-    linkedin: 'https://linkedin.com/in/97agupta',
-    gradYear: 2019,
+    linkedin: 'https://www.linkedin.com/in/nancyybui/',
+    gradYear: 2020,
+  },
+  {
+    id: 'steven',
+    name: 'Steven Chen',
+    role: 'Co-President',
+    linkedin: 'https://www.linkedin.com/in/StevChen/',
+    gradYear: 2020,
   },
   {
     id: 'kaila',
     name: 'Kaila Lee',
-    role: 'Co-President',
+    role: 'Vice President',
     linkedin: 'https://www.linkedin.com/in/kailatlee/',
     gradYear: 2019,
   },
   {
-    id: 'vincent',
-    name: 'Vincent Liaw',
-    role: 'Vice President External',
-    linkedin: 'https://www.linkedin.com/in/vincentliaw/',
-    gradYear: 2018,
-  },
-  {
-    id: 'anna',
-    name: 'Anne Le',
-    role: 'Vice President Internal',
-    linkedin: 'https://www.linkedin.com/in/anne-le-607415bb/',
-    gradYear: 2018,
-  },
-  {
-    id: 'kai-chin',
-    name: 'Kai-Chin Shih',
-    role: 'Vice President Finance',
-    linkedin: 'https://www.linkedin.com/in/kaichinshih/',
+    id: 'aman',
+    name: 'Aman Gupta',
+    role: 'Vice President',
+    linkedin: 'https://linkedin.com/in/97agupta',
     gradYear: 2019,
   },
   {
-    id: 'chris',
-    name: 'Chris Wong',
-    role: 'Professional Development',
-    linkedin: 'https://linkedin.com/in/ckwong97',
-    gradYear: 2020,
+    id: 'emily',
+    name: 'Emily Nguyen',
+    role: 'Tech Chair',
+    linkedin: 'https://www.linkedin.com/in/emilymnguyen/',
+    gradYear: 2019,
   },
   {
-    id: 'anita',
-    name: 'Anita Chuen',
+    id: 'elmer',
+    name: 'Elmer Barrera',
     role: 'Professional Development',
-    linkedin: 'https://linkedin.com/in/anitachuen',
-    gradYear: 2020,
-  },
-  {
-    id: 'josh',
-    name: 'Joshua Tjong',
-    role: 'Professional Development',
-    linkedin: 'https://www.linkedin.com/in/joshua-tjong/',
+    linkedin: 'https://www.linkedin.com/in/elmerbarrera/',
     gradYear: 2018,
   },
   {
-    id: 'chaitanya',
-    name: 'Chaitanya Prashant',
-    role: 'Community and Culture',
-    linkedin: 'https://linkedin.com/in/chaitanyaprashant',
+    id: 'lauren',
+    name: 'Lauren Choy',
+    role: 'Visual Design',
+    linkedin: 'https://www.linkedin.com/in/laurenchoy/',
+    gradYear: 2019,
+  },
+  {
+    id: 'lucy',
+    name: 'Lucy Xu',
+    role: 'Visual Design',
+    linkedin: 'https://www.linkedin.com/in/lucylouxu/',
     gradYear: 2020,
   },
   {
     id: 'tamar',
     name: 'Tamar Esserman',
     role: 'Community and Culture',
-    linkedin: '',
+    linkedin: 'https://www.linkedin.com/in/tamar-esserman-2991a414a/',
     gradYear: 2018,
   },
   {
-    id: 'akanksha',
-    name: 'Akanksha Kevalramani',
-    role: 'Marketing Chair',
-    linkedin: 'https://linkedin.com/in/itsakanksha/',
-    gradYear: 2018,
+    id: 'nathan',
+    name: 'Nathan Mansur',
+    role: 'Community and Culture',
+    linkedin: 'https://www.linkedin.com/in/nathan-mansur/',
+    gradYear: 2019,
   },
   {
-    id: 'steven',
-    name: 'Steven Chen',
-    role: 'Marketing Chair',
-    linkedin: 'https://www.linkedin.com/in/StevChen/',
+    id: 'brittany',
+    name: 'Brittany Newton',
+    role: 'Community and Culture',
+    linkedin: 'https://www.linkedin.com/in/brittany-newton-648452133/',
     gradYear: 2020,
+  },
+  {
+    id: 'katya',
+    name: 'Katya Noble',
+    role: 'Community and Culture',
+    linkedin: 'https://www.linkedin.com/in/katya-noble/',
+    gradYear: 2019,
   },
   {
     id: 'bianca',
     name: 'Bianca Moy',
-    role: 'Marketing Chair',
+    role: 'Marketing Coordinator',
     linkedin: 'https://www.linkedin.com/in/biancamoy/',
     gradYear: 2021,
   },
   {
-    id: 'nancy',
-    name: 'Nancy Bui',
-    role: 'Visual Design',
-    linkedin: 'https://www.linkedin.com/in/nancyybui/',
-    gradYear: 2020,
-  },
-  {
-    id: 'emily',
-    name: 'Emily Nguyen',
-    role: 'Visual Design',
-    linkedin: 'https://www.linkedin.com/in/emilymnguyen/',
-    gradYear: 2019,
-  },
-  {
     id: 'joel',
     name: 'Joel Sequeira',
-    role: 'Tech Chair',
+    role: 'Industry Advisor',
     linkedin: 'https://www.linkedin.com/in/joelseq/',
     gradYear: 2018,
-  },
+  }
   /*
   {
     id: 'ed',
@@ -309,7 +295,7 @@ function generateTeamMembers() {
 
     // Create each board member div
     var result = '<div class="col-md-4 col-sm-6 du-card--wrapper">' +
-      '<div class="card du-card du-card--about du-card--red" data-year="' + currTeam.gradYear + '">' +
+      '<div class="card du-card du-card--about" data-year="' + currTeam.gradYear + '">' +
         '<div class="card-img-top-wrapper du-card--about-img-top-wrapper">' +
           '<div class="card-img-top du-card--about-img-top du-card--img-top-front" data-index="' + i + '" id="' + currTeam.id + '"></div>' +
           '<div class="card-img-top du-card--about-img-top" data-index="' + i + '" id="' + currTeam.id + '-hover"></div>' +
@@ -335,17 +321,18 @@ function generateTeamMembers() {
     $('#' + currTeam.id).css('background', 'url(' + imageURL + ') no-repeat center center');
     $('#' + currTeam.id).css('background-size', 'cover');
 
-    $('#' + currTeam.id + '-hover').css('background', 'url(' + hoverImageURL + ') no-repeat center center');
-    $('#' + currTeam.id + '-hover').css('background-size', 'cover');
+    //$('#' + currTeam.id + '-hover').css('background', 'url(' + hoverImageURL + ') no-repeat center center');
+    //$('#' + currTeam.id + '-hover').css('background-size', 'cover');
 
     // Add hover effect
+    /*
     $('#' + currTeam.id).hover(function(e) {
       // First callback is mouseenter
       $(e.target).css('opacity', 0);
     }, function(e) {
       // Second callback is mouseleave
       $(e.target).css('opacity', 1);
-    });
+    }); */
   }
 
   bindYearsToMembers();
