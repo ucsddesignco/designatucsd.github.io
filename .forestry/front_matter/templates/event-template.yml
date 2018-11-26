@@ -59,6 +59,7 @@ fields:
   label: Mentorship
   description: Whether this event is a mentorship related event
 pages:
+- _posts/design-camp-building-your-design-portfolio.md
 - _posts/2018-11-16-design-camp-growing-as-a-designer-pt-2.md
 - _posts/2018-11-10-growing-as-designer.md
 - _posts/2018-11-02-design-camp.md
