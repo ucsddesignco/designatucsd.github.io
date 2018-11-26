@@ -5,7 +5,7 @@ layout: post
 hosted: Design at UCSD
 time: Tues, Nov. 27, 6:30 PM
 location: CSE 1202
-image: https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/46520702_2178379789069147_7135318688848150528_n.jpg?_nc_cat=109&_nc_ht=scontent-sjc3-1.xx&oh=8831419b779e3fdbcde291ed7cfe245c&oe=5C718927
+image: https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/46815689_2179587645615028_7305663684582309888_o.jpg?_nc_cat=106&_nc_ht=scontent-lax3-2.xx&oh=878656d64a49e61fc29a4386a1a84edc&oe=5C6B8442
 quarter: FA18
 type: industry
 resource_text: ''
