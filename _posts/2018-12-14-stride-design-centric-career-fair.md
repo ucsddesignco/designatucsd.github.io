@@ -5,7 +5,7 @@ layout: post
 hosted: Design at UCSD
 time: Tuesday, Jan. 15, 12 PM - 4 PM
 location: PC East Ballroom
-image: https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/48382916_2191050321135427_4077440375122296832_n.jpg?_nc_cat=102&_nc_ht=scontent-lax3-1.xx&oh=11e8ab269835a8954d7afb716418ac4a&oe=5CACE0A8
+image: https://scontent-lax3-1.xx.fbcdn.net/v/l/t1.0-9/48266804_2191069017800224_8984529438100160512_o.jpg?_nc_cat=104&_nc_ht=scontent-lax3-1.xx&oh=2e3ae606785e0a1bc1b7c838c9a5919e&oe=5C933085
 quarter: WI19
 type: industry
 resource_text: ''
