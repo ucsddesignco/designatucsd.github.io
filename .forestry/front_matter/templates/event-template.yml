@@ -59,6 +59,8 @@ fields:
   label: Mentorship
   description: Whether this event is a mentorship related event
 pages:
+- _posts/intuit-info-session.md
+- _posts/2019-01-10-pre-stride-office-hours.md
 - _posts/2018-10-03-happy-lemon-boba-run.md
 - _posts/2018-11-16-design-camp-growing-as-a-designer-pt-2.md
 - _posts/2018-10-09-workday-design-jam.md
@@ -78,7 +80,6 @@ pages:
 - _posts/2018-01-21-presenting-the-portfolio.md
 - _posts/2018-02-14-figma-invision-workshop.md
 - _posts/2018-11-01-design-frontiers-intuit.md
-- _posts/pre-stride-office-hours.md
 - _posts/2018-04-17-dessert-board-games.md
 - _posts/2018-05-01-torrey-pines-hike.md
 - _posts/2018-10-02-fall-kick-off.md
