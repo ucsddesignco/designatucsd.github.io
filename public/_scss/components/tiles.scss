@@ -56,7 +56,7 @@
     margin-bottom: 10px;
   }
   &--linkedin {
-    background: #0077B5;
+    background: #0077b5;
     padding: 0px 2px;
     margin-left: 10px;
     > i {
@@ -85,7 +85,7 @@
     height: 290px; // 290
     //height: 42vw;
   }
-  &--img-top { 
+  &--img-top {
     height: calc(35px + 43vw);
     border-radius: 10px 10px 0 0;
     @media (min-width: 768px) {
@@ -150,7 +150,6 @@
     margin-top: -20px;
   }
   &--description {
-
   }
   &--event-description {
     height: 44px;
@@ -173,7 +172,7 @@
   // Semantic CSS for types of events
   // Skills: Green + hamburger menu
   &--type-skill {
-    &>.du-card {
+    & > .du-card {
       background-color: $GREEN_1;
       border-bottom: 6px solid $GREEN_1;
     }
@@ -190,13 +189,13 @@
       background-size: cover;
     }
     .du-card--icon div {
-      background: url('../images/icons/icon_menu.png') no-repeat center center;
+      background: url("../images/icons/icon_menu.png") no-repeat center center;
       background-size: 20px 20px;
     }
   }
   // Professional: Yellow + bag
   &--type-industry {
-    &>.du-card {
+    & > .du-card {
       background-color: $YELLOW_1;
       border-bottom: 6px solid $YELLOW_1;
     }
@@ -213,13 +212,13 @@
       background-size: cover;
     }
     .du-card--icon div {
-      background: url('../images/icons/icon_bag.png') no-repeat center center;
+      background: url("../images/icons/icon_bag.png") no-repeat center center;
       background-size: 20px 20px;
     }
   }
   // Social: Blue + book
   &--type-research {
-    &>.du-card {
+    & > .du-card {
       background-color: $BLUE_1;
       border-bottom: 6px solid $BLUE_1;
     }
@@ -236,13 +235,13 @@
       background-size: cover;
     }
     .du-card--icon div {
-      background: url('../images/icons/icon_book.png') no-repeat center center;
+      background: url("../images/icons/icon_book.png") no-repeat center center;
       background-size: 20px 20px;
     }
   }
   // Community: Red + circle
   &--type-community {
-    &>.du-card {
+    & > .du-card {
       background-color: $RED_1;
       border-bottom: 6px solid $RED_1;
     }
@@ -259,13 +258,13 @@
       background-size: cover;
     }
     .du-card--icon div {
-      background: url('../images/icons/icon_circle.png') no-repeat center center;
+      background: url("../images/icons/icon_circle.png") no-repeat center center;
       background-size: 20px 20px;
     }
   }
   // RESOURCES page: resource cards
   &--type-resource {
-    &>.du-card {
+    & > .du-card {
       //   background-color: $GREEN_1;
       border-bottom: 6px solid $GREEN_1;
     }
@@ -329,8 +328,12 @@
     .du-card--title {
       padding: 0;
       margin-bottom: 5px;
+      color: $RED_1;
+      a {
+        color: inherit;
+        font-family: inherit;
+      }
     }
-    .du-card--title,
     .du-card--desc {
       color: $GRAY_7;
     }

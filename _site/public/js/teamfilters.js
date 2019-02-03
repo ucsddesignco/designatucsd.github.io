@@ -7,102 +7,109 @@ const GRAD_YEAR = 2016;
 // List of teams
 var team = [
   {
-    id: 'nancy',
-    name: 'Nancy Bui',
-    role: 'Co-President',
-    linkedin: 'https://www.linkedin.com/in/nancyybui/',
-    gradYear: 2020,
+    id: "steven",
+    name: "Steven Chen",
+    role: "President",
+    link: "https://www.linkedin.com/in/StevChen/",
+    gradYear: 2020
   },
   {
-    id: 'steven',
-    name: 'Steven Chen',
-    role: 'Co-President',
-    linkedin: 'https://www.linkedin.com/in/StevChen/',
-    gradYear: 2020,
+    id: "kaila",
+    name: "Kaila Lee",
+    role: "Vice President, Marketing",
+    link: "https://www.linkedin.com/in/kailatlee/",
+    gradYear: 2019
   },
   {
-    id: 'kaila',
-    name: 'Kaila Lee',
-    role: 'Vice President',
-    linkedin: 'https://www.linkedin.com/in/kailatlee/',
-    gradYear: 2019,
+    id: "aman",
+    name: "Aman Gupta",
+    role: "Vice President",
+    link: "https://linkedin.com/in/97agupta",
+    gradYear: 2019
   },
   {
-    id: 'aman',
-    name: 'Aman Gupta',
-    role: 'Vice President',
-    linkedin: 'https://linkedin.com/in/97agupta',
-    gradYear: 2019,
+    id: "nancy",
+    name: "Nancy Bui",
+    role: "Creative Director",
+    link: "https://www.nancybui.co/",
+    gradYear: 2020
   },
   {
-    id: 'emily',
-    name: 'Emily Nguyen',
-    role: 'Tech Chair',
-    linkedin: 'https://www.linkedin.com/in/emilymnguyen/',
-    gradYear: 2019,
+    id: "emily",
+    name: "Emily Nguyen",
+    role: "Web Developer",
+    link: "http://emilynguyen.co/",
+    gradYear: 2019
   },
   {
-    id: 'elmer',
-    name: 'Elmer Barrera',
-    role: 'Professional Development',
-    linkedin: 'https://www.linkedin.com/in/elmerbarrera/',
-    gradYear: 2018,
+    id: "nathan",
+    name: "Nathan Mansur",
+    role: "Industry Engagement Coordinator",
+    link: "https://www.linkedin.com/in/nathan-mansur/",
+    gradYear: 2019
   },
   {
-    id: 'lauren',
-    name: 'Lauren Choy',
-    role: 'Visual Design',
-    linkedin: 'https://www.linkedin.com/in/laurenchoy/',
-    gradYear: 2019,
+    id: "katya",
+    name: "Katya Noble",
+    role: "Industry Engagement Coordinator",
+    link: "https://www.katyanoble.design/",
+    gradYear: 2019
   },
   {
-    id: 'lucy',
-    name: 'Lucy Xu',
-    role: 'Visual Design',
-    linkedin: 'https://www.linkedin.com/in/lucylouxu/',
-    gradYear: 2020,
+    id: "vibhu",
+    name: "Vibhu Sapra",
+    role: "Industry Engagement Coordinator",
+    link: "https://www.linkedin.com/in/vibhusapra/",
+    gradYear: 2019
   },
   {
-    id: 'tamar',
-    name: 'Tamar Esserman',
-    role: 'Community and Culture',
-    linkedin: 'https://www.linkedin.com/in/tamar-esserman-2991a414a/',
-    gradYear: 2018,
+    id: "lauren",
+    name: "Lauren Choy",
+    role: "Visual and Brand Designer",
+    link: "https://www.linkedin.com/in/laurenchoy/",
+    gradYear: 2019
   },
   {
-    id: 'nathan',
-    name: 'Nathan Mansur',
-    role: 'Community and Culture',
-    linkedin: 'https://www.linkedin.com/in/nathan-mansur/',
-    gradYear: 2019,
+    id: "lucy",
+    name: "Lucy Xu",
+    role: "Visual and Brand Designer",
+    link: "https://lucylouxu.com/",
+    gradYear: 2020
   },
   {
-    id: 'brittany',
-    name: 'Brittany Newton',
-    role: 'Community and Culture',
-    linkedin: 'https://www.linkedin.com/in/brittany-newton-648452133/',
-    gradYear: 2020,
+    id: "nhu",
+    name: "Nhu Luong",
+    role: "Community and Culture",
+    link: "https://nluongs77.wixsite.com/mysite",
+    gradYear: 2021
   },
   {
-    id: 'katya',
-    name: 'Katya Noble',
-    role: 'Community and Culture',
-    linkedin: 'https://www.linkedin.com/in/katya-noble/',
-    gradYear: 2019,
+    id: "brittany",
+    name: "Brittany Newton",
+    role: "Community and Culture",
+    link: "https://www.linkedin.com/in/brittany-newton-648452133/",
+    gradYear: 2020
   },
   {
-    id: 'bianca',
-    name: 'Bianca Moy',
-    role: 'Marketing Coordinator',
-    linkedin: 'https://www.linkedin.com/in/biancamoy/',
-    gradYear: 2021,
+    id: "alison",
+    name: "Alison Chen",
+    role: "Marketing Coordinator",
+    link: "https://www.linkedin.com/in/ealisonchen/",
+    gradYear: 2021
   },
   {
-    id: 'joel',
-    name: 'Joel Sequeira',
-    role: 'Industry Advisor',
-    linkedin: 'https://www.linkedin.com/in/joelseq/',
-    gradYear: 2018,
+    id: "julia",
+    name: "Julia Nguyen",
+    role: "Marketing Coordinator",
+    link: "https://www.linkedin.com/in/julia-nguyen-98671615a/",
+    gradYear: 2021
+  },
+  {
+    id: "joel",
+    name: "Joel Sequeira",
+    role: "Industry Advisor",
+    link: "https://www.linkedin.com/in/joelseq/",
+    gradYear: 2018
   }
   /*
   {
@@ -274,52 +281,69 @@ $(document).ready(function() {
 
 // Shows the entire team;
 function showAllTeam() {
-  $(".team-member").parent().css("display", "inline-block");
+  $(".team-member")
+    .parent()
+    .css("display", "inline-block");
 }
 
 // Function that generates the HTML for team members
 function generateTeamMembers() {
-
-  for (var i=0; i<team.length; i++) {
+  for (var i = 0; i < team.length; i++) {
     // Only currently show current team members
     if (team[i].gradYear <= GRAD_YEAR) continue;
 
     var currTeam = team[i];
-    var role = (currTeam.gradYear >= GRAD_YEAR) ? currTeam.role : 'Alumnus';
-    var imageURL = 'public/images/team/' + currTeam.id + '.png';
-    var hoverImageURL = 'public/images/team/' + currTeam.id + '-hover.png';
+    var role = currTeam.gradYear >= GRAD_YEAR ? currTeam.role : "Alumnus";
+    var imageURL = "public/images/team/" + currTeam.id + ".png";
+    var hoverImageURL = "public/images/team/" + currTeam.id + "-hover.png";
 
     currTeam.imageURL = imageURL;
     currTeam.hoverImageURL = hoverImageURL;
     currTeam.index = i; // For keeping track of which board member in array
 
     // Create each board member div
-    var result = '<div class="col-md-4 col-sm-6 du-card--wrapper">' +
-      '<div class="card du-card du-card--about" data-year="' + currTeam.gradYear + '">' +
-        '<div class="card-img-top-wrapper du-card--about-img-top-wrapper">' +
-          '<div class="card-img-top du-card--about-img-top du-card--img-top-front" data-index="' + i + '" id="' + currTeam.id + '"></div>' +
-          '<div class="card-img-top du-card--about-img-top" data-index="' + i + '" id="' + currTeam.id + '-hover"></div>' +
-        '</div>' +
-        '<div class="card-block du-card--block">' +
-          '<h4 class="du-card--title">' + currTeam.name +
-            '<a class="du-card--linkedin" href="' + currTeam.linkedin + '" target="_blank">' +
-              '<i class="fa fa-linkedin" aria-hidden="true"></i>' +
-            '</a>' +
-          '</h4>' +
-          '<p class="du-card--desc">' + role + '</p>' +
-          '<p class="light-gray">Class of ' + currTeam.gradYear + '</p>' +
-        '</div>' +
-      '</div>' +
-    '</div>';
+    var result =
+      '<div class="col-md-4 col-sm-6 du-card--wrapper">' +
+      '<div class="card du-card du-card--about" data-year="' +
+      currTeam.gradYear +
+      '">' +
+      '<div class="card-img-top-wrapper du-card--about-img-top-wrapper">' +
+      '<div class="card-img-top du-card--about-img-top du-card--img-top-front" data-index="' +
+      i +
+      '" id="' +
+      currTeam.id +
+      '"></div>' +
+      '<div class="card-img-top du-card--about-img-top" data-index="' +
+      i +
+      '" id="' +
+      currTeam.id +
+      '-hover"></div>' +
+      "</div>" +
+      '<div class="card-block du-card--block">' +
+      '<h4 class="du-card--title">' +
+      `<a href="${currTeam.link}" target="_blank">${currTeam.name}</a>` +
+      "</h4>" +
+      '<p class="du-card--desc">' +
+      role +
+      "</p>" +
+      '<p class="light-gray">Class of ' +
+      currTeam.gradYear +
+      "</p>" +
+      "</div>" +
+      "</div>" +
+      "</div>";
 
-    $('#board-members-wrapper').append(result);
+    $("#board-members-wrapper").append(result);
 
     // Also preload hover images, as they don't load by default
     // $('.preloaded-images').append('<img src="' + hoverImageURL + '"/>')
 
     // Add css
-    $('#' + currTeam.id).css('background', 'url(' + imageURL + ') no-repeat center center');
-    $('#' + currTeam.id).css('background-size', 'cover');
+    $("#" + currTeam.id).css(
+      "background",
+      "url(" + imageURL + ") no-repeat center center"
+    );
+    $("#" + currTeam.id).css("background-size", "cover");
 
     //$('#' + currTeam.id + '-hover').css('background', 'url(' + hoverImageURL + ') no-repeat center center');
     //$('#' + currTeam.id + '-hover').css('background-size', 'cover');
@@ -372,27 +396,23 @@ function filterTeam(type) {
   if (!type) {
     console.log("Team type not specified");
     return false;
-  }
-  else if (type == TEAM_CURRENT) {
+  } else if (type == TEAM_CURRENT) {
     showAllTeam();
     var toHide = $(".team-member").filter(function() {
       if ($(this).attr("data-year") > GRAD_YEAR) return false;
       return true;
     });
     toHide.parent().css("display", "none");
-  }
-  else if (type == TEAM_EVERYONE) {
+  } else if (type == TEAM_EVERYONE) {
     showAllTeam();
-  }
-  else if (type == TEAM_ALUMNI) {
+  } else if (type == TEAM_ALUMNI) {
     showAllTeam();
     var toHide = $(".team-member").filter(function() {
       if ($(this).attr("data-year") <= GRAD_YEAR) return false;
       return true;
     });
     toHide.parent().css("display", "none");
-  }
-  else {
+  } else {
     console.log("Team type not supported");
   }
 }
