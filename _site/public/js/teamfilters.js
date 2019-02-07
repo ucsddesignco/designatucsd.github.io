@@ -10,7 +10,14 @@ var team = [
     id: "steven",
     name: "Steven Chen",
     role: "President",
-    link: "https://www.linkedin.com/in/StevChen/",
+    link: "https://www.stevenychen.com/",
+    gradYear: 2020
+  },
+  {
+    id: "nancy",
+    name: "Nancy Bui",
+    role: "Vice President, Creative Director",
+    link: "https://www.nancybui.co/",
     gradYear: 2020
   },
   {
@@ -26,13 +33,6 @@ var team = [
     role: "Vice President",
     link: "https://linkedin.com/in/97agupta",
     gradYear: 2019
-  },
-  {
-    id: "nancy",
-    name: "Nancy Bui",
-    role: "Creative Director",
-    link: "https://www.nancybui.co/",
-    gradYear: 2020
   },
   {
     id: "emily",
@@ -63,6 +63,13 @@ var team = [
     gradYear: 2019
   },
   {
+    id: "josh",
+    name: "Joshua Tjong",
+    role: "Industry Engagement Coordinator",
+    link: "https://www.linkedin.com/in/joshua-tjong/",
+    gradYear: 2019
+  },
+  {
     id: "lauren",
     name: "Lauren Choy",
     role: "Visual and Brand Designer",
@@ -79,14 +86,14 @@ var team = [
   {
     id: "nhu",
     name: "Nhu Luong",
-    role: "Community and Culture",
+    role: "Community Engagement Coordinator",
     link: "https://nluongs77.wixsite.com/mysite",
     gradYear: 2021
   },
   {
     id: "brittany",
     name: "Brittany Newton",
-    role: "Community and Culture",
+    role: "Community Engagement Coordinator",
     link: "https://www.linkedin.com/in/brittany-newton-648452133/",
     gradYear: 2020
   },
@@ -307,7 +314,9 @@ function generateTeamMembers() {
       '<div class="card du-card du-card--about" data-year="' +
       currTeam.gradYear +
       '">' +
-      '<div class="card-img-top-wrapper du-card--about-img-top-wrapper">' +
+      `<a href="${
+        currTeam.link
+      }" target="_blank"><div class="card-img-top-wrapper du-card--about-img-top-wrapper">` +
       '<div class="card-img-top du-card--about-img-top du-card--img-top-front" data-index="' +
       i +
       '" id="' +
@@ -318,7 +327,7 @@ function generateTeamMembers() {
       '" id="' +
       currTeam.id +
       '-hover"></div>' +
-      "</div>" +
+      "</div></a>" +
       '<div class="card-block du-card--block">' +
       '<h4 class="du-card--title">' +
       `<a href="${currTeam.link}" target="_blank">${currTeam.name}</a>` +

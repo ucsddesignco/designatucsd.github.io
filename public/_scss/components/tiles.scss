@@ -84,6 +84,12 @@
     position: relative;
     height: 290px; // 290
     //height: 42vw;
+    transition: transform 0.3s;
+    @media (hover: hover) {
+      &:hover {
+        transform: scale(0.95);
+      }
+    }
   }
   &--img-top {
     height: calc(35px + 43vw);
