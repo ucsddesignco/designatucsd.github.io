@@ -29,17 +29,19 @@
   &--links {
     a {
       display: inline-block;
-      padding: 42px 20px;
+      // padding: 42px 20px;
+      padding: 42px 12px;
+
       cursor: pointer;
 
       li:after {
-        content: '';
+        content: "";
         display: block;
         margin: auto;
         height: 2px;
         width: 0px;
         background: transparent;
-        transition: width .5s ease, background-color .5s ease;
+        transition: width 0.5s ease, background-color 0.5s ease;
       }
 
       &:hover {
@@ -51,7 +53,7 @@
       }
     }
     li {
-      font-size: 14px;
+      font-size: 12px; //14px
       letter-spacing: 0.7px;
       line-height: 1.6;
       padding-bottom: 3px;
@@ -70,28 +72,48 @@ $NAV_BODYBG: $WHITE;
 
 /* Safari requires animations to be loaded before being called. */
 @keyframes header_fadeIn {
-  from { transform: translateY(-100px); }
-  to { transform: translateY(0px); }
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 /* Firefox < 16 */
 @-moz-keyframes header_fadeIn {
-  from { transform: translateY(-100px); }
-  to { transform: translateY(0px); }
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes header_fadeIn {
-  from { transform: translateY(-100px); }
-  to { transform: translateY(0px); }
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 /* Internet Explorer */
 @-ms-keyframes header_fadeIn {
-  from { transform: translateY(-100px); }
-  to { transform: translateY(0px); }
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 /* Opera < 12.1 */
 @-o-keyframes header_fadeIn {
-  from { transform: translateY(-100px); }
-  to { transform: translateY(0px); }
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 .mobile-link {
   cursor: pointer;
@@ -118,7 +140,7 @@ $NAV_BODYBG: $WHITE;
     &:after {
       border-top: 3px solid;
       border-color: $GRAY_1;
-      content: ' ';
+      content: " ";
       height: 0;
       left: 0;
       position: absolute;
