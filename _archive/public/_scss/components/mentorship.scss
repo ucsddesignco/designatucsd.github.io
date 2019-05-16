@@ -1,0 +1,31 @@
+.du-mentorship {
+  &--card {
+    text-align: center;
+    margin: 24px 0px;
+
+    h2 {
+      font-family: $HEADER_FONT;
+      letter-spacing: 0.6px;
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+
+    img {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 24px;
+    }
+
+    p {
+      //display: inline-block;
+      width: 300px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &--collage {
+    margin-top: 90px;
+    margin-bottom: -50px;
+  }
+}

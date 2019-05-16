@@ -1,0 +1,48 @@
+/**
+ * Button styles go here
+ */
+.btn {
+  background-color: $GRAY_4;
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  padding: 8px 24px;
+  color: $WHITE;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $WHITE;
+    background-color: $GRAY_4;
+    border: none;
+  }
+  &.btn-primary {
+    background-color: $RED_1;
+
+    &:hover {
+      background-color: $RED_1;
+    }
+  }
+  &.btn-no-round {
+    border-radius: 0;
+  }
+  &--footer-form {
+    background-color: $RED_2;
+    color: white;
+    border: none;
+    padding: 2px 12px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 0;
+    border-radius: 0;
+
+    &:hover {
+      background-color: $RED_2;
+    }
+  }
+  &.btn-lg {
+    font-size: 16px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    background-color: $RED_1;
+  }
+}

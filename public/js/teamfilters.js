@@ -87,7 +87,7 @@ var team = [
     id: "nhu",
     name: "Nhu Luong",
     role: "Community Engagement Coordinator",
-    link: "https://nluongs77.wixsite.com/mysite",
+    link: "http://nhu777.net",
     gradYear: 2021
   },
   {
@@ -108,7 +108,7 @@ var team = [
     id: "julia",
     name: "Julia Nguyen",
     role: "Marketing Coordinator",
-    link: "https://www.linkedin.com/in/julia-nguyen-98671615a/",
+    link: "https://nguyenjuliaa.com/",
     gradYear: 2021
   },
   {

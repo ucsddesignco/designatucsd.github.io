@@ -1,6 +1,5 @@
 .du-archive {
   &--buttons {
-
   }
   &--button {
     &.btn-lg {
@@ -8,7 +7,7 @@
       border: 2px solid $GRAY_3;
       box-sizing: border-box;
       color: $GRAY_1;
-
+      margin-bottom: 4px;
       &.active {
         background-color: $RED_1;
         color: $WHITE;
@@ -25,7 +24,7 @@
   &--table-head {
     padding-top: 40px;
 
-    &>div {
+    & > div {
       padding-top: 40px;
       padding-bottom: 15px;
       font-size: 20px;
@@ -36,7 +35,7 @@
     }
   }
   &--table-row {
-    &>div {
+    & > div {
       // width: 25%;
       padding-top: 10px;
       padding-bottom: 10px;
@@ -56,34 +55,34 @@
   // Skills - green and hamburger
   &--type-skill {
     div:first-of-type {
-      background: url('../images/icons/icon_menu.png') no-repeat 15px center;
+      background: url("../images/icons/icon_menu.png") no-repeat 15px center;
       background-size: 20px 20px;
     }
   }
   // Research - blue and graph
   &--type-research {
     div:first-of-type {
-      background: url('../images/icons/icon_book.png') no-repeat 15px center;
+      background: url("../images/icons/icon_book.png") no-repeat 15px center;
       background-size: 20px 20px;
     }
   }
   // Industry - yellow and bag
   &--type-industry {
     div:first-of-type {
-      background: url('../images/icons/icon_bag.png') no-repeat 15px center;
+      background: url("../images/icons/icon_bag.png") no-repeat 15px center;
       background-size: 20px 20px;
     }
   }
   // Community - Red circle
   &--type-community {
     div:first-of-type {
-      background: url('../images/icons/icon_circle.png') no-repeat 15px center;
+      background: url("../images/icons/icon_circle.png") no-repeat 15px center;
       background-size: 20px 20px;
     }
   }
   // Mobile styles for archive events
   @media screen and (max-width: $BP_LG) {
-    &--table-row>div {
+    &--table-row > div {
       padding-left: 44px;
     }
     &--table-event {

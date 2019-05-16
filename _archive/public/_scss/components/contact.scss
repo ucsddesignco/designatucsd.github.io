@@ -1,0 +1,178 @@
+.du-map {
+  background-color: $GRAY_5;
+
+  &--description {
+    padding-top: 25px;
+
+    &>div {
+      padding-top: 25px;
+    }
+  }
+}
+.du-contact {
+  &--section {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  &--banner-title {
+    min-height: 160px;
+    background-color: $BLUE_3;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .du-section--header {
+      color: $WHITE;
+    }
+  }
+  &--list {
+    margin: 10px 0 20px 0;
+  }
+  &--form {
+    background-color: $WHITE;
+    border-radius: 10px;
+    padding: 0 50px 40px 50px;
+
+    label,
+    input,
+    textarea {
+      display: block;
+    }
+    label {
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-top: 45px;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    input {
+      border: none;
+      width: 100%;
+      border-bottom: 1.5px solid $GRAY_1;
+      // TODO: animations
+
+      &:focus {
+        outline: none;
+        border-color: $BLUE_3;
+      }
+
+      &::placeholder {
+        color: $GRAY_3;
+      }
+
+      &[type="radio"],
+      &[type="checkbox"] {
+        display: inline-block;
+        width: 30px;
+        margin-top: 15px;
+      }
+    }
+    textarea {
+      border: 1.5px solid $GRAY_1;
+      width: 100%;
+      min-height: 220px;
+    }
+    textarea:focus {
+      border-color: $BLUE_3;
+      outline: none;
+    }
+
+    .apparel-images {
+      margin: 30px 0;
+    }
+  }
+  &--form-wrapper {
+    position: relative;
+    top: -60px;
+    background-color: $BLUE_3;
+    border-bottom: 10px solid $BLUE_3;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: -60px;
+  }
+  &--loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    svg {
+      position: relative;
+      top: -40px;
+      left: -40px;
+    }
+  }
+  &--form-success {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    width: 250px;
+  }
+  &--form-success-content {
+    position: relative;
+    left: -125px;
+
+    h4 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  &--application-container {
+    min-height: 160px;
+    background-color: $WHITE;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  &--application-text {
+    margin-bottom: 20px;
+
+    p {
+      margin-bottom: 14px;
+      font-size: 16px;
+    }
+  }
+  &--application-buttons {
+    margin-bottom: 30px;
+  }
+  &--application-button {
+    text-align: center;
+    min-height: 40px;
+    line-height: 40px;
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid $GRAY_4;
+    font-family: $HEADER_FONT;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    margin-bottom: 16px;
+
+    &:hover, &:focus {
+      color: $GRAY_7;
+      box-shadow: 0 0.5em 0.5em -0.4em $GRAY_3;
+      text-decoration: none;
+    }
+  }
+  &--google-form-button {
+    background-color: $GREEN_3;
+    color: $WHITE;
+    border: none;
+  }
+  &--application-type-skill {
+    background: url('../images/icons/icon_menu.png') no-repeat 15px center, $WHITE;
+    background-size: 30px 30px;
+  }
+  &--application-type-research {
+    background: url('../images/icons/icon_book.png') no-repeat 15px center, $WHITE;
+    background-size: 30px 30px;
+  }
+  &--application-type-industry {
+    background: url('../images/icons/icon_bag.png') no-repeat 15px center, $WHITE;
+    background-size: 30px 30px;
+  }
+  &--application-type-community {
+    background: url('../images/icons/icon_circle.png') no-repeat 15px center, $WHITE;
+    background-size: 30px 30px;
+  }
+}

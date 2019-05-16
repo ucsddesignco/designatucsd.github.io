@@ -1,0 +1,92 @@
+---
+layout: default
+---
+<div class="du-wrapper du-home--wrapper">
+  <div class="du-hero du-hero--index">
+    <div class="du-video--wrapper">
+      <div class="du-video">
+        <!-- <iframe src="https://www.youtube.com/embed/86RZ6T2R2Qs?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=86RZ6T2R2Qs" frameborder="0"></iframe> -->
+        <video loop muted autoplay>
+          <source src="public/video/feature_video.mp4">
+        </video>
+      </div>
+    </div>
+    <div class="du-hero--content du-hero--home-content">
+      <div class="container">
+        <h1>An Open Design Community at UC San Diego</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="du-section">
+    <div class="container">
+      <h2 class="du-section--header">Past and Upcoming Events</h2>
+
+      <div class="row du-card--row">
+        {% for post in site.posts limit: 3 %}
+          <div class="col-md-4 du-card--wrapper du-card--type-{{ post.type }}" >
+            <a class="card du-card du-card--event" href="{% if post.facebook %}{{ post.facebook }}{% else %}{{post.resource_link }}{% endif %}" target="_blank">
+              <div class="card-img-top du-card--img-top">
+                {% if post.image %}
+                  <img src="{{ post.image }}" alt="">
+                {% endif %}
+              </div>
+              <div class="card-block du-card--block du-card--block--event">
+                <div class="du-card--icon"><div></div></div>
+                <div class="du-card--content">
+                  <h4 class="card-title du-card--title du-card--event-title">{{ post.title }}</h4>
+                  <h6 class="du-card--date">{{ post.time }}</h6>
+                  <p class="du-card--description du-card--event-description">{{ post.excerpt }}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+<!--   <div class="du-section du-section--white">
+    <div class="container">
+      <h2 class="du-section--header">What We Do</h2>
+      <p class="du-section--description">
+        If you’re developing your professional design skills, starting to learn about design, or just looking to hang out, you’re in the right place.
+      </p>
+      <p class="du-section--description">
+        Our events include skill-building workshops, talks presented by design industry guests, community networking events, alumni panels, and social hangouts.
+      </p>
+    </div>
+  </div> -->
+
+  <!--
+  <div class="du-section">
+    <div class="container">
+      <h2 class="du-section--header">What We've Been Up To</h2>
+
+      <div class="row du-tile--row" id="instafeed">
+      </div>
+
+      <div class="text-center">
+        <a class="du-btn btn btn-lg" href="https://www.instagram.com/designatucsd/" target="_blank">Follow Us</a>
+      </div>
+    </div>
+  </div>
+  -->
+
+</div>
+<script src="public/js/instafeed.min.js"></script>
+<script>
+  var feed = new Instafeed({
+    get: 'user',
+    userId: 3028872187, // Ex: 1374300081
+    accessToken: '3028872187.54142da.1a1906f7787547389eddcac028e81f62',
+    limit: 6,
+    resolution: 'standard_resolution',
+    after: function() {
+    // Execute after
+      $('#instafeed a').attr('target', '_blank');
+    }
+  });
+  feed.run();
+  // Execute after
+</script>

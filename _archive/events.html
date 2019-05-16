@@ -1,0 +1,114 @@
+---
+layout: default
+---
+<div class="du-wrapper du-events--wrapper">
+  <div class="du-hero du-hero--events">
+    <div class="du-hero--content">
+      <h1>Events</h1>
+    </div>
+  </div>
+
+  <div class="du-section du-section--white">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+          <h2 class="du-section--header">Stay up to date with our events!</h2>
+          <p class="du-section--large-text">We’re constantly trying to provide students with the best events and workshops we think would be helpful to get them industry-ready.</p>
+          <br>
+          <p class="du-section--large-text">Sign up for our newsletter to hear about future events.</p>
+          <div class="pos-relative du-events--form-wrapper">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSeOb8DiOujSTgK3inQJtjriwtAbd0GSdEU-WepoxvcptH6XoQ/formResponse" target="dummyfooterframe" class="form-inline du-footer--form" id="events-form">
+              <!-- <label class="" for="emailInput">Sign up for our newsletter</label> -->
+              <br>
+              <div class="du-footer--form-inputs">
+                <input type="email" class="quantumWizTextinputPaperinputInput exportInput du-footer--input form-control" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Email" aria-describedby="i.desc.1391549105 i.err.1391549105" name="entry.131456824" value="" dir="auto" data-initial-dir="auto" data-initial-value="" placeholder="email@designatucsd.org" required><button type="submit" class="btn btn-primary btn--footer-form">Subscribe</button>
+              </div>
+            </form>
+            <div class="du-footer--submit-message du-footer--submit-events hidden">
+              <p>Thanks for submitting!</p>
+              <a class="du-footer--submit-another">Submit another</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content goes here -->
+  <div class="du-section">
+    <div class="container">
+      <h2 class="du-section--header">Past and Upcoming Events</h2>
+
+      <div class="row du-card--row">
+        {% for post in site.posts limit: 3 %}
+          <div class="col-md-4 du-card--wrapper du-card--type-{{ post.type }}" >
+            <a class="card du-card du-card--event" href="{% if post.facebook %}{{ post.facebook }}{% else %}{{post.resource_link }}{% endif %}" target="_blank">
+              <div class="card-img-top du-card--img-top">
+                {% if post.image %}
+                  <img src="{{ post.image }}" alt="">
+                {% endif %}
+              </div>
+              <div class="card-block du-card--block du-card--block--event">
+                <div class="du-card--icon"><div></div></div>
+                <div class="du-card--content">
+                  <h4 class="card-title du-card--title du-card--event-title">{{ post.title }}</h4>
+                  <h6 class="du-card--date">{{ post.time }}</h6>
+                  <p class="du-card--description du-card--event-description">{{ post.excerpt }}</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="du-section du-section--white">
+    <div class="container">
+      <h2 class="du-section--header">Archived Events</h2>
+
+      <div class="du-archive--wrapper">
+        <div class="du-archive--buttons text-center">
+          <button class="du-archive--button du-btn btn btn-lg active" id="du-archive--button-recent" data-quarter="ALL">Recent</button>
+          <button class="du-archive--button du-btn btn btn-lg" id="du-archive--button-sp17" data-quarter="SP17">Spring 2017</button>
+          <button class="du-archive--button du-btn btn btn-lg" id="du-archive--button-sp16" data-quarter="WI17">Winter 2017</button>
+          <button class="du-archive--button du-btn btn btn-lg" id="du-archive--button-wi16"data-quarter="FA16">Fall 2016</button>
+        </div>
+      </div>
+
+      <div class="du-archive--table">
+        <div class="row du-archive--table-head">
+          <div class="col-md-6">Event</div>
+          <div class="col-md-3 hidden-sm hidden-xs hidden-sm hidden-xs">Gallery</div>
+          <div class="col-md-3 hidden-sm hidden-xs hidden-sm hidden-xs">Resources</div>
+        </div>
+        
+        {% assign curDate = site.time | date: '%s' %}
+        {% for post in site.posts %}
+          {% assign postStartDate = post.date | date: '%s' %}
+          {% if postStartDate < curDate %}
+              <div class="row du-archive--table-row du-archive--type-{{ post.type }}" data-quarter="{{ post.quarter }}">
+                <div class="col-md-6 du-archive--table-event">
+                  <a href="{{ post.facebook }}" target="_blank">
+                    {{ post.title }}
+                  </a>
+                </div>
+                <div class="col-md-3 hidden-sm hidden-xs du-archive--table-gallery">
+                  {% if post.gallery_link %}
+                    <a href="{{ post.gallery_link }}">Photo Gallery</a>
+                  {% endif %}
+                </div>
+                <div class="col-md-3 hidden-sm hidden-xs du-archive--table-resources">
+                  {% if post.resource_link %}
+                    <a href="{{ post.resource_link }}">{{ post.resource_text }}</a>
+                  {% endif %}
+                </div>
+              </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="public/js/events.js"></script>

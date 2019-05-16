@@ -1,0 +1,122 @@
+// For global variables such as colors, fonts, etc.
+
+/* Fonts */
+  // Font imports 
+  @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+  // Font Awesome
+  @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+  // @import url('/public/fonts/OratorStdMedium.ttf');
+  @font-face {
+      font-family: "FF_DIN_Regular";
+      src: url("../fonts/FF_DIN_Regular.otf") format("opentype");
+  }
+
+  $FFDIN: "FF_DIN_Regular", Helvetica, Arial, sans-serif;
+  $JOSEFIN: "Josefin Sans", Helvetica, Arial, sans-serif;
+
+  $TEXT_FONT: $FFDIN;
+  $HEADER_FONT: $JOSEFIN;
+
+/* Styling */
+
+  // Radius of buttons
+  $BUTTON_RADIUS: 0px;  
+
+
+/* Colors */
+  // Usage: .selector { color: $BLUE_1; }
+  $BLUE_1: #077EA4;
+
+  // The lighter blue (ie background of cards)
+  $BLUE_2: #84B5C8;
+
+  // Light blue in contact form background
+  $BLUE_3: #65A1BA;
+
+  // The main (logo) green
+  $GREEN_1: #82AF5B;
+
+  // The green for success indicators/buttons
+  $GREEN_2: #3FC0B0;
+
+  // The green for the Google forms button
+  $GREEN_3: #60B794;
+
+  // Green for code
+  $GREEN_4: rgb(45, 102, 80);
+
+  // Red for backgrounds (ie background of FOOTER)
+  $RED_1: #DF2F41;
+
+  // Red for buttons (ie background in button in FOOTER)
+  $RED_2: #BD0F21;
+
+  // Lighter red for backgrond of cards
+  $RED_3: #E75A68;
+
+  // Red for background of cards on about page
+  $RED_4: #FF8390;
+
+  // Default yellow
+  $YELLOW_1: #FCB040;
+
+  // Lighter yellow for background of cards
+  $YELLOW_2: #FFD97A;
+
+  // The white
+  $WHITE: #FFFFFF;
+
+  // The black
+  $BLACK: #000;
+
+  // Gray used for text in mockup
+  $GRAY_1: #767676;
+
+  // Light gray (background color)
+  $GRAY_2: #FAFAFA;
+
+  // Shadow gray
+  $GRAY_3: #DFDFDF;
+
+  // Button gray bg
+  $GRAY_4: #9B9B9B;
+
+  // Gray for quotes
+  $GRAY_5: #DEDEDE;
+
+  // Gray on cards
+  $GRAY_6: #939292;
+
+  // Dark gray on cards
+  $GRAY_7: #4A4A4A;
+
+  // Assignments
+  $TEXT_COLOR: $GRAY_1;
+  $BACKGROUND_COLOR: $GRAY_2;
+  $TITLE_SHADOW: rgba(0, 0, 0, .13);
+
+/* Breakpoints */
+  // Note breakpoints are the upper bound of each device size
+  // Usage: @media screen and (max-width: $BP_WHATEVER) { }
+
+  /* Bootstrap 6 default breakpoints 
+   * $breakpoints: (
+   *   small: 0px,
+   *   medium: 640px,
+   *   large: 1024px,
+   *   xlarge: 1200px,
+   *   xxlarge: 1440px,
+   * );
+   */
+
+  // Small mobile device
+  $BP_SM: 640px;
+
+  // Mobile device width upper bound
+  $BP_MD: 768px;
+  
+  // Tablet width upper bound
+  $BP_LG: 992px;
+
+  // Small desktop width upper bound (ie laptops)
+  $BP_XL: 1200px;

@@ -1,0 +1,42 @@
+.du-post {
+  padding-top: 120px;
+  padding-bottom: 60px;
+
+  p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    padding-top: 24px;
+    font-size: 28px;
+  }
+  h3 {
+    padding-top: 20px;
+    font-size: 22px;
+  }
+
+  &--title {
+    margin-top: 20px;
+    font-size: 48px !important;
+    text-align: center;
+  }
+  a {
+    text-decoration: underline;
+    color: $BLUE_1;
+  }
+  ul {
+    margin-bottom: 16px;
+
+    ul {
+      margin-bottom: 0;
+    }
+  }
+  li {
+    list-style-type: square;
+    margin-left: 28px;
+    line-height: 1.6;
+  }
+}

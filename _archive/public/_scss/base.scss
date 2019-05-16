@@ -1,0 +1,66 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $HEADER_FONT;
+}
+a,
+li,
+div,
+p {
+  font-family: $TEXT_FONT;
+  line-height: 1.4;
+}
+a {
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}
+html,
+body {
+  //height: 100%;
+  width: 100%;
+  background-color: $GRAY_2;
+}
+h2 {
+  font-size: 36px;
+}
+.du-inline-list {
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    display: inline;
+  }
+}
+// Overwrite default max container width
+.container {
+  @media screen and (min-width: $BP_LG) {
+    width: 970px;
+  }
+}
+// Map stuff
+#map {
+  height: 100%;
+}
+div[id^=map_canvas], 
+div[id^=map_canvas] div {
+  overflow: auto;
+}
+img {
+  max-width: 100%;
+}
+.flex-vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.light-gray {
+  color: $GRAY_6;
+}
+.pos-relative {
+  position: relative;
+}

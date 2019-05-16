@@ -1,0 +1,100 @@
+.du-archive {
+  &--buttons {
+
+  }
+  &--button {
+    &.btn-lg {
+      background-color: $WHITE;
+      border: 2px solid $GRAY_3;
+      box-sizing: border-box;
+      color: $GRAY_1;
+
+      &.active {
+        background-color: $RED_1;
+        color: $WHITE;
+        border-color: $RED_1;
+        box-shadow: none;
+      }
+      @media screen and (max-width: $BP_SM) {
+        button {
+          padding: 16px;
+        }
+      }
+    }
+  }
+  &--table-head {
+    padding-top: 40px;
+
+    &>div {
+      padding-top: 40px;
+      padding-bottom: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: $TEXT_FONT;
+      letter-spacing: 1px;
+    }
+  }
+  &--table-row {
+    &>div {
+      // width: 25%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      &:first-of-type {
+        // width: 50%;
+        // padding-left: 32px;
+        // padding-right: 10px;
+        padding-left: 44px;
+      }
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+  // Semantic types
+  // Skills - green and hamburger
+  &--type-skill {
+    div:first-of-type {
+      background: url('../images/icons/icon_menu.png') no-repeat 15px center;
+      background-size: 20px 20px;
+    }
+  }
+  // Research - blue and graph
+  &--type-research {
+    div:first-of-type {
+      background: url('../images/icons/icon_book.png') no-repeat 15px center;
+      background-size: 20px 20px;
+    }
+  }
+  // Industry - yellow and bag
+  &--type-industry {
+    div:first-of-type {
+      background: url('../images/icons/icon_bag.png') no-repeat 15px center;
+      background-size: 20px 20px;
+    }
+  }
+  // Community - Red circle
+  &--type-community {
+    div:first-of-type {
+      background: url('../images/icons/icon_circle.png') no-repeat 15px center;
+      background-size: 20px 20px;
+    }
+  }
+  // Mobile styles for archive events
+  @media screen and (max-width: $BP_LG) {
+    &--table-row>div {
+      padding-left: 44px;
+    }
+    &--table-event {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.du-events {
+  &--form-wrapper {
+    min-height: 60px;
+  }
+}

@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <div class="du-wrapper du-mentorship-wrapper">
   <div class="du-hero du-hero--mentorship">
     <div class="du-hero--content">
@@ -16,17 +17,22 @@ layout: default
           <h2 class="du-section--header">Purpose and Goals</h2>
           <div class="du-mentorship--purpose">
             <p class="du-section--large-text du-section--quote">
-              The purpose of this program is to support students who are interested in design,
-              and are seeking guidance or mentorship whether it be in the form of career
-              advice or learning new design skills and practices. We also strive to make this 
-              program beneficial to mentors by providing structure for mentorship, supplying
-              design resources, and establishing a network of mentors who can help and
-              support each other.
+              The purpose of this program is to support students who are
+              interested in design, and are seeking guidance or mentorship
+              whether it be in the form of career advice or learning new design
+              skills and practices. We also strive to make this program
+              beneficial to mentors by providing structure for mentorship,
+              supplying design resources, and establishing a network of mentors
+              who can help and support each other.
             </p>
           </div>
         </div>
       </div>
-      <img src="public/images/site_images/collage.png" alt="Collage of mentors and mentees" class="img-responsive du-mentorship--collage">
+      <img
+        src="public/images/site_images/collage.png"
+        alt="Collage of mentors and mentees"
+        class="img-responsive du-mentorship--collage"
+      />
     </div>
   </div>
 
@@ -35,12 +41,14 @@ layout: default
       <div class="row">
         <div class="du-mentorship--card col-sm-6">
           <h2 class="du-section--header text-center">Role of Mentor</h2>
-          <img src="public/images/icons/lightbulb.svg" alt="Mentor Graphic">
+          <img src="public/images/icons/lightbulb.svg" alt="Mentor Graphic" />
           <p>
-            The role of a <strong>mentor</strong> is to provide career and education guidance 
-            to their mentees, and to be a resource for quality feedback on resumes, portfolios, 
-            pitches, etc. Overall, we hope mentors guide mentees in establishing realistic goals, 
-            and create meaningful relationships that foster achievement of those goals.
+            The role of a <strong>mentor</strong> is to provide career and
+            education guidance to their mentees, and to be a resource for
+            quality feedback on resumes, portfolios, pitches, etc. Overall, we
+            hope mentors guide mentees in establishing realistic goals, and
+            create meaningful relationships that foster achievement of those
+            goals.
           </p>
           <!--
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdx0Z6Xb4McQVvzEJf6eTQhQeYTi1RL6SZqOhRfoWRc8cHuVA/viewform" target="_blank" class="du-btn btn btn-lg du-about--btn-lg">Mentor Application</a>
@@ -48,12 +56,13 @@ layout: default
         </div>
         <div class="du-mentorship--card col-sm-6">
           <h2 class="du-section--header text-center">Role of Mentee</h2>
-          <img src="public/images/icons/backpack.svg" alt="Mentee Graphic">
+          <img src="public/images/icons/backpack.svg" alt="Mentee Graphic" />
           <p>
-            The role of a <strong>mentee</strong> is to identify their career goals and establish 
-            steps they will take to accomplish those goals with their mentor. Mentees should be 
-            willing to learn and work with their mentor in order to improve skills in design and 
-            networking, and most importantly not be afraid to ask questions!
+            The role of a <strong>mentee</strong> is to identify their career
+            goals and establish steps they will take to accomplish those goals
+            with their mentor. Mentees should be willing to learn and work with
+            their mentor in order to improve skills in design and networking,
+            and most importantly not be afraid to ask questions!
           </p>
           <!--
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfk3vgrKMDz_WKt2E5FOUDJrG0Z-cFC80UVSqkN5W-tSVvK0A/viewform" target="_blank" class="du-btn btn btn-lg du-about--btn-lg">Mentee Application</a>
@@ -68,32 +77,37 @@ layout: default
       <h2 class="du-section--header text-center">Important Events</h2>
 
       <div class="row du-card--row">
-        {% assign count = 0 %}
-        {% for post in site.posts reversed %}
-          {% if post.mentorship %}
-            <div class="col-md-4 du-card--wrapper du-card--type-{{ post.type }}" >
-              <a class="card du-card du-card--event" href="{% if post.facebook %}{{ post.facebook }}{% else %}{{post.resource_link }}{% endif %}" target="_blank">
-                <div class="card-img-top du-card--img-top">
-                  {% if post.image %}
-                    <img src="{{ post.image }}" alt="">
-                  {% endif %}
-                </div>
-                <div class="card-block du-card--block du-card--block--event">
-                  <div class="du-card--icon"><div></div></div>
-                  <div class="du-card--content">
-                    <h4 class="card-title du-card--title du-card--event-title">{{ post.title }}</h4>
-                    <h6 class="du-card--date">{{ post.time }}</h6>
-                    <p class="du-card--description du-card--event-description">{{ post.excerpt }}</p>
-                  </div>
-                </div>
-              </a>
+        {% assign count = 0 %} {% for post in site.posts reversed %} {% if
+        post.mentorship %}
+        <div class="col-md-4 du-card--wrapper du-card--type-{{ post.type }}">
+          <a
+            class="card du-card du-card--event"
+            href="{% if post.facebook %}{{ post.facebook }}{% else %}{{
+              post.resource_link
+            }}{% endif %}"
+            target="_blank"
+          >
+            <div class="card-img-top du-card--img-top">
+              {% if post.image %}
+              <img src="{{ post.image }}" alt="" />
+              {% endif %}
             </div>
-            {% assign count = count | plus: 1 %}
-            {% if count == 3 %}
-              {% break %}
-            {% endif %}
-          {% endif %}
-        {% endfor %}
+            <div class="card-block du-card--block du-card--block--event">
+              <div class="du-card--icon"><div></div></div>
+              <div class="du-card--content">
+                <h4 class="card-title du-card--title du-card--event-title">
+                  {{ post.title }}
+                </h4>
+                <h6 class="du-card--date">{{ post.time }}</h6>
+                <p class="du-card--description du-card--event-description">
+                  {{ post.excerpt }}
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        {% assign count = count | plus: 1 %} {% if count == 3 %} {% break %} {%
+        endif %} {% endif %} {% endfor %}
       </div>
     </div>
   </div>
@@ -105,8 +119,9 @@ layout: default
           <h2 class="du-section--header">Contact</h2>
           <div class="du-mentorship--purpose">
             <p class="du-section--large-text du-section--quote">
-              If you have any questions or concerns, feel free to contact Anne Le <a href="mailto:anl193@ucsd.edu">(anl193@ucsd.edu)</a>
-              or Chaitanya Prashant <a href="mailto:cprashan@ucsd.edu">(cprashan@ucsd.edu)</a>
+              If you have any questions or concerns, feel free to contact
+              <a href="mailto:designatucsd@gmail.com">designatucsd@gmail.com</a
+              >.
             </p>
           </div>
         </div>

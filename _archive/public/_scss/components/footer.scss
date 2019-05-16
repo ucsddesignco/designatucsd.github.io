@@ -1,0 +1,149 @@
+.du-footer {
+  width: 100%;
+  background-color: $RED_1;
+  padding: 24px 0 34px 0;
+
+  &--left {
+    float: left;
+
+    @media screen and (max-width: $BP_MD) {
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
+  }
+  &--right {
+    float: right;
+    position: relative;
+
+    @media screen and (max-width: $BP_MD) {
+      width: 100%;
+      text-align: center;
+      float: none;
+      min-height: 94px;
+    }
+  }
+  &--icons {
+    padding: 14px 0;
+
+    a {
+      height: 43px;
+      width: 43px;
+      border-radius: 22px;
+      border: 2px solid $WHITE;
+      box-sizing: border-box;
+      color: white;
+      text-align: center;
+      display: inline-block;
+      margin-right: 15px;
+    }
+    li:last-of-type a {
+      margin-right: 0;
+    }
+    i {
+      color: inherit;
+      line-height: 40px;
+      font-size: 20px;
+    }
+  }
+  &--form {
+    &#events-form {
+      input {
+        border: 2px solid $GRAY_3;
+        box-shadow: none;
+
+        @media screen and (min-width: $BP_MD) {
+          border-right: none;
+        }
+      }
+    }
+    label {
+      color: $WHITE;
+      font-size: 14px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+    input {
+      border-radius: 0;
+      outline: none;
+      background-color: $WHITE;
+      min-width: 360px;
+      border: none;
+      max-width: 400px;
+      margin: auto;
+
+      @media screen and (max-width: $BP_SM) {
+        min-width: auto;
+      }
+    }
+    button {
+      height: 34px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      font-size: 14px;
+      // Text off center due to letter-spacing (I think);
+      padding-left: 12px;
+
+      @media screen and (max-width: $BP_MD) {
+        margin-top: 10px;
+      }
+    }
+
+    // @media screen and (max-width: $BP_SM) {
+    //   label {
+    //     float: center;
+    //   }
+    //   input {
+    //     float: center;
+    //   }
+    // }
+  }
+  &--submit-message {
+    text-align: left;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    min-width: 300px;
+    text-align: right;
+
+    a,
+    p {
+      color: $WHITE;
+    }
+    a {
+      cursor: pointer;
+
+      &:hover {
+        color: $WHITE;
+      }
+    }
+    @media screen and (max-width: $BP_MD) {
+      // position: relative;
+      text-align: center;
+      width: 100%;
+
+      a,
+      p {
+        max-width: 400px;
+        margin: auto;
+      }
+    }
+  }
+  &--submit-events{
+    text-align: center;
+    width: 100%;
+
+    a,
+    p {
+      color: $GRAY_1;
+    }
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        color: $GRAY_1;
+      }
+    }
+  }
+}

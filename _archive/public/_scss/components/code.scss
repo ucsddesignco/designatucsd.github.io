@@ -1,0 +1,259 @@
+/**
+ * SCSS overrides for highlighter-rouge
+ */
+ .highlight table td { padding: 5px; }
+ .highlight table pre { margin: 0; }
+ .highlight .c, .highlight .cd {
+   color: $GRAY_1;
+   font-style: italic;
+ }
+ .highlight .cm {
+   color: $GRAY_1;
+   font-style: italic;
+ }
+ .highlight .c1 {
+   color: $GRAY_1;
+   font-style: italic;
+ }
+ .highlight .cp {
+   color: $GRAY_1;
+   font-weight: bold;
+ }
+ .highlight .cs {
+   color: $GRAY_1;
+   font-weight: bold;
+   font-style: italic;
+ }
+ .highlight .err {
+   color: #960050;
+   background-color: #1e0010;
+ }
+ .highlight .gi {
+   color: #ffffff;
+   background-color: #324932;
+ }
+ .highlight .gd {
+   color: #ffffff;
+   background-color: #493131;
+ }
+ .highlight .ge {
+   color: #000000;
+   font-style: italic;
+ }
+ .highlight .gr {
+   color: #aa0000;
+ }
+ .highlight .gt {
+   color: #aa0000;
+ }
+ .highlight .gh {
+   color: #999999;
+ }
+ .highlight .go {
+   color: #888888;
+ }
+ .highlight .gp {
+   color: #555555;
+ }
+ .highlight .gs {
+   font-weight: bold;
+ }
+ .highlight .gu {
+   color: #aaaaaa;
+ }
+ .highlight .k, .highlight .kv {
+   color: #4F9C6E;
+   font-weight: bold;
+ }
+ .highlight .kc {
+   color: #4F9C6E;
+   font-weight: bold;
+ }
+ .highlight .kd {
+   color: #4F9C6E;
+   font-weight: bold;
+ }
+ .highlight .kp {
+   color: #4F9C6E;
+   font-weight: bold;
+ }
+ .highlight .kr {
+   color: #4F9C6E;
+   font-weight: bold;
+ }
+ .highlight .kt {
+   color: #4F9C6E;
+   font-weight: bold;
+ }
+ .highlight .kn {
+   color: $GREEN_1;
+   font-weight: bold;
+ }
+ .highlight .ow {
+   color: $GREEN_1;
+   font-weight: bold;
+ }
+ .highlight .o {
+   color: $GREEN_1;
+   font-weight: bold;
+ }
+ .highlight .mf {
+   color: $YELLOW_1;
+ }
+ .highlight .mh {
+   color: $YELLOW_1;
+ }
+ .highlight .il {
+   color: $YELLOW_1;
+ }
+ .highlight .mi {
+   color: $YELLOW_1;
+ }
+ .highlight .mo {
+   color: $YELLOW_1;
+ }
+ .highlight .m, .highlight .mb, .highlight .mx {
+   color: $YELLOW_1;
+ }
+ .highlight .se {
+   color: $YELLOW_1;
+ }
+ .highlight .sb {
+   color: $RED_3;
+ }
+ .highlight .sc {
+   color: $RED_3;
+ }
+ .highlight .sd {
+   color: $RED_3;
+ }
+ .highlight .s2 {
+   color: $RED_3;
+ }
+ .highlight .sh {
+   color: $RED_3;
+ }
+ .highlight .si {
+   color: $RED_3;
+ }
+ .highlight .sx {
+   color: $RED_3;
+ }
+ .highlight .sr {
+   color: $RED_3;
+ }
+ .highlight .s1 {
+   color: $RED_3;
+ }
+ .highlight .ss {
+   color: $RED_3;
+ }
+ .highlight .s {
+   color: $RED_3;
+ }
+ .highlight .na {
+   color: $BLUE_1;
+ }
+ .highlight .nc {
+   color: $BLUE_1;
+   font-weight: bold;
+ }
+ .highlight .nd {
+   color: $BLUE_1;
+   font-weight: bold;
+ }
+ .highlight .ne {
+   color: $BLUE_1;
+   font-weight: bold;
+ }
+ .highlight .nf {
+   color: $BLUE_1;
+   font-weight: bold;
+ }
+ .highlight .no {
+   color: rgb(55, 160, 97);
+ }
+ .highlight .bp {
+   color: darken($GRAY_4, 8%);
+ }
+ .highlight .nb {
+   color: darken($GRAY_4, 8%);
+ }
+ .highlight .ni {
+   color: darken($GRAY_4, 8%);
+ }
+ .highlight .nn {
+   color: darken($GRAY_4, 8%);
+ }
+ .highlight .vc {
+   color: darken($GRAY_4, 8%);
+ }
+ .highlight .vg {
+   color: darken($GRAY_4, 8%);
+ }
+ .highlight .vi {
+   color: darken($GRAY_4, 8%);
+ }
+ .highlight .nv {
+   color: darken($GRAY_4, 8%);
+ }
+ .highlight .w {
+   color: darken($GRAY_4, 8%);
+ }
+ .highlight .nl {
+   color: darken($GRAY_4, 8%);
+   font-weight: bold;
+ }
+ .highlight .nt {
+   color: $GREEN_1;
+ }
+ .highlight .n,
+ .highlight .nb {
+   color: $GREEN_1;
+   color: $RED_3;
+ }
+ .highlight {
+   margin: 10px 0 0 0;
+   color: darken($GRAY_4, 8%);
+   background-color: lighten($GRAY_3, 5%);
+   padding: 4px;
+ }
+ .highlight * {
+   font-family: monospace !important;
+   font-size: 16px;
+ }
+ .highlighter-rouge,
+ .highlighter-rouge * {
+   font-family: monospace !important;
+   font-size: 16px !important;
+ }
+ .highlighter-rouge {
+   background-color: lighten($GRAY_3, 5%);
+   padding: 0 4px;
+ }
+ div.highlighter-rouge {
+   border-radius: 5px;
+   border-top: 24px solid $GRAY_4;
+   margin-bottom: 10px;
+   padding-top: 0;
+   position: relative;
+
+  .highlight {
+    margin-top: 0;
+  }
+  &.language-css:before,
+  &.language-html:before {
+    content: ' ';
+    text-align: center;
+    color: $WHITE;
+    position: absolute;
+    top: -23px;
+    left: 9px;
+  }
+  &.language-css:before {
+    content: 'CSS';
+  }
+  &.language-html:before {
+    content: 'HTML';
+  }
+ }

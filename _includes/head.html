@@ -1,0 +1,52 @@
+<head>
+  <!-- Meta tags 
+    <meta charset="utf-8" />
+    {% if jekyll.environment == "development" %}
+    <base href="/" />
+    {% else %}
+    <base href="{{ site.base }}" />
+    {% endif %} -->
+
+  <base href="{{ site.base }}" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="keywords" content="UCSD, UC San Diego, design, UX" />
+
+  <meta
+    property="og:title"
+    content="{% if page.url != '/' %}{{ page.title }} | {% endif %}{{
+      site.title
+    }}"
+  />
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:image"
+    content="{{ site.url }}/assets/images/site/preview.png"
+  />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Favicons -->
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500|Josefin+Sans:700"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheets -->
+  <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
+
+  <title>
+    {% if page.url == "/" %}
+    {{ site.title }}
+    {% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{% endif
+    %}
+  </title>
+</head>

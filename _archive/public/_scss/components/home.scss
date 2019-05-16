@@ -1,0 +1,182 @@
+/**
+ * Home page + hero
+ */
+.du-video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: $BLUE_1;
+  background: url('../video/feature_video_frame1.png') no-repeat center center;
+  background-size: cover;
+
+  @media screen and (max-width: $BP_MD) {
+    height: 60%;
+    height: 60vh;
+  }
+  // // Deprecated YT stuff
+  // iframe {
+  //   position: absolute;
+  //   top: -10%;
+  //   // top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  // }
+  video {
+    width: 100%;
+    height: 100%;
+
+    @media screen and (max-width: $BP_MD) {
+      display: none;
+    }
+  }
+  &--wrapper {
+    max-height: 60%;
+    max-height: 60vh;
+    overflow: hidden;
+  }
+}
+.du-hero {
+  width: 100%;
+  min-height: 375px;
+  margin-top: 109px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+
+  @media screen and (max-width: $BP_LG) {
+    margin-top: 93px;
+  }
+  @media screen and (max-width: $BP_MD) {
+    margin-top: 73px;
+  }
+
+  // Heroes for pages
+  &--index {
+    // TODO: possibly add a loading image of the first frame
+    // background: url('../images/video_banner.jpg') no-repeat center center;
+    background-size: cover;
+    // Wrap video
+    position: relative;
+    min-height: none;
+  }
+  &--events {
+    background: url('../images/banners/hero_events.png') no-repeat center center;
+    background-size: cover;
+
+    @media screen and (max-width: $BP_SM) {
+      background: url('../images/banners/event_mobile.png') no-repeat center center;
+      background-size: cover;
+    }
+  }
+  &--contact {
+    background: url('../images/banners/hero_contact.png') no-repeat center center;
+    background-size: cover;
+
+    @media screen and (max-width: $BP_SM) {
+      background: url('../images/banners/contact_mobile.png') no-repeat center center;
+      background-size: cover;
+    }
+  }
+  &--resources {
+    background: url('../images/banners/hero_resources.png') no-repeat center center;
+    background-size: cover;
+
+    @media screen and (max-width: $BP_SM) {
+      background: url('../images/banners/resources_mobile.png') no-repeat center center;
+      background-size: cover;
+    }
+  }
+  &--about {
+    background: url('../images/banners/hero_about.png') no-repeat center center;
+    background-size: cover;
+
+    @media screen and (max-width: $BP_SM) {
+      background: url('../images/banners/about_mobile.png') no-repeat center center;
+      background-size: cover;
+    }
+  }
+  &--mentorship {
+    background: url('../images/banners/hero_mentorship.png') no-repeat center center;
+    background-size: cover;
+
+    @media screen and (max-width: $BP_SM) {
+      background: url('../images/banners/mentorship_mobile.png') no-repeat center center;
+      background-size: cover;
+    }
+  }
+  &--board {
+    background-size: cover;
+
+    @media screen and (max-width: $BP_SM) {
+      background-size: cover;
+    }
+  }
+  &--content {
+    h1 {
+      color: $WHITE;
+      font-size: 64px;
+      text-shadow: 2px 2px 2px $TITLE_SHADOW;
+    }
+    h2 {
+      color: $WHITE;
+      font-size: 48px;
+      text-shadow: 2px 2px 2px $TITLE_SHADOW;
+    }
+  }
+  &--home-content {
+    position: absolute;
+    width: 100%;
+
+    @media screen and (max-width: $BP_MD) {
+      top: 32%
+    }
+    @media screen and (max-width: $BP_SM) {
+      top: 24%;
+    }
+    h1 {
+      display: block;
+
+      @media screen and (max-width: $BP_MD) {
+        font-size: 52px;
+      }
+      @media screen and (max-width: $BP_SM) {
+        font-size: 48px;
+      }
+    }
+  }
+}
+.du-collabs {
+  &--tile {
+    height: 176px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (max-width: $BP_MD) {
+      height: 110px;
+    }
+  }
+}
+#instafeed {
+  // display: flex;
+
+  a {
+    display: inline-block;
+    width: 33.33333333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+    @media screen and (max-width: $BP_MD) {
+      width: 100%;  
+    }
+  }
+}
