@@ -1,5 +1,5 @@
 ---
-date: ''
+date: '2019-05-23 00:00:00 -0800'
 layout: post
 title: Storyboarding Workshop with Sony
 hosted: Design at UCSD
@@ -11,7 +11,7 @@ type: skill
 resource_text: ''
 facebook: https://www.facebook.com/events/602829070127225/
 excerpt: Create your own storyboards in this active workshop.
-published: false
+published: true
 mentorship: false
 
 ---
