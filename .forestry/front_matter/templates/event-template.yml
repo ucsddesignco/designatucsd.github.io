@@ -1,7 +1,6 @@
 ---
 label: Event Template
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: date
@@ -59,6 +58,10 @@ fields:
   label: Mentorship
   description: Whether this event is a mentorship related event
 pages:
+- _posts/storyboarding-workshop-with-sony.md
+- _posts/2018-04-17-dessert-board-games.md
+- _posts/2018-04-20-html-css-workshop.md
+- _posts/2018-06-10-finals-study-jam.md
 - _posts/intuit-info-session.md
 - _posts/2019-01-10-pre-stride-office-hours.md
 - _posts/2019-01-10-servicenow-info-session.md
@@ -81,7 +84,6 @@ pages:
 - _posts/2018-01-21-presenting-the-portfolio.md
 - _posts/2018-02-14-figma-invision-workshop.md
 - _posts/2018-11-01-design-frontiers-intuit.md
-- _posts/2018-04-17-dessert-board-games.md
 - _posts/2018-05-01-torrey-pines-hike.md
 - _posts/2018-10-02-fall-kick-off.md
 - _posts/2018-10-25-resume-workshop.md
@@ -104,5 +106,3 @@ pages:
 - _posts/2018-04-10-info-session.md
 - _posts/2018-12-14-stride-design-centric-career-fair.md
 - _posts/2018-04-26-designing-for-stem-education-w-robolink.md
-- _posts/2018-04-20-html-css-workshop.md
-- _posts/2018-06-10-finals-study-jam.md
