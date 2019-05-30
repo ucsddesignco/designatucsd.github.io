@@ -1,16 +1,16 @@
 ---
 date: '2019-05-23 00:00:00 -0800'
 layout: post
-title: Storyboarding Workshop with Sony
+title: Designing for Non-Human Factors
 hosted: Design at UCSD
-time: Thursday, May. 23, 6:30 PM
+time: Tuesday, May 28, 6:30 PM
 location: HSS 1346
-image: https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/60474760_2285018838405241_6207534950376275968_o.jpg?_nc_cat=108&_nc_ht=scontent-lax3-1.xx&oh=99d38503badedf19b3e86c7325ce071a&oe=5D8E2C02
+image: https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/61131518_2286272701613188_3346628058797834240_o.jpg?_nc_cat=110&_nc_eui2=AeHpGfH_nCTxgs0s2YxvecljsfInVSRJNP3_Cmn6zbRI5sWYH7sTSQSlRQurCSB7e8g-bqpqAEzRY9x9yltArFPx6NPqu5s6_sDkYsncyoyhfQ&_nc_oc=AQl3rcZ5A-H-raoKsEyn3vhzepHDp_n6kvFibDFVENRc5yxhIK2q2tU8wfqc-gW_SBw&_nc_ht=scontent-lax3-1.xx&oh=a06a01b643438f99abcf100dfde9514f&oe=5D5C0DD9
 quarter: SP19
 type: skill
 resource_text: ''
-facebook: https://www.facebook.com/events/602829070127225/
-excerpt: Create your own storyboards in this active workshop.
+facebook: https://www.facebook.com/events/2153912841585349/
+excerpt: Learn how to defend your design decisions.
 published: true
 mentorship: false
 
