@@ -59,6 +59,7 @@ fields:
   description: Whether this event is a mentorship related event
 pages:
 - _posts/storyboarding-workshop-with-sony.md
+- _posts/designing-for-non-human-factors-w-sdxd.md
 - _posts/2018-04-17-dessert-board-games.md
 - _posts/2018-04-20-html-css-workshop.md
 - _posts/2018-06-10-finals-study-jam.md
