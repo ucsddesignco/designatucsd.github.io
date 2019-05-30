@@ -1,7 +1,7 @@
 ---
 date: '2019-05-23 00:00:00 -0800'
 layout: post
-title: Designing for Non-Human Factors
+title: Designing for Non-Human Factors w/ SDXD
 hosted: Design at UCSD
 time: Tuesday, May 28, 6:30 PM
 location: HSS 1346
