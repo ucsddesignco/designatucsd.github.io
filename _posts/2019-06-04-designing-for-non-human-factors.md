@@ -1,7 +1,7 @@
 ---
 date: '2019-06-04 00:00:00 -0800'
 layout: post
-title: Designing for Non-Human Factors
+title: Design Your Summer & Closing Mixer
 hosted: Design at UCSD
 time: Tuesday, June 4, 6:30 PM
 location: HSS 1346
