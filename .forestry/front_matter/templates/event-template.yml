@@ -58,7 +58,7 @@ fields:
   label: Mentorship
   description: Whether this event is a mentorship related event
 pages:
-- _posts/2019-06-04-designing-for-non-human-factors.md
+- _posts/designing-for-non-human-factors.md
 - _posts/storyboarding-workshop-with-sony-1.md
 - _posts/storyboarding-workshop-with-sony.md
 - _posts/2018-04-26-designing-for-stem-education-w-robolink.md
