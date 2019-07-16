@@ -10,7 +10,7 @@ quarter: SP19
 type: skill
 resource_text: ''
 facebook: https://www.facebook.com/events/878673072485679/
-excerpt: Celebrate the end of a successful school year at our last GBM!
+excerpt: Celebrate the end of a successful school year!
 published: true
 mentorship: false
 
