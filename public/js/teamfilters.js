@@ -116,7 +116,7 @@ var team = [
     name: "Andrew Zhen",
     role: "Industry Relations Coordinator",
     link: "https://www.linkedin.com/in/andrew-zhen/",
-    gradYear: 2021
+    gradYear: 2020
   },
 /*
   {
