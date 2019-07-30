@@ -94,8 +94,8 @@ var team = [
     id: "vicky",
     name: "Vicky Ly",
     role: "Marketing Coordinator",
-    link: "https://www.linkedin.com/in/vicky-ly/",
-    gradYear: 2021
+    link: "https://vickyly.co",
+    gradYear: 2020
   },
   {
     id: "quinn",
@@ -108,14 +108,14 @@ var team = [
     id: "winson",
     name: "Winson Dieu",
     role: "Industry Relations Coordinator",
-    link: "https://www.linkedin.com/in/winson-dieu/",
+    link: "https://winsondieu.com",
     gradYear: 2021
   },
   {
     id: "andrew",
     name: "Andrew Zhen",
     role: "Industry Relations Coordinator",
-    link: "https://www.linkedin.com/in/andrew-zhen/",
+    link: "https://ajzhen.com",
     gradYear: 2020
   },
 /*
