@@ -1,6 +1,7 @@
 # Site settings
 title: Design at UCSD
 url: "https://designatucsd.org"
+base: "/site"
 
 markdown: kramdown
 
@@ -13,8 +14,8 @@ sass:
   sass_dir: public/_scss
 
 include:
-- public/css
-- public/js
+  - public/css
+  - public/js
 
 # Show future events/posts
 future: true
