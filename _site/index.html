@@ -120,14 +120,19 @@
         width: 18rem;
         height: 18rem;
       }
+      .arrow {
+        fill: none;
+        stroke-width: 3;
+      }
+
       @media screen and (max-width: 600px) {
         svg {
           width: 10rem;
           height: 10rem;
         }
-      }
-      .logo {
-        fill: none;
+        .arrow {
+          stroke-width: 4;
+        }
       }
 
       h1 {
@@ -177,7 +182,7 @@
     <div class="marquee">
       <svg viewBox="0 0 181 181" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
-          class="logo"
+          class="arrow"
           d="M2.41842 150.626L107.173 47.3961L108.911 45.6839H106.471H23.3024V1.93433H179.148V160.058H139.366V74.1793V71.7892L137.664 73.4672L30.9368 178.686L2.41842 150.626Z"
           stroke="white"
           stroke-width="2"
@@ -210,7 +215,12 @@
         return array;
       }
 
-      var colors = [
+      var SPEED = 150;
+      if ($(window).width() <= 600) {
+        SPEED = 100;
+      }
+
+      var COLORS = [
         ["#fff", "#000"],
         ["#F8BBD0", "#1A237E"],
         ["#00695C", "#E3F2FD"],
@@ -221,14 +231,14 @@
       ];
 
       // load first colors randomly
-      colors = shuffle(colors);
+      COLORS = shuffle(COLORS);
 
-      var newColors = colors.pop();
+      var newColors = COLORS.pop();
       var fg = newColors[0];
       var bg = newColors[1];
-      colors.unshift(newColors);
+      COLORS.unshift(newColors);
 
-      $(".marquee .logo").css("stroke", fg);
+      $(".marquee .arrow").css("stroke", fg);
       $("body").css("background", bg);
       $("body").css("color", fg);
 
@@ -339,17 +349,17 @@
 
       $(document).ready(function() {
         $(".marquee").marqueeify({
-          speed: 150,
+          speed: SPEED,
           bumpEdge: function() {
-            var newColors = colors.pop();
+            var newColors = COLORS.pop();
             var fg = newColors[0];
             var bg = newColors[1];
             // reverse fg and bg
-            // newColors[0] = bg;
-            // newColors[1] = fg;
-            colors.unshift(newColors);
+            newColors[0] = bg;
+            newColors[1] = fg;
+            COLORS.unshift(newColors);
 
-            $(".marquee .logo").css("stroke", fg);
+            $(".marquee .arrow").css("stroke", fg);
             $("body").css("background", bg);
             $("body").css("color", fg);
           }
